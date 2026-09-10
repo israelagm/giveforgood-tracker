@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T23:43:00.238Z",
+ "ts": "2026-09-10T23:43:51.847Z",
  "tier": "Tier 1",
  "org": {
   "raised": 22571,
@@ -27,7 +27,7 @@
     "name": "Amped",
     "value": 14733000
    },
-   "gap": 43900,
+   "gap": 46400,
    "chasing": "The Waldorf School of Louisville",
    "scored": true
   },
@@ -218,14 +218,14 @@
    "end": "2026-09-10T20:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 99,
+   "value": 100,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 109
    },
-   "gap": 10,
+   "gap": 9,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23446493
+ "lastDonationId": 23446594
 }
