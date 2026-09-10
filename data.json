@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T17:20:07.019Z",
+ "ts": "2026-09-10T17:20:59.051Z",
  "tier": "Tier 1",
  "org": {
   "raised": 15418,
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 56,
-   "value": 1539800,
+   "value": 1541800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13063500
    },
-   "gap": 25700,
+   "gap": 23700,
    "chasing": "Friends of the Belle",
    "scored": true
   },
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 485
+    "value": 486
    },
    "gap": 1,
    "chasing": "ART FM",
@@ -64,7 +64,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 418,
+   "value": 419,
    "field": "donations",
    "total": 665,
    "leader": {
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 418,
+   "value": 419,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 418
+    "value": 419
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1376800,
+   "value": 1378800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13052500
    },
-   "gap": 43700,
+   "gap": 41700,
    "chasing": "Walden School",
    "scored": true
   },
