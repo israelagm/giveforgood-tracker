@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T20:23:34.966Z",
+ "ts": "2026-09-10T20:24:26.524Z",
  "tier": "Tier 1",
  "org": {
   "raised": 19360,
@@ -27,7 +27,7 @@
     "name": "Amped",
     "value": 13968500
    },
-   "gap": 20500,
+   "gap": 25500,
    "chasing": "Awake Ministries",
    "scored": true
   },
