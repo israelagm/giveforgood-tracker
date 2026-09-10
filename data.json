@@ -1,8 +1,8 @@
 {
- "ts": "2026-09-10T18:31:20.263Z",
+ "ts": "2026-09-10T18:32:12.011Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 17786,
+  "raised": 17791,
   "donors": 364,
   "donations": 364,
   "avgGift": 36,
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 58,
-   "value": 1778600,
+   "value": 1779100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13352000
    },
-   "gap": 8900,
+   "gap": 8400,
    "chasing": "Home of the Innocents",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 498,
+   "value": 499,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 652
+    "value": 653
    },
-   "gap": 46,
+   "gap": 45,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 498,
+   "value": 499,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 498
+    "value": 499
    },
    "gap": null,
    "chasing": null,
@@ -107,16 +107,16 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 46,
-   "value": 1615600,
+   "rank": 47,
+   "value": 1616100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13341000
    },
-   "gap": 36800,
-   "chasing": "St. Vincent de Paul Louisville",
+   "gap": 19800,
+   "chasing": "The Louisville Free Public Library Foundation",
    "scored": true
   },
   {
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23426514
+ "lastDonationId": 23426636
 }
