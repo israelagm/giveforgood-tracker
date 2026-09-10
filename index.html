@@ -287,11 +287,26 @@ var LIVE_ENDPOINT = '';
 var RAW = 'https://raw.githubusercontent.com/israelagm/giveforgood-tracker/data/data.json';
 var API = 'https://api.github.com/repos/israelagm/giveforgood-tracker/contents/data.json?ref=data';
 
+/**
+ * Keep the last reading so a reload paints immediately with something real
+ * (correctly labelled with its age) instead of a blank "Loading…".
+ */
+function saveLast(data){
+  try { localStorage.setItem('gfg:last', JSON.stringify(data)); } catch (e) {}
+}
+function loadLast(){
+  try {
+    var raw = localStorage.getItem('gfg:last');
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) { return null; }
+}
+
 function adopt(data){
   // Either source can hand back something older than what we already have.
   if (!data || !data.ts) return;
   if (STATE && new Date(data.ts).getTime() <= new Date(STATE.ts).getTime()) return;
   STATE = data;
+  saveLast(data);
   render();
 }
 
@@ -310,7 +325,24 @@ function pollRaw(){
     .catch(function(err){ showLoadError(); console.warn('raw:', err); });
 }
 
+/**
+ * The fast source allows 60 requests an hour per internet connection, shared
+ * by everyone on it. A page load would otherwise spend one every time, so a
+ * few people refreshing repeatedly could drain the whole school's allowance.
+ * Remember across reloads when we last used it and skip if it was recent.
+ */
+var API_MIN_GAP = 90000;
+
+function apiLastCall(){
+  try { return Number(localStorage.getItem('gfg:apiLast') || 0); } catch (e) { return 0; }
+}
+function noteApiCall(){
+  try { localStorage.setItem('gfg:apiLast', String(Date.now())); } catch (e) {}
+}
+
 function pollApi(){
+  if (Date.now() - apiLastCall() < API_MIN_GAP) return;   // too soon; raw covers us
+  noteApiCall();
   fetch(API + '&t=' + Date.now(),
         { headers: { Accept: 'application/vnd.github.raw' }, cache: 'no-store' })
     .then(function(r){
@@ -334,6 +366,10 @@ function pollLive(){
     })
     .catch(function(err){ showLoadError(); console.warn('live:', err); });
 }
+
+// Paint the previous reading first so a refresh is never a blank screen.
+STATE = loadLast();
+if (STATE) render();
 
 if (LIVE_ENDPOINT) {
   // Real time: computed per request, so poll it directly and often.
