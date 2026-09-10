@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T22:44:35.689Z",
+ "ts": "2026-09-10T22:45:27.004Z",
  "tier": "Tier 1",
  "org": {
   "raised": 21151,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14172000
+    "value": 14174500
    },
    "gap": 89800,
    "chasing": "The Arrow Fund",
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14161000
+    "value": 14163500
    },
    "gap": 32200,
    "chasing": "Paws with Purpose",
