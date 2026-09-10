@@ -261,44 +261,67 @@ function tickClocks(){
 /**
  * Where the numbers come from.
  *
- * The event API can't be called from this page at all — it sends no CORS
- * headers — so a GitHub Action fetches it server-side and commits data.json.
+ * The event API sends no CORS headers, so this page cannot call it. A GitHub
+ * Action fetches it server-side and commits data.json to the `data` branch.
+ * Getting that file back out, fresh, is the awkward part — two sources, each
+ * broken in a different way, so the page uses both and keeps whichever
+ * reading is newer:
  *
- * We read that file from raw.githubusercontent.com rather than from our own
- * origin, because GitHub Pages rebuilds on every commit and those builds queue
- * up and cancel each other when the data refreshes once a minute — the Pages
- * copy of data.json can sit minutes behind the repo. raw serves the newest
- * commit immediately and sends `access-control-allow-origin: *`, so reading it
- * cross-origin is allowed. Readings live on a separate `data` branch so that
- * main stays quiet and Pages can actually finish deploying index.html.
- * Falls back to the same-origin copy if raw is unreachable.
+ *   raw.githubusercontent.com — no rate limit, but Fastly caches it for five
+ *     minutes and a cache-busting query does not reliably defeat that. It has
+ *     been observed serving a copy 27 minutes old.
+ *
+ *   api.github.com/contents — served within seconds of the commit, but only
+ *     60 requests an hour PER IP for anonymous callers. A school network is a
+ *     single IP, so a dozen parents on the same wifi would exhaust it. Polled
+ *     sparingly, and a 403 just means we coast on raw until the hour resets.
  */
 var RAW = 'https://raw.githubusercontent.com/israelagm/giveforgood-tracker/data/data.json';
+var API = 'https://api.github.com/repos/israelagm/giveforgood-tracker/contents/data.json?ref=data';
 
-function poll(){
-  fetch(RAW + '?t=' + Date.now(), { cache: 'no-store' })
-    .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
-    .catch(function(){
-      return fetch('data.json?t=' + Date.now(), { cache: 'no-store' })
-        .then(function(r){ return r.json(); });
-    })
-    .then(function(data){ STATE = data; })
-    .then(function(){ render(); })
-    .catch(function(err){
-      // A render bug must not look like a network failure — it silently left
-      // the page on "Loading…" once already.
-      if (!STATE) {
-        document.getElementById('root').innerHTML =
-          '<div class="empty">Couldn\'t load the latest numbers.<br>' +
-          '<a href="https://www.giveforgoodlouisville.org/p/leaderboards">' +
-          'Official leaderboards</a></div>';
-      }
-      console.error(err);
-    });
+function adopt(data){
+  // Either source can hand back something older than what we already have.
+  if (!data || !data.ts) return;
+  if (STATE && new Date(data.ts).getTime() <= new Date(STATE.ts).getTime()) return;
+  STATE = data;
+  render();
 }
 
-poll();
-setInterval(poll, 20000);
+function showLoadError(){
+  if (STATE) return;   // we have something to show; a failed poll is harmless
+  document.getElementById('root').innerHTML =
+    '<div class="empty">Couldn\'t load the latest numbers.<br>' +
+    '<a href="https://www.giveforgoodlouisville.org/p/leaderboards">' +
+    'Official leaderboards</a></div>';
+}
+
+function pollRaw(){
+  fetch(RAW + '?t=' + Date.now(), { cache: 'no-store' })
+    .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(adopt)
+    .catch(function(err){ showLoadError(); console.warn('raw:', err); });
+}
+
+function pollApi(){
+  fetch(API + '&t=' + Date.now(),
+        { headers: { Accept: 'application/vnd.github.raw' }, cache: 'no-store' })
+    .then(function(r){
+      if (r.status === 403) return null;   // rate limited; raw carries us
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    })
+    .then(adopt)
+    .catch(function(err){ console.warn('api:', err); });
+}
+
+function poll(){ pollRaw(); pollApi(); }
+
+// One immediate read of both, then raw often and the API sparingly — about
+// 30 calls an hour, leaving room for several viewers behind one IP.
+pollRaw();
+pollApi();
+setInterval(pollRaw, 20000);
+setInterval(pollApi, 120000);
 setInterval(tickClocks, 1000);
 </script>
 </body>
