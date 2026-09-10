@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T15:06:56.727Z",
+ "ts": "2026-09-10T15:07:48.224Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 10952,
-  "donors": 242,
-  "donations": 242,
+  "raised": 10977,
+  "donors": 243,
+  "donations": 243,
   "avgGift": 37,
   "goal": 20000
  },
@@ -20,7 +20,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 68,
-   "value": 1095200,
+   "value": 1097700,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 242,
+   "value": 243,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 383
+    "value": 384
    },
-   "gap": 2,
+   "gap": 1,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -64,7 +64,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 293,
+   "value": 294,
    "field": "donations",
    "total": 665,
    "leader": {
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 293,
+   "value": 294,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 293
+    "value": 294
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 55,
-   "value": 932200,
+   "value": 934700,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12929500
    },
-   "gap": 57800,
+   "gap": 55300,
    "chasing": "The Prisoner's Hope",
    "scored": true
   },
@@ -152,14 +152,14 @@
    "end": "2026-09-10T11:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 73,
+   "value": 74,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 78
+    "value": 82
    },
-   "gap": 5,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
