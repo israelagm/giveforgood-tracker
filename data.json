@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T14:13:10.158Z",
+ "ts": "2026-09-10T14:14:11.556Z",
  "tier": "Tier 1",
  "org": {
   "raised": 8571,
@@ -27,8 +27,8 @@
     "name": "Louisville Collegiate School",
     "value": 5216100
    },
-   "gap": 15400,
-   "chasing": "Lincoln Foundation",
+   "gap": 17900,
+   "chasing": "Family Community Clinic",
    "scored": true
   },
   {
@@ -49,8 +49,8 @@
     "name": "The Louisville Orchestra",
     "value": 344
    },
-   "gap": 7,
-   "chasing": "Louisville Public Media",
+   "gap": 8,
+   "chasing": "ART FM",
    "scored": true
   },
   {
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 388
    },
-   "gap": 7,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 230
+    "value": 231
    },
-   "gap": 7,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -157,9 +157,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 24
+    "value": 25
    },
-   "gap": 13,
+   "gap": 14,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
