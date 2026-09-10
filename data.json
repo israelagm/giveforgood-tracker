@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T22:05:47.068Z",
+ "ts": "2026-09-10T22:06:38.379Z",
  "tier": "Tier 1",
  "org": {
   "raised": 20961,
@@ -27,7 +27,7 @@
     "name": "Amped",
     "value": 14057000
    },
-   "gap": 49500,
+   "gap": 76000,
    "chasing": "Gilda's Club Kentuckiana",
    "scored": true
   },
