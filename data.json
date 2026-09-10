@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T16:36:54.570Z",
+ "ts": "2026-09-10T16:37:46.442Z",
  "tier": "Tier 1",
  "org": {
   "raised": 13843,
@@ -27,8 +27,8 @@
     "name": "Amped",
     "value": 13050000
    },
-   "gap": 3700,
-   "chasing": "Awake Ministries",
+   "gap": 6200,
+   "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
   {
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 445
+    "value": 448
    },
-   "gap": 13,
+   "gap": 14,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 512
    },
-   "gap": 79,
+   "gap": 82,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -115,7 +115,7 @@
     "name": "Amped",
     "value": 13039000
    },
-   "gap": 11700,
+   "gap": 21700,
    "chasing": "Sweet Evening Breeze",
    "scored": true
   },
