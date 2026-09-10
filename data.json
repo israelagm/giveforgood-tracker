@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T14:06:45.368Z",
+ "ts": "2026-09-10T14:07:46.610Z",
  "tier": "Tier 1",
  "org": {
   "raised": 8541,
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 50,
-   "value": 853600,
+   "value": 854100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Louisville Collegiate School",
-    "value": 5208600
+    "value": 5213600
    },
-   "gap": 9400,
+   "gap": 10900,
    "chasing": "Lincoln Foundation",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 193,
+   "value": 194,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 338
+    "value": 339
    },
-   "gap": 2,
+   "gap": 1,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -64,12 +64,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 220,
+   "value": 221,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 383
+    "value": 384
    },
    "gap": 125,
    "chasing": "The Louisville Orchestra",
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 220,
+   "value": 221,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 220
+    "value": 221
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 24,
-   "value": 690600,
+   "value": 691100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "OneWest",
     "value": 4030000
    },
-   "gap": 36900,
+   "gap": 36400,
    "chasing": "St. Joseph Children's Home",
    "scored": true
   },
