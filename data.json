@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T17:20:59.051Z",
+ "ts": "2026-09-10T17:21:50.569Z",
  "tier": "Tier 1",
  "org": {
   "raised": 15418,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13063500
+    "value": 13073500
    },
    "gap": 23700,
    "chasing": "Friends of the Belle",
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13052500
+    "value": 13062500
    },
    "gap": 41700,
    "chasing": "Walden School",
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23422801
+ "lastDonationId": 23422883
 }
