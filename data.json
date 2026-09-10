@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T20:24:26.524Z",
+ "ts": "2026-09-10T20:25:18.151Z",
  "tier": "Tier 1",
  "org": {
   "raised": 19360,
@@ -27,8 +27,8 @@
     "name": "Amped",
     "value": 13968500
    },
-   "gap": 25500,
-   "chasing": "Awake Ministries",
+   "gap": 29400,
+   "chasing": "The Arrow Fund",
    "scored": true
   },
   {
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 588
    },
-   "gap": 10,
+   "gap": 14,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 736
+    "value": 740
    },
    "gap": 21,
    "chasing": "The Louisville Orchestra",
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23432112
+ "lastDonationId": 23432385
 }
