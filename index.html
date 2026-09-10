@@ -253,10 +253,11 @@ function tickClocks(){
  * up and cancel each other when the data refreshes once a minute — the Pages
  * copy of data.json can sit minutes behind the repo. raw serves the newest
  * commit immediately and sends `access-control-allow-origin: *`, so reading it
- * cross-origin is allowed. Falls back to the same-origin copy if raw is
- * unreachable.
+ * cross-origin is allowed. Readings live on a separate `data` branch so that
+ * main stays quiet and Pages can actually finish deploying index.html.
+ * Falls back to the same-origin copy if raw is unreachable.
  */
-var RAW = 'https://raw.githubusercontent.com/israelagm/giveforgood-tracker/main/data.json';
+var RAW = 'https://raw.githubusercontent.com/israelagm/giveforgood-tracker/data/data.json';
 
 function poll(){
   fetch(RAW + '?t=' + Date.now(), { cache: 'no-store' })

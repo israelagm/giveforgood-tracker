@@ -3,7 +3,7 @@ name: Refresh leaderboard data
 on:
   schedule:
     # Five minutes is GitHub's floor for cron, which is too coarse for a prize
-    # window decided by a handful of donors. So each run loops internally,
+    # window decided by a handful of donors. Each run loops internally,
     # refreshing about once a minute until the next run takes over.
     - cron: '*/5 * * * *'
   workflow_dispatch:
@@ -15,7 +15,7 @@ permissions:
 
 concurrency:
   # A new scheduled run replaces the previous looping one, so only one process
-  # is ever committing. Without this the runs would overlap and race on push.
+  # is ever pushing. Without this the runs overlap and race.
   group: refresh
   cancel-in-progress: true
 
@@ -32,23 +32,40 @@ jobs:
         with:
           node-version: '20'
 
+      # Readings land on their own branch, never on main. Pages rebuilds on
+      # every push to main, and a commit a minute kept cancelling those builds
+      # so index.html could never deploy. Keeping main quiet fixes that, and
+      # the page reads the data branch through raw.githubusercontent.com.
+      - name: Prepare data branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            git fetch origin data
+            git worktree add out data
+          else
+            git worktree add --orphan -b data out || {
+              git worktree add -d out && cd out && git checkout --orphan data && cd ..
+            }
+          fi
+
       - name: Refresh on a loop
         run: |
+          cd out
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           for i in $(seq 1 5); do
             echo "::group::pass $i"
-            node scripts/refresh.mjs || echo "fetch failed, will retry next pass"
+            node ../scripts/refresh.mjs || echo "fetch failed, will retry next pass"
 
-            if git diff --quiet -- data.json; then
-              echo "no change"
-            else
+            if git status --porcelain data.json | grep -q .; then
               git add data.json
               git commit -q -m "Standings $(TZ=America/New_York date '+%-I:%M %p ET')"
-              # A cancelled predecessor may have landed a commit first.
-              git pull --rebase --autostash -q origin main || true
-              git push -q || echo "push rejected, next pass will retry"
+              git pull --rebase --autostash -q origin data 2>/dev/null || true
+              git push -q origin data || echo "push rejected, next pass will retry"
+            else
+              echo "no change"
             fi
             echo "::endgroup::"
 
