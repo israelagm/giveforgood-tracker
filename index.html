@@ -276,6 +276,14 @@ function tickClocks(){
  *     single IP, so a dozen parents on the same wifi would exhaust it. Polled
  *     sparingly, and a 403 just means we coast on raw until the hour resets.
  */
+// ─────────────────────────────────────────────────────────────────────────
+//  PASTE YOUR APPS SCRIPT /exec URL BETWEEN THE QUOTES BELOW.
+//  See apps-script/Endpoint.gs. Once set, the page reads live numbers every
+//  15 seconds straight from it and ignores the GitHub sources entirely —
+//  no cache, no rate limit, no waiting on a commit.
+// ─────────────────────────────────────────────────────────────────────────
+var LIVE_ENDPOINT = '';
+
 var RAW = 'https://raw.githubusercontent.com/israelagm/giveforgood-tracker/data/data.json';
 var API = 'https://api.github.com/repos/israelagm/giveforgood-tracker/contents/data.json?ref=data';
 
@@ -314,14 +322,31 @@ function pollApi(){
     .catch(function(err){ console.warn('api:', err); });
 }
 
-function poll(){ pollRaw(); pollApi(); }
+function pollLive(){
+  // Apps Script answers on script.googleusercontent.com after a redirect;
+  // send no custom headers so this stays a simple request with no preflight.
+  fetch(LIVE_ENDPOINT + '?t=' + Date.now())
+    .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function(d){
+      if (d && d.error) throw new Error(d.error);
+      STATE = d;            // always authoritative; it is computed on request
+      render();
+    })
+    .catch(function(err){ showLoadError(); console.warn('live:', err); });
+}
 
-// One immediate read of both, then raw often and the API sparingly — about
-// 30 calls an hour, leaving room for several viewers behind one IP.
-pollRaw();
-pollApi();
-setInterval(pollRaw, 20000);
-setInterval(pollApi, 120000);
+if (LIVE_ENDPOINT) {
+  // Real time: computed per request, so poll it directly and often.
+  pollLive();
+  setInterval(pollLive, 15000);
+} else {
+  // Fallback while no endpoint is configured: raw is unlimited but lags
+  // several minutes, the API is seconds-fresh but capped at 60/hour per IP.
+  pollRaw();
+  pollApi();
+  setInterval(pollRaw, 20000);
+  setInterval(pollApi, 120000);
+}
 setInterval(tickClocks, 1000);
 </script>
 </body>
