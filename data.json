@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T22:07:29.848Z",
+ "ts": "2026-09-10T22:08:20.837Z",
  "tier": "Tier 1",
  "org": {
   "raised": 20961,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14057000
+    "value": 14067000
    },
    "gap": 76000,
    "chasing": "Gilda's Club Kentuckiana",
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 667
    },
-   "gap": 37,
+   "gap": 38,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 820
+    "value": 822
    },
    "gap": 36,
    "chasing": "The Louisville Orchestra",
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14046000
+    "value": 14056000
    },
    "gap": 41200,
    "chasing": "Paws with Purpose",
