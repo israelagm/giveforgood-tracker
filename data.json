@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T21:24:34.458Z",
+ "ts": "2026-09-10T21:25:25.789Z",
  "tier": "Tier 1",
  "org": {
   "raised": 20041,
@@ -19,13 +19,13 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 65,
+   "rank": 67,
    "value": 2004100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14008500
+    "value": 14018500
    },
    "gap": 19400,
    "chasing": "Louisville Story Program",
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 628
    },
-   "gap": 28,
+   "gap": 30,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 784
+    "value": 786
    },
    "gap": 33,
    "chasing": "The Louisville Orchestra",
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13997500
+    "value": 14007500
    },
    "gap": 38900,
    "chasing": "National Stem Cell Foundation",
@@ -201,9 +201,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 53
+    "value": 54
    },
-   "gap": 0,
+   "gap": 1,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
