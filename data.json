@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T20:08:04.209Z",
+ "ts": "2026-09-10T20:08:56.093Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 19025,
-  "donors": 402,
-  "donations": 569,
-  "avgGift": 33.43585237258348,
+  "raised": 19225,
+  "donors": 403,
+  "donations": 570,
+  "avgGift": 33.728070175438596,
   "goal": 20000
  },
  "prizes": [
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 56,
-   "value": 1902500,
+   "rank": 55,
+   "value": 1922500,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13935000
    },
-   "gap": 5100,
-   "chasing": "Actors Theatre of Louisville",
+   "gap": 21500,
+   "chasing": "Awake Ministries",
    "scored": true
   },
   {
@@ -42,12 +42,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 402,
+   "value": 403,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 578
+    "value": 579
    },
    "gap": 4,
    "chasing": "ART FM",
@@ -64,12 +64,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 569,
+   "value": 570,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 722
+    "value": 723
    },
    "gap": 26,
    "chasing": "The Louisville Orchestra",
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 569,
+   "value": 570,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 569
+    "value": 570
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1739500,
+   "value": 1759500,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13924000
    },
-   "gap": 72700,
+   "gap": 52700,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
@@ -196,12 +196,12 @@
    "end": "2026-09-10T17:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 6,
+   "value": 7,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Elmgrove Foundation, Inc.",
-    "value": 6
+    "value": 7
    },
    "gap": 0,
    "chasing": "Elmgrove Foundation, Inc.",
