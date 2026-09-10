@@ -1,0 +1,259 @@
+{
+ "ts": "2026-09-10T13:55:20.109Z",
+ "tier": "Tier 1",
+ "org": {
+  "raised": 7901,
+  "donors": 173,
+  "donations": 173,
+  "avgGift": 42,
+  "goal": 20000
+ },
+ "prizes": [
+  {
+   "id": "131341:dollars",
+   "boardId": 131341,
+   "prize": "All Orgs - Most Dollars",
+   "tier": null,
+   "name": "2026 All Orgs - Full Event",
+   "rankBy": "dollars",
+   "start": "2026-09-07T00:00:00.000-04:00",
+   "end": "2026-09-10T23:59:59.000-04:00",
+   "status": "live",
+   "rank": 54,
+   "value": 790100,
+   "field": "dollars_in_cents",
+   "total": 665,
+   "leader": {
+    "name": "Louisville Collegiate School",
+    "value": 4738400
+   },
+   "gap": 1900,
+   "chasing": "ACLU of Kentucky Foundation",
+   "scored": true
+  },
+  {
+   "id": "131341:donors",
+   "boardId": 131341,
+   "prize": "All Orgs - Most Donors",
+   "tier": null,
+   "name": "2026 All Orgs - Full Event",
+   "rankBy": "donors",
+   "start": "2026-09-07T00:00:00.000-04:00",
+   "end": "2026-09-10T23:59:59.000-04:00",
+   "status": "live",
+   "rank": 5,
+   "value": 173,
+   "field": "donors",
+   "total": 665,
+   "leader": {
+    "name": "The Louisville Orchestra",
+    "value": 331
+   },
+   "gap": 4,
+   "chasing": "Louisville Public Media",
+   "scored": true
+  },
+  {
+   "id": "131341:donations",
+   "boardId": 131341,
+   "prize": "All Orgs - Most Donations",
+   "tier": null,
+   "name": "2026 All Orgs - Full Event",
+   "rankBy": "donations",
+   "start": "2026-09-07T00:00:00.000-04:00",
+   "end": "2026-09-10T23:59:59.000-04:00",
+   "status": "live",
+   "rank": 4,
+   "value": 190,
+   "field": "donations",
+   "total": 665,
+   "leader": {
+    "name": "ART FM",
+    "value": 358
+   },
+   "gap": 7,
+   "chasing": "Bloom Elementary PTA",
+   "scored": true
+  },
+  {
+   "id": "131089:donations",
+   "boardId": 131089,
+   "prize": "Grand Prizes",
+   "tier": "Tier 1",
+   "name": "2026 Grand Prize | Tier 1",
+   "rankBy": "donations",
+   "start": "2026-09-07T00:00:00.000-04:00",
+   "end": "2026-09-10T23:59:59.000-04:00",
+   "status": "live",
+   "rank": 2,
+   "value": 190,
+   "field": "donations",
+   "total": 199,
+   "leader": {
+    "name": "Bloom Elementary PTA",
+    "value": 197
+   },
+   "gap": 7,
+   "chasing": "Bloom Elementary PTA",
+   "scored": true
+  },
+  {
+   "id": "131088:dollars",
+   "boardId": 131088,
+   "prize": "All Organizations",
+   "tier": null,
+   "name": "2026 All Organizations",
+   "rankBy": "dollars",
+   "start": "2026-09-10T00:00:00.000-04:00",
+   "end": "2026-09-10T23:59:59.000-04:00",
+   "status": "live",
+   "rank": 26,
+   "value": 627100,
+   "field": "dollars_in_cents",
+   "total": 665,
+   "leader": {
+    "name": "OneWest",
+    "value": 4025000
+   },
+   "gap": 44700,
+   "chasing": "Louisville Habitat",
+   "scored": true
+  },
+  {
+   "id": "131093:donors",
+   "boardId": 131093,
+   "prize": "Morning Rush",
+   "tier": "Tier 1",
+   "name": "2026 Morning Rush | Tier 1",
+   "rankBy": "donors",
+   "start": "2026-09-10T08:00:00.000-04:00",
+   "end": "2026-09-10T09:59:59.000-04:00",
+   "status": "live",
+   "rank": 2,
+   "value": 144,
+   "field": "donors",
+   "total": 199,
+   "leader": {
+    "name": "Bloom Elementary PTA",
+    "value": 157
+   },
+   "gap": 13,
+   "chasing": "Bloom Elementary PTA",
+   "scored": true
+  },
+  {
+   "id": "131097:donors",
+   "boardId": 131097,
+   "prize": "Mid-Morning Break For It",
+   "tier": "Tier 1",
+   "name": "2026 Mid-Morning Break | Tier 1",
+   "rankBy": "donors",
+   "start": "2026-09-10T10:00:00.000-04:00",
+   "end": "2026-09-10T11:59:59.000-04:00",
+   "status": "upcoming",
+   "rank": null,
+   "value": 0,
+   "field": "donors",
+   "total": 199,
+   "leader": {
+    "name": "502 Dragon Boat Community",
+    "value": 0
+   },
+   "gap": null,
+   "chasing": null,
+   "scored": false
+  },
+  {
+   "id": "131280:donors",
+   "boardId": 131280,
+   "prize": "Afternoon Drive",
+   "tier": "Tier 1",
+   "name": "2026 Afternoon Drive | Tier 1",
+   "rankBy": "donors",
+   "start": "2026-09-10T13:00:00.000-04:00",
+   "end": "2026-09-10T14:59:59.000-04:00",
+   "status": "upcoming",
+   "rank": null,
+   "value": 0,
+   "field": "donors",
+   "total": 199,
+   "leader": {
+    "name": "502 Dragon Boat Community",
+    "value": 0
+   },
+   "gap": null,
+   "chasing": null,
+   "scored": false
+  },
+  {
+   "id": "131284:donors",
+   "boardId": 131284,
+   "prize": "Bridging the Gap",
+   "tier": "Tier 1",
+   "name": "2026 Bridging the Gap | Tier 1",
+   "rankBy": "donors",
+   "start": "2026-09-10T16:00:00.000-04:00",
+   "end": "2026-09-10T17:59:59.000-04:00",
+   "status": "upcoming",
+   "rank": null,
+   "value": 0,
+   "field": "donors",
+   "total": 199,
+   "leader": {
+    "name": "502 Dragon Boat Community",
+    "value": 0
+   },
+   "gap": null,
+   "chasing": null,
+   "scored": false
+  },
+  {
+   "id": "131293:donors",
+   "boardId": 131293,
+   "prize": "Evening Break For It",
+   "tier": "Tier 1",
+   "name": "2026 Evening Break | Tier 1",
+   "rankBy": "donors",
+   "start": "2026-09-10T19:00:00.000-04:00",
+   "end": "2026-09-10T20:59:59.000-04:00",
+   "status": "upcoming",
+   "rank": null,
+   "value": 0,
+   "field": "donors",
+   "total": 199,
+   "leader": {
+    "name": "502 Dragon Boat Community",
+    "value": 0
+   },
+   "gap": null,
+   "chasing": null,
+   "scored": false
+  },
+  {
+   "id": "131337:donors",
+   "boardId": 131337,
+   "prize": "Late Night Push",
+   "tier": "Tier 1",
+   "name": "2026 Late Night Push | Tier 1",
+   "rankBy": "donors",
+   "start": "2026-09-10T22:00:00.000-04:00",
+   "end": "2026-09-10T22:59:59.000-04:00",
+   "status": "upcoming",
+   "rank": null,
+   "value": 0,
+   "field": "donors",
+   "total": 199,
+   "leader": {
+    "name": "502 Dragon Boat Community",
+    "value": 0
+   },
+   "gap": null,
+   "chasing": null,
+   "scored": false
+  }
+ ],
+ "config": {
+  "label": "Hawthorne Elementary PTA",
+  "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
+ }
+}
