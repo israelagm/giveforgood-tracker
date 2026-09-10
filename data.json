@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T16:54:12.604Z",
+ "ts": "2026-09-10T16:55:04.320Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 13948,
-  "donors": 297,
-  "donations": 297,
+  "raised": 13963,
+  "donors": 298,
+  "donations": 298,
   "avgGift": 36,
   "goal": 20000
  },
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 62,
-   "value": 1394800,
+   "value": 1396300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13058500
    },
-   "gap": 8000,
+   "gap": 6500,
    "chasing": "New Directions Housing Corporation",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 297,
+   "value": 298,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 467
    },
-   "gap": 3,
+   "gap": 2,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 384,
+   "value": 385,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 549
    },
-   "gap": 96,
+   "gap": 95,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 384,
+   "value": 385,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 384
+    "value": 385
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1231800,
+   "value": 1233300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13047500
    },
-   "gap": 36700,
+   "gap": 35200,
    "chasing": "New Directions Housing Corporation",
    "scored": true
   },
