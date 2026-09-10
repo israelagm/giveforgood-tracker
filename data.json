@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T17:04:33.651Z",
+ "ts": "2026-09-10T17:05:25.269Z",
  "tier": "Tier 1",
  "org": {
   "raised": 14093,
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 61,
-   "value": 1407800,
+   "value": 1409300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13063500
    },
-   "gap": 10300,
+   "gap": 8800,
    "chasing": "United Crescent Hill Ministries",
    "scored": true
   },
@@ -42,7 +42,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 301,
+   "value": 302,
    "field": "donors",
    "total": 665,
    "leader": {
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 391,
+   "value": 394,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 558
+    "value": 559
    },
-   "gap": 97,
+   "gap": 94,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 391,
+   "value": 394,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 391
+    "value": 394
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1244800,
+   "value": 1246300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13052500
    },
-   "gap": 23700,
+   "gap": 22200,
    "chasing": "New Directions Housing Corporation",
    "scored": true
   },
@@ -179,9 +179,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 14
+    "value": 16
    },
-   "gap": 9,
+   "gap": 11,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
