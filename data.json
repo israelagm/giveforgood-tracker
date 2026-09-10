@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T15:19:00.059Z",
+ "ts": "2026-09-10T15:19:51.830Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 11128,
-  "donors": 252,
-  "donations": 252,
+  "raised": 11138,
+  "donors": 253,
+  "donations": 253,
   "avgGift": 36,
   "goal": 20000
  },
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 69,
-   "value": 1112800,
+   "value": 1113800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12940500
    },
-   "gap": 4200,
+   "gap": 3200,
    "chasing": "Smoketown Family Wellness Center",
    "scored": true
   },
@@ -42,7 +42,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 252,
+   "value": 253,
    "field": "donors",
    "total": 665,
    "leader": {
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 308,
+   "value": 309,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 446
+    "value": 447
    },
-   "gap": 4,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 308,
+   "value": 309,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 312
+    "value": 317
    },
-   "gap": 4,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -107,15 +107,15 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 55,
-   "value": 949800,
+   "rank": 56,
+   "value": 950800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12929500
    },
-   "gap": 64700,
+   "gap": 63700,
    "chasing": "Lighthouse Academy at Newburg/Lighthouse Promise, Inc.",
    "scored": true
   },
@@ -152,14 +152,14 @@
    "end": "2026-09-10T11:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 87,
+   "value": 88,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 103
+    "value": 108
    },
-   "gap": 16,
+   "gap": 20,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
