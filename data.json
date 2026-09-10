@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T23:00:03.497Z",
+ "ts": "2026-09-10T23:00:54.766Z",
  "tier": "Tier 1",
  "org": {
   "raised": 21201,
@@ -19,7 +19,7 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 66,
+   "rank": 67,
    "value": 2120100,
    "field": "dollars_in_cents",
    "total": 665,
@@ -27,8 +27,8 @@
     "name": "Amped",
     "value": 14174500
    },
-   "gap": 93000,
-   "chasing": "Gilda's Club Kentuckiana",
+   "gap": 5400,
+   "chasing": "Louisville Story Program",
    "scored": true
   },
   {
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 696
+    "value": 697
    },
    "gap": 57,
    "chasing": "ART FM",
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 853
+    "value": 856
    },
-   "gap": 56,
+   "gap": 57,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -115,8 +115,8 @@
     "name": "Amped",
     "value": 14163500
    },
-   "gap": 40900,
-   "chasing": "Louisville Story Program",
+   "gap": 62200,
+   "chasing": "Paws with Purpose",
    "scored": true
   },
   {
@@ -216,18 +216,18 @@
    "rankBy": "donors",
    "start": "2026-09-10T19:00:00.000-04:00",
    "end": "2026-09-10T20:59:59.000-04:00",
-   "status": "upcoming",
+   "status": "live",
    "rank": null,
    "value": 0,
    "field": "donors",
    "total": 199,
    "leader": {
-    "name": "502 Dragon Boat Community",
-    "value": 0
+    "name": "Miles for Merry Miracles",
+    "value": 1
    },
    "gap": null,
    "chasing": null,
-   "scored": false
+   "scored": true
   },
   {
    "id": "131337:donors",
