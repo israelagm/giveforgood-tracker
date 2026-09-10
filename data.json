@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T16:10:01.959Z",
+ "ts": "2026-09-10T16:10:54.427Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 13308,
-  "donors": 286,
-  "donations": 286,
+  "raised": 13348,
+  "donors": 287,
+  "donations": 287,
   "avgGift": 36,
   "goal": 20000
  },
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 59,
-   "value": 1330800,
+   "value": 1334800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13021500
    },
-   "gap": 35200,
+   "gap": 31200,
    "chasing": "Hildegard House",
    "scored": true
   },
@@ -42,7 +42,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 286,
+   "value": 287,
    "field": "donors",
    "total": 665,
    "leader": {
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 370,
+   "value": 371,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 493
    },
-   "gap": 72,
+   "gap": 71,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 370,
+   "value": 371,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 370
+    "value": 371
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 47,
-   "value": 1167800,
+   "value": 1171800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13010500
    },
-   "gap": 15200,
+   "gap": 11200,
    "chasing": "Sweet Evening Breeze",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23418990
+ "lastDonationId": 23419078
 }
