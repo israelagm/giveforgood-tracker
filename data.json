@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T23:12:54.738Z",
+ "ts": "2026-09-10T23:13:46.140Z",
  "tier": "Tier 1",
  "org": {
   "raised": 21336,
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 865
+    "value": 866
    },
    "gap": 58,
    "chasing": "The Louisville Orchestra",
@@ -222,8 +222,8 @@
    "field": "donors",
    "total": 199,
    "leader": {
-    "name": "Cultivating The Youth Experience, Inc.",
-    "value": 7
+    "name": "Sonrisas Y Luz",
+    "value": 8
    },
    "gap": 1,
    "chasing": "Bloom Elementary PTA",
