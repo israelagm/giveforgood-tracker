@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T22:10:55.260Z",
+ "ts": "2026-09-10T22:11:46.557Z",
  "tier": "Tier 1",
  "org": {
   "raised": 20986,
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 824
+    "value": 826
    },
    "gap": 35,
    "chasing": "The Louisville Orchestra",
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23438157
+ "lastDonationId": 23438217
 }
