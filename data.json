@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T21:46:54.466Z",
+ "ts": "2026-09-10T21:47:45.724Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 20231,
-  "donors": 428,
-  "donations": 632,
-  "avgGift": 32.01107594936709,
+  "raised": 20256,
+  "donors": 429,
+  "donations": 633,
+  "avgGift": 32,
   "goal": 20000
  },
  "prizes": [
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 67,
-   "value": 2023100,
+   "rank": 66,
+   "value": 2025600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14037000
    },
-   "gap": 2400,
-   "chasing": "Louisville Story Program",
+   "gap": 15900,
+   "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 428,
+   "value": 429,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 651
    },
-   "gap": 38,
+   "gap": 39,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 632,
+   "value": 633,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 809
+    "value": 811
    },
-   "gap": 42,
+   "gap": 41,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 632,
+   "value": 633,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 632
+    "value": 633
    },
    "gap": null,
    "chasing": null,
@@ -107,16 +107,16 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 58,
-   "value": 1860100,
+   "rank": 59,
+   "value": 1862600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14026000
    },
-   "gap": 19900,
-   "chasing": "National Stem Cell Foundation",
+   "gap": 10300,
+   "chasing": "Waterfront Botanical Gardens",
    "scored": true
   },
   {
@@ -196,14 +196,14 @@
    "end": "2026-09-10T17:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 67,
+   "value": 68,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 67
+    "value": 69
    },
-   "gap": 0,
+   "gap": 1,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
