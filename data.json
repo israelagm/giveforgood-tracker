@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T17:02:50.107Z",
+ "ts": "2026-09-10T17:03:41.771Z",
  "tier": "Tier 1",
  "org": {
   "raised": 14078,
@@ -173,7 +173,7 @@
    "start": "2026-09-10T13:00:00.000-04:00",
    "end": "2026-09-10T14:59:59.000-04:00",
    "status": "live",
-   "rank": 3,
+   "rank": 4,
    "value": 2,
    "field": "donors",
    "total": 199,
@@ -182,7 +182,7 @@
     "value": 8
    },
    "gap": 0,
-   "chasing": "Jeffersontown High School Band",
+   "chasing": "Louisville Tool Library Inc",
    "scored": true
   },
   {
