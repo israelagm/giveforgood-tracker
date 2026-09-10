@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T21:08:16.108Z",
+ "ts": "2026-09-10T21:09:07.316Z",
  "tier": "Tier 1",
  "org": {
   "raised": 19876,
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 613
+    "value": 614
    },
    "gap": 28,
    "chasing": "ART FM",
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 777
    },
-   "gap": 21,
+   "gap": 22,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -115,7 +115,7 @@
     "name": "Amped",
     "value": 13977500
    },
-   "gap": 40600,
+   "gap": 45600,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
