@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T19:09:39.812Z",
+ "ts": "2026-09-10T19:10:31.152Z",
  "tier": "Tier 1",
  "org": {
   "raised": 18615,
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 687
+    "value": 688
    },
    "gap": 6,
    "chasing": "The Louisville Orchestra",
@@ -115,7 +115,7 @@
     "name": "Amped",
     "value": 13370000
    },
-   "gap": 8700,
+   "gap": 18700,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
