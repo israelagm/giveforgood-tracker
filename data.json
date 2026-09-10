@@ -1,8 +1,8 @@
 {
- "ts": "2026-09-10T19:21:39.455Z",
+ "ts": "2026-09-10T19:22:30.325Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 18665,
+  "raised": 18675,
   "donors": 396,
   "donations": 396,
   "avgGift": 34,
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 54,
-   "value": 1866500,
+   "rank": 53,
+   "value": 1867500,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13403500
    },
-   "gap": 1000,
-   "chasing": "YMCA of Greater Louisville",
+   "gap": 39900,
+   "chasing": "The Arrow Fund",
    "scored": true
   },
   {
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 556,
+   "value": 557,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 692
    },
-   "gap": 12,
+   "gap": 11,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 556,
+   "value": 557,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 556
+    "value": 557
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1703500,
+   "value": 1704500,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13392500
    },
-   "gap": 13700,
+   "gap": 12700,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
