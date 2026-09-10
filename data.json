@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T16:36:02.635Z",
+ "ts": "2026-09-10T16:36:54.570Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 13793,
-  "donors": 292,
-  "donations": 292,
-  "avgGift": 36,
+  "raised": 13843,
+  "donors": 293,
+  "donations": 293,
+  "avgGift": 37,
   "goal": 20000
  },
  "prizes": [
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 61,
-   "value": 1379300,
+   "rank": 60,
+   "value": 1384300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13050000
    },
-   "gap": 1200,
-   "chasing": "The Parklands of Floyds Fork",
+   "gap": 3700,
+   "chasing": "Awake Ministries",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 292,
+   "value": 293,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 444
+    "value": 445
    },
-   "gap": 14,
+   "gap": 13,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -64,12 +64,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 378,
+   "value": 379,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 510
+    "value": 512
    },
    "gap": 79,
    "chasing": "The Louisville Orchestra",
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 378,
+   "value": 379,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 378
+    "value": 379
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 47,
-   "value": 1216300,
+   "value": 1221300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13039000
    },
-   "gap": 16700,
+   "gap": 11700,
    "chasing": "Sweet Evening Breeze",
    "scored": true
   },
