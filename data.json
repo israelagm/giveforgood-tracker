@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T18:14:04.559Z",
+ "ts": "2026-09-10T18:14:56.411Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 17346,
-  "donors": 354,
-  "donations": 354,
+  "raised": 17471,
+  "donors": 355,
+  "donations": 355,
   "avgGift": 36,
   "goal": 20000
  },
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 57,
-   "value": 1724100,
+   "rank": 56,
+   "value": 1747100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13352000
    },
-   "gap": 21400,
-   "chasing": "Sweet Evening Breeze",
+   "gap": 38200,
+   "chasing": "The Arrow Fund",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 352,
+   "value": 355,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 522
    },
-   "gap": 28,
+   "gap": 26,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 484,
+   "value": 488,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 618
    },
-   "gap": 53,
+   "gap": 49,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 484,
+   "value": 488,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 484
+    "value": 488
    },
    "gap": null,
    "chasing": null,
@@ -107,16 +107,16 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 49,
-   "value": 1561100,
+   "rank": 46,
+   "value": 1584100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13341000
    },
-   "gap": 3500,
-   "chasing": "TreesLouisville",
+   "gap": 11500,
+   "chasing": "St. Nicholas Academy",
    "scored": true
   },
   {
@@ -174,12 +174,12 @@
    "end": "2026-09-10T14:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 90,
+   "value": 93,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 90
+    "value": 93
    },
    "gap": null,
    "chasing": null,
