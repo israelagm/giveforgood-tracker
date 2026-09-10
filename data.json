@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T21:17:43.175Z",
+ "ts": "2026-09-10T21:18:34.516Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 19936,
-  "donors": 418,
-  "donations": 614,
-  "avgGift": 32.469055374592834,
+  "raised": 19986,
+  "donors": 419,
+  "donations": 615,
+  "avgGift": 32.49756097560976,
   "goal": 20000
  },
  "prizes": [
@@ -19,15 +19,15 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 62,
-   "value": 1993600,
+   "rank": 65,
+   "value": 1998600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14008500
    },
-   "gap": 25900,
+   "gap": 20900,
    "chasing": "Louisville Story Program",
    "scored": true
   },
@@ -42,7 +42,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 418,
+   "value": 419,
    "field": "donors",
    "total": 665,
    "leader": {
@@ -64,12 +64,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 614,
+   "value": 615,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 781
+    "value": 782
    },
    "gap": 27,
    "chasing": "The Louisville Orchestra",
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 614,
+   "value": 615,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 614
+    "value": 615
    },
    "gap": null,
    "chasing": null,
@@ -107,15 +107,15 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 54,
-   "value": 1830600,
+   "rank": 58,
+   "value": 1835600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13997500
    },
-   "gap": 49400,
+   "gap": 44400,
    "chasing": "National Stem Cell Foundation",
    "scored": true
   },
@@ -196,12 +196,12 @@
    "end": "2026-09-10T17:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 50,
+   "value": 51,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 50
+    "value": 51
    },
    "gap": null,
    "chasing": null,
