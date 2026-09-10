@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T16:13:29.521Z",
+ "ts": "2026-09-10T16:14:23.477Z",
  "tier": "Tier 1",
  "org": {
   "raised": 13353,
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 433
    },
-   "gap": 8,
+   "gap": 9,
    "chasing": "Louisville Public Media",
    "scored": true
   },
