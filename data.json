@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T14:04:41.931Z",
+ "ts": "2026-09-10T14:05:43.605Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 8351,
-  "donors": 188,
-  "donations": 188,
+  "raised": 8486,
+  "donors": 191,
+  "donations": 191,
   "avgGift": 39,
   "goal": 20000
  },
@@ -20,15 +20,15 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 51,
-   "value": 835100,
+   "value": 848600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Louisville Collegiate School",
-    "value": 5033600
+    "value": 5058600
    },
-   "gap": 597,
-   "chasing": "Boys & Girls Haven",
+   "gap": 2200,
+   "chasing": "Louisville Urban League",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 188,
+   "value": 191,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 338
    },
-   "gap": 4,
+   "gap": 2,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -63,16 +63,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 4,
-   "value": 214,
+   "rank": 3,
+   "value": 218,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 374
+    "value": 377
    },
-   "gap": 0,
-   "chasing": "Bloom Elementary PTA",
+   "gap": 127,
+   "chasing": "The Louisville Orchestra",
    "scored": true
   },
   {
@@ -85,16 +85,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 2,
-   "value": 214,
+   "rank": 1,
+   "value": 218,
    "field": "donations",
    "total": 199,
    "leader": {
-    "name": "Bloom Elementary PTA",
-    "value": 214
+    "name": "Hawthorne Elementary PTA",
+    "value": 218
    },
-   "gap": 0,
-   "chasing": "Bloom Elementary PTA",
+   "gap": null,
+   "chasing": null,
    "scored": true
   },
   {
@@ -107,16 +107,16 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 26,
-   "value": 672100,
+   "rank": 24,
+   "value": 685600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "OneWest",
     "value": 4030000
    },
-   "gap": 4700,
-   "chasing": "Louisville Habitat",
+   "gap": 41900,
+   "chasing": "St. Joseph Children's Home",
    "scored": true
   },
   {
@@ -151,16 +151,16 @@
    "start": "2026-09-10T10:00:00.000-04:00",
    "end": "2026-09-10T11:59:59.000-04:00",
    "status": "live",
-   "rank": 6,
-   "value": 2,
+   "rank": 2,
+   "value": 6,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 9
+    "value": 11
    },
-   "gap": 0,
-   "chasing": "POPs Booster Club",
+   "gap": 5,
+   "chasing": "Bloom Elementary PTA",
    "scored": true
   },
   {
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23411327
+ "lastDonationId": 23411391
 }
