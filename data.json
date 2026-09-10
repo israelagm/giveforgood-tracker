@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T21:11:41.785Z",
+ "ts": "2026-09-10T21:12:33.510Z",
  "tier": "Tier 1",
  "org": {
   "raised": 19901,
@@ -19,13 +19,13 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 56,
+   "rank": 62,
    "value": 1990100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13988500
+    "value": 13998500
    },
    "gap": 20300,
    "chasing": "The Arrow Fund",
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 615
+    "value": 616
    },
-   "gap": 29,
+   "gap": 30,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 780
+    "value": 781
    },
-   "gap": 23,
+   "gap": 24,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -107,16 +107,16 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 49,
+   "rank": 54,
    "value": 1827100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13977500
+    "value": 13987500
    },
-   "gap": 43100,
-   "chasing": "Simmons College of Kentucky",
+   "gap": 52900,
+   "chasing": "National Stem Cell Foundation",
    "scored": true
   },
   {
