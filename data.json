@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T17:44:18.898Z",
+ "ts": "2026-09-10T17:45:10.472Z",
  "tier": "Tier 1",
  "org": {
   "raised": 16745,
@@ -19,7 +19,7 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 52,
+   "rank": 53,
    "value": 1674500,
    "field": "dollars_in_cents",
    "total": 665,
@@ -27,8 +27,8 @@
     "name": "Amped",
     "value": 13111000
    },
-   "gap": 63000,
-   "chasing": "Home of the Innocents",
+   "gap": 18300,
+   "chasing": "The Arrow Fund",
    "scored": true
   },
   {
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 504
+    "value": 505
    },
-   "gap": 18,
+   "gap": 20,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 595
+    "value": 601
    },
-   "gap": 65,
+   "gap": 66,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
