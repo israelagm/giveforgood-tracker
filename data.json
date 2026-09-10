@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T14:18:00.414Z",
+ "ts": "2026-09-10T14:19:01.930Z",
  "tier": "Tier 1",
  "org": {
   "raised": 8641,
@@ -19,13 +19,13 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 62,
+   "rank": 64,
    "value": 864100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
-    "name": "Louisville Collegiate School",
-    "value": 5431300
+    "name": "Amped",
+    "value": 7558000
    },
    "gap": 9700,
    "chasing": "Louisville Urban League",
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 392
    },
-   "gap": 6,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 234
+    "value": 236
    },
-   "gap": 6,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -107,13 +107,13 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 36,
+   "rank": 38,
    "value": 701100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
-    "name": "OneWest",
-    "value": 4032500
+    "name": "Amped",
+    "value": 7547000
    },
    "gap": 5200,
    "chasing": "The Arrow Fund",
@@ -157,9 +157,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 28
+    "value": 30
    },
-   "gap": 12,
+   "gap": 14,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
