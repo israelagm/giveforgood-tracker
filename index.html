@@ -72,6 +72,7 @@
     border-radius:8px;padding:9px 12px;font-size:13px}
   .stalebar a{color:#7a5c00}
   .meta.pending{color:#9a7400;font-style:italic}
+  .closed-head{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}
   @media (max-width:520px){ .amount{font-size:34px} body{padding:14px} }
 </style>
 </head>
@@ -212,42 +213,30 @@ function render(){
     h.push('</div>');
   });
 
-  h.push('<h2>All prizes' + (s.tier ? ' · ' + esc(s.tier) : '') + '</h2>');
-  h.push('<div class="grid">');
-  prizes.forEach(function(p){
-    var podium = p.status === 'final' && !p.pending && p.rank && p.rank <= 3;
-    h.push('<div class="card ' + p.status + (podium ? ' podium' : '') + '">');
-    h.push('<div class="top"><div class="pn">' + esc(p.prize) + '</div>' +
-      '<span class="chip ' + p.status + '">' + p.status + '</span></div>');
+  // Finished prizes move out of the way. What's still winnable stays at the
+  // top where it can be acted on; results become a record you scroll to.
+  var open = prizes.filter(function(p){ return p.status !== 'final'; });
+  var closed = prizes.filter(function(p){ return p.status === 'final'; });
 
-    if (p.status === 'upcoming') {
-      h.push('<div class="rk"><small>Opens ' + clockTime(p.start) + '</small></div>');
-      h.push('<div class="meta">Ranked by ' + rankByLabel(p.rankBy) + '</div>');
-    } else if (p.rank) {
-      var medal = (podium && !p.pending) ? ['🥇','🥈','🥉'][p.rank-1] + ' ' : '';
-      h.push('<div class="rk">' + medal + '#' + p.rank +
-        ' <small>of ' + num(p.total) + '</small></div>');
-      h.push('<div class="meta">' + valueOf(p, p.value) + ' · by ' +
-        rankByLabel(p.rankBy) + '</div>');
-      if (p.pending) {
-        h.push('<div class="meta pending">Provisional — taken at ' +
-          clockTime(s.ts) + ', before this window closed.</div>');
-      }
-      if (p.status === 'live' && p.gap != null) {
-        h.push('<div class="meta">' + valueOf(p, p.gap) + ' behind ' + esc(p.chasing) + '</div>');
-      }
-      if (p.leader) {
-        h.push('<div class="meta">Leader: ' + esc(p.leader.name) + ' (' +
-          valueOf(p, p.leader.value) + ')</div>');
-      }
-    } else {
-      h.push('<div class="rk"><small>' + (p.scored ? 'Not ranked' : 'No gifts yet') + '</small></div>');
-      h.push('<div class="meta">Ranked by ' + rankByLabel(p.rankBy) + '</div>');
-    }
-    h.push('<div class="when">' + spanOf(p) + '</div>');
+  // Most recently decided first — that's the one people are asking about.
+  closed.sort(function(a, b){ return new Date(b.end) - new Date(a.end); });
+
+  if (open.length) {
+    h.push('<h2>Still in play' + (s.tier ? ' · ' + esc(s.tier) : '') + '</h2>');
+    h.push('<div class="grid">');
+    open.forEach(function(p){ h.push(card(p, s)); });
     h.push('</div>');
-  });
-  h.push('</div>');
+  }
+
+  if (closed.length) {
+    var medals = closed.filter(function(p){ return p.rank && p.rank <= 3 && !p.pending; }).length;
+    h.push('<h2 class="closed-head">Closed · ' + closed.length + ' decided' +
+      (medals ? ' · ' + medals + ' top-three finish' + (medals > 1 ? 'es' : '') : '') +
+      '</h2>');
+    h.push('<div class="grid">');
+    closed.forEach(function(p){ h.push(card(p, s)); });
+    h.push('</div>');
+  }
 
   // The refresh job runs on a 5-minute schedule and GitHub can delay it, so
   // say how old the reading is rather than implying it's live to the second.
@@ -259,6 +248,46 @@ function render(){
     '>official leaderboards</a></div>');
 
   document.getElementById('root').innerHTML = h.join('');
+}
+
+/** One prize card. Shared by the "still in play" and "closed" grids. */
+function card(p, s){
+  var h = [];
+  var podium = p.status === 'final' && !p.pending && p.rank && p.rank <= 3;
+  h.push('<div class="card ' + p.status + (podium ? ' podium' : '') + '">');
+  h.push('<div class="top"><div class="pn">' + esc(p.prize) + '</div>' +
+    '<span class="chip ' + p.status + '">' +
+    (p.status === 'final' ? 'closed' : p.status) + '</span></div>');
+
+  if (p.status === 'upcoming') {
+    h.push('<div class="rk"><small>Opens ' + clockTime(p.start) + '</small></div>');
+    h.push('<div class="meta">Ranked by ' + rankByLabel(p.rankBy) + '</div>');
+  } else if (p.rank) {
+    var medal = podium ? ['🥇','🥈','🥉'][p.rank-1] + ' ' : '';
+    h.push('<div class="rk">' + medal + '#' + p.rank +
+      ' <small>of ' + num(p.total) + '</small></div>');
+    h.push('<div class="meta">' + valueOf(p, p.value) + ' · by ' +
+      rankByLabel(p.rankBy) + '</div>');
+    if (p.pending) {
+      h.push('<div class="meta pending">Provisional — taken at ' +
+        clockTime(s.ts) + ', before this window closed.</div>');
+    }
+    if (p.status === 'live' && p.gap != null) {
+      h.push('<div class="meta">' + valueOf(p, p.gap) + ' behind ' + esc(p.chasing) + '</div>');
+    }
+    if (p.leader) {
+      h.push('<div class="meta">' + (p.status === 'final' ? 'Won by: ' : 'Leader: ') +
+        esc(p.leader.name) + ' (' + valueOf(p, p.leader.value) + ')</div>');
+    }
+  } else {
+    h.push('<div class="rk"><small>' +
+      (p.status === 'final' ? 'Did not place' : (p.scored ? 'Not ranked' : 'No gifts yet')) +
+      '</small></div>');
+    h.push('<div class="meta">Ranked by ' + rankByLabel(p.rankBy) + '</div>');
+  }
+  h.push('<div class="when">' + spanOf(p) + '</div>');
+  h.push('</div>');
+  return h.join('');
 }
 
 /** Ticks the live countdown every second without refetching. */
