@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T20:22:43.420Z",
+ "ts": "2026-09-10T20:23:34.966Z",
  "tier": "Tier 1",
  "org": {
   "raised": 19360,
@@ -27,7 +27,7 @@
     "name": "Amped",
     "value": 13968500
    },
-   "gap": 10500,
+   "gap": 20500,
    "chasing": "Awake Ministries",
    "scored": true
   },
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 586
+    "value": 588
    },
    "gap": 10,
    "chasing": "ART FM",
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 735
+    "value": 736
    },
-   "gap": 19,
+   "gap": 21,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
