@@ -218,6 +218,16 @@ function render(){
   var open = prizes.filter(function(p){ return p.status !== 'final'; });
   var closed = prizes.filter(function(p){ return p.status === 'final'; });
 
+  // Closing soonest first: the prize you can still do something about outranks
+  // one that runs until midnight. Timed windows therefore lead, and the
+  // all-day boards settle to the bottom. Ties broken by start, then name, so
+  // the order stays put between refreshes instead of shuffling.
+  open.sort(function(a, b){
+    return (new Date(a.end) - new Date(b.end)) ||
+           (new Date(a.start) - new Date(b.start)) ||
+           (a.prize < b.prize ? -1 : a.prize > b.prize ? 1 : 0);
+  });
+
   // Most recently decided first — that's the one people are asking about.
   closed.sort(function(a, b){ return new Date(b.end) - new Date(a.end); });
 
