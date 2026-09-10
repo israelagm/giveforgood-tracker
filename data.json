@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T16:14:23.477Z",
+ "ts": "2026-09-10T16:15:15.113Z",
  "tier": "Tier 1",
  "org": {
   "raised": 13353,
@@ -19,7 +19,7 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 59,
+   "rank": 60,
    "value": 1335300,
    "field": "dollars_in_cents",
    "total": 665,
@@ -27,8 +27,8 @@
     "name": "Amped",
     "value": 13021500
    },
-   "gap": 31700,
-   "chasing": "Hildegard House",
+   "gap": 8200,
+   "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
   {
