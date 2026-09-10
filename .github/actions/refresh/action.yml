@@ -1,0 +1,67 @@
+name: Refresh standings
+description: >
+  Fetch the event API on a loop and publish readings to the data branch,
+  until either the event ends or this shift runs out of time.
+
+inputs:
+  minutes:
+    description: How long this shift may run before handing off.
+    required: true
+  interval:
+    description: Seconds between readings.
+    required: false
+    default: '45'
+  stop-utc:
+    description: Absolute end of the event; every shift exits at this point.
+    required: false
+    default: '2026-09-11T17:00:00Z'
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - shell: bash
+      run: |
+        STOP=$(date -u -d '${{ inputs.stop-utc }}' +%s)
+        if [ "$(date -u +%s)" -ge "$STOP" ]; then
+          echo "Event is over; nothing to do."
+          exit 0
+        fi
+
+        git config user.name  "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        # Readings live on their own branch so publishing never rebuilds Pages.
+        if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+          git fetch origin data:data
+          git worktree add out data
+        else
+          git worktree add --orphan -b data out
+        fi
+        cd out
+        git config user.name  "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        DEADLINE=$(( $(date -u +%s) + ${{ inputs.minutes }} * 60 ))
+
+        while :; do
+          NOW=$(date -u +%s)
+          [ "$NOW" -ge "$STOP" ] && { echo "Event over."; break; }
+          [ "$NOW" -ge "$DEADLINE" ] && { echo "Shift over; handing off."; break; }
+
+          node ../scripts/refresh.mjs || echo "fetch failed; retrying next pass"
+
+          if git status --porcelain data.json | grep -q .; then
+            git add data.json
+            git commit -q -m "Standings $(TZ=America/New_York date '+%-I:%M:%S %p ET')"
+            git pull --rebase --autostash -q origin data 2>/dev/null || true
+            git push -q origin data || echo "push rejected; retrying next pass"
+          fi
+
+          sleep ${{ inputs.interval }}
+        done

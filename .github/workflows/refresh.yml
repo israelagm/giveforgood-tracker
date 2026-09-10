@@ -1,71 +1,53 @@
 name: Refresh leaderboard data
 
-# Cron is not the engine here. GitHub queues scheduled runs best-effort on
-# free public repos and drops them under load — on this repo not one */5 run
-# ever fired. Instead a single job runs for hours, refreshing on its own loop,
-# and the schedule exists only to queue a successor when it finishes.
+# One dispatch covers the whole event.
+#
+# A single Actions job is capped at 6 hours, and cron cannot be relied on to
+# start a replacement — GitHub queues schedule events best-effort on free
+# public repos and on this repo not one ever fired. So instead of hoping for a
+# successor, three shifts are chained with `needs` inside ONE run. Each waits
+# for the previous to finish, giving ~17 hours of unbroken coverage from a
+# single click.
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '*/30 * * * *'   # belt and braces; starts a run only if none exists
 
 permissions:
   contents: write
 
 concurrency:
   group: refresh
-  # NOT cancel-in-progress: a scheduled run must wait its turn rather than kill
-  # the long-running one. GitHub keeps one run pending per group, so whenever
-  # cron does fire it becomes the successor and starts the moment this ends.
-  cancel-in-progress: false
+  cancel-in-progress: false   # a second run waits its turn, never kills the worker
 
 jobs:
-  refresh:
+  shift-1:
     runs-on: ubuntu-latest
-    timeout-minutes: 350        # just under the 6-hour ceiling for a job
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
+      - uses: ./.github/actions/refresh
         with:
-          node-version: '20'
+          minutes: '340'
 
-      # Readings land on their own branch, never on main, so publishing data
-      # never triggers a Pages rebuild. Pages builds once, when code changes.
-      - name: Prepare data branch
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
-            git fetch origin data:data
-            git worktree add out data
-          else
-            git worktree add --orphan -b data out
-          fi
+  shift-2:
+    needs: shift-1
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/refresh
+        with:
+          minutes: '340'
 
-      - name: Refresh until the event is over
-        run: |
-          cd out
-          git config user.name  "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          # Late giving closes at noon ET on the 11th; stop shortly after.
-          STOP=$(date -u -d '2026-09-11T17:00:00Z' +%s)
-          DEADLINE=$(( $(date -u +%s) + 340*60 ))
-
-          while :; do
-            NOW=$(date -u +%s)
-            [ "$NOW" -ge "$STOP" ] && { echo "event over"; break; }
-            [ "$NOW" -ge "$DEADLINE" ] && { echo "handing off to the next run"; break; }
-
-            node ../scripts/refresh.mjs || echo "fetch failed; retrying next pass"
-
-            if git status --porcelain data.json | grep -q .; then
-              git add data.json
-              git commit -q -m "Standings $(TZ=America/New_York date '+%-I:%M:%S %p ET')"
-              git pull --rebase --autostash -q origin data 2>/dev/null || true
-              git push -q origin data || echo "push rejected; retrying next pass"
-            fi
-
-            sleep 45
-          done
+  shift-3:
+    needs: shift-2
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/refresh
+        with:
+          minutes: '340'
