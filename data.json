@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T22:22:56.055Z",
+ "ts": "2026-09-10T22:23:47.700Z",
  "tier": "Tier 1",
  "org": {
   "raised": 21146,
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 672
+    "value": 674
    },
    "gap": 42,
    "chasing": "ART FM",
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 837
    },
-   "gap": 34,
+   "gap": 36,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -115,7 +115,7 @@
     "name": "Amped",
     "value": 14156000
    },
-   "gap": 22700,
+   "gap": 32700,
    "chasing": "Paws with Purpose",
    "scored": true
   },
