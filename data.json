@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T23:23:12.024Z",
+ "ts": "2026-09-10T23:24:03.469Z",
  "tier": "Tier 1",
  "org": {
   "raised": 22261,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14714000
+    "value": 14718500
    },
    "gap": 200,
    "chasing": "The Parklands of Floyds Fork",
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14703000
+    "value": 14707500
    },
    "gap": 27400,
    "chasing": "USA Cares",
