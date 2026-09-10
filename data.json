@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T16:06:34.372Z",
+ "ts": "2026-09-10T16:07:26.259Z",
  "tier": "Tier 1",
  "org": {
   "raised": 13243,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 12971500
+    "value": 13021500
    },
    "gap": 41700,
    "chasing": "Hildegard House",
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 428
+    "value": 431
    },
-   "gap": 7,
+   "gap": 8,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 487
    },
-   "gap": 71,
+   "gap": 74,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 12960500
+    "value": 13010500
    },
    "gap": 21700,
    "chasing": "Sweet Evening Breeze",
