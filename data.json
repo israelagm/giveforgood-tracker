@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T21:58:54.613Z",
+ "ts": "2026-09-10T21:59:46.094Z",
  "tier": "Tier 1",
  "org": {
   "raised": 20911,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14037000
+    "value": 14047000
    },
    "gap": 2400,
    "chasing": "Kentucky Performing Arts",
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 659
+    "value": 660
    },
    "gap": 35,
    "chasing": "ART FM",
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 818
    },
-   "gap": 29,
+   "gap": 30,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14026000
+    "value": 14036000
    },
    "gap": 46200,
    "chasing": "Paws with Purpose",
@@ -201,9 +201,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 90
+    "value": 94
    },
-   "gap": 5,
+   "gap": 9,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
