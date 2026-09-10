@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T20:34:46.920Z",
+ "ts": "2026-09-10T20:35:38.463Z",
  "tier": "Tier 1",
  "org": {
   "raised": 19520,
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 592
    },
-   "gap": 15,
+   "gap": 16,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 747
+    "value": 748
    },
    "gap": 16,
    "chasing": "The Louisville Orchestra",
