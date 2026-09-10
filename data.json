@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T16:16:06.874Z",
+ "ts": "2026-09-10T16:16:58.603Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 13353,
-  "donors": 287,
-  "donations": 287,
+  "raised": 13378,
+  "donors": 288,
+  "donations": 288,
   "avgGift": 36,
   "goal": 20000
  },
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 60,
-   "value": 1335300,
+   "value": 1337800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13021500
    },
-   "gap": 8200,
+   "gap": 5700,
    "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
@@ -42,7 +42,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 287,
+   "value": 288,
    "field": "donors",
    "total": 665,
    "leader": {
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 372,
+   "value": 373,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 496
    },
-   "gap": 72,
+   "gap": 71,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 372,
+   "value": 373,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 372
+    "value": 373
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1172300,
+   "value": 1174800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13010500
    },
-   "gap": 10700,
+   "gap": 8200,
    "chasing": "Sweet Evening Breeze",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23419156
+ "lastDonationId": 23419356
 }
