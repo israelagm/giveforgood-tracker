@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T21:57:11.573Z",
+ "ts": "2026-09-10T21:58:03.179Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 20851,
-  "donors": 436,
-  "donations": 649,
-  "avgGift": 32.12788906009245,
+  "raised": 20886,
+  "donors": 438,
+  "donations": 652,
+  "avgGift": 32.033742331288344,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 66,
-   "value": 2085100,
+   "value": 2088600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14037000
    },
-   "gap": 8400,
+   "gap": 4900,
    "chasing": "Kentucky Performing Arts",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 436,
+   "value": 438,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 657
+    "value": 659
    },
-   "gap": 37,
+   "gap": 35,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 649,
+   "value": 652,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 817
+    "value": 818
    },
-   "gap": 31,
+   "gap": 30,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 649,
+   "value": 652,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 649
+    "value": 652
    },
    "gap": null,
    "chasing": null,
@@ -107,16 +107,16 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 57,
-   "value": 1922100,
+   "rank": 56,
+   "value": 1925600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14026000
    },
-   "gap": 1900,
-   "chasing": "A Fund, Inc.",
+   "gap": 47700,
+   "chasing": "Paws with Purpose",
    "scored": true
   },
   {
@@ -201,9 +201,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 88
+    "value": 89
    },
-   "gap": 4,
+   "gap": 5,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
