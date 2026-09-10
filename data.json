@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T20:00:18.273Z",
+ "ts": "2026-09-10T20:01:10.319Z",
  "tier": "Tier 1",
  "org": {
   "raised": 18985,
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 576
    },
-   "gap": 0,
+   "gap": 1,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 715
+    "value": 716
    },
    "gap": 30,
    "chasing": "The Louisville Orchestra",
@@ -200,12 +200,12 @@
    "field": "donors",
    "total": 199,
    "leader": {
-    "name": "502 Dragon Boat Community",
-    "value": 0
+    "name": "Bloom Elementary PTA",
+    "value": 1
    },
    "gap": null,
    "chasing": null,
-   "scored": false
+   "scored": true
   },
   {
    "id": "131293:donors",
