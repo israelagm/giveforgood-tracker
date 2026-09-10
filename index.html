@@ -57,8 +57,12 @@
   .card .meta{font-size:12.5px;color:var(--muted);margin-top:4px;line-height:1.4}
   .card .when{font-size:11.5px;color:var(--faint);margin-top:7px}
 
-  .cta{display:inline-block;margin-top:22px;background:var(--accent);color:#fff;text-decoration:none;
+  .actions{display:flex;align-items:center;gap:16px;margin-top:18px;flex-wrap:wrap}
+  .cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
     padding:12px 22px;border-radius:8px;font-weight:750;font-size:15px}
+  .secondary{color:var(--accent);font-weight:650;font-size:14px;text-decoration:none;
+    border-bottom:1px solid color-mix(in srgb, var(--accent) 35%, transparent);padding-bottom:1px}
+  .secondary:hover{border-bottom-color:var(--accent)}
   .foot{margin-top:14px;font-size:11.5px;color:var(--faint)}
   .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--live);
     margin-right:5px;vertical-align:1px}
@@ -158,6 +162,15 @@ function render(){
     '<div><b>' + num(o.donations) + '</b>gifts</div>' +
     '<div><b>' + money(o.avgGift) + '</b>avg gift</div></div>');
 
+  // Giving is the point of the page, so the button sits above the fold rather
+  // than below a long prize grid. The official leaderboards sit beside it
+  // permanently — this page always trails them by a minute or two, and during
+  // the last minutes of a window that is the one to trust.
+  h.push('<div class="actions">' +
+    '<a class="cta" href="' + esc(s.config.url) + '">Give now</a>' +
+    '<a class="secondary" href="' + esc(LEADERBOARDS) + '">' +
+    'Official leaderboards \u2197</a></div>');
+
   var dataTs = new Date(s.ts).getTime();
   var ageMin = (Date.now() - dataTs) / 60000;
 
@@ -171,8 +184,7 @@ function render(){
 
   if (ageMin > 3) {
     h.push('<div class="stalebar">These numbers are ' + Math.round(ageMin) +
-      ' minutes old. <a href="https://www.giveforgoodlouisville.org/p/leaderboards">' +
-      'Official leaderboards</a></div>');
+      ' minutes old. <a href="' + LEADERBOARDS + '">Official leaderboards</a></div>');
   }
 
   // The hero is for the timed window that's open right now. All-day boards
@@ -236,14 +248,13 @@ function render(){
   });
   h.push('</div>');
 
-  h.push('<a class="cta" href="' + esc(s.config.url) + '">Give now</a>');
-
   // The refresh job runs on a 5-minute schedule and GitHub can delay it, so
   // say how old the reading is rather than implying it's live to the second.
   var age = Math.round(ageMin);
   h.push('<div class="foot"><span class="dot' + (age > 4 ? ' stale' : '') + '"></span>' +
     'Updated ' + clockTime(s.ts) + ' ET' +
-    (age >= 1 ? ' · ' + age + ' min ago' : ' · just now') + '</div>');
+    (age >= 1 ? ' · ' + age + ' min ago' : ' · just now') +
+    ' · <a href="' + esc(LEADERBOARDS) + '">official leaderboards</a></div>');
 
   document.getElementById('root').innerHTML = h.join('');
 }
@@ -284,6 +295,8 @@ function tickClocks(){
 // ─────────────────────────────────────────────────────────────────────────
 var LIVE_ENDPOINT = '';
 
+var LEADERBOARDS = 'https://www.giveforgoodlouisville.org/p/leaderboards';
+
 var RAW = 'https://raw.githubusercontent.com/israelagm/giveforgood-tracker/data/data.json';
 var API = 'https://api.github.com/repos/israelagm/giveforgood-tracker/contents/data.json?ref=data';
 
@@ -314,8 +327,7 @@ function showLoadError(){
   if (STATE) return;   // we have something to show; a failed poll is harmless
   document.getElementById('root').innerHTML =
     '<div class="empty">Couldn\'t load the latest numbers.<br>' +
-    '<a href="https://www.giveforgoodlouisville.org/p/leaderboards">' +
-    'Official leaderboards</a></div>';
+    '<a href="' + LEADERBOARDS + '">Official leaderboards</a></div>';
 }
 
 function pollRaw(){
