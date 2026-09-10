@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T23:06:03.270Z",
+ "ts": "2026-09-10T23:06:54.626Z",
  "tier": "Tier 1",
  "org": {
   "raised": 21226,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14174500
+    "value": 14199500
    },
    "gap": 2400,
    "chasing": "USA Cares",
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 697
+    "value": 698
    },
    "gap": 59,
    "chasing": "ART FM",
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 860
    },
-   "gap": 56,
+   "gap": 57,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14163500
+    "value": 14188500
    },
    "gap": 59700,
    "chasing": "Paws with Purpose",
@@ -217,13 +217,13 @@
    "start": "2026-09-10T19:00:00.000-04:00",
    "end": "2026-09-10T20:59:59.000-04:00",
    "status": "live",
-   "rank": 19,
+   "rank": 20,
    "value": 1,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 3
+    "value": 4
    },
    "gap": 0,
    "chasing": "Friends of the Belle",
