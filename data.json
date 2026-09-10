@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T13:55:20.109Z",
+ "ts": "2026-09-10T13:56:53.403Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 7901,
-  "donors": 173,
-  "donations": 173,
+  "raised": 8136,
+  "donors": 176,
+  "donations": 176,
   "avgGift": 42,
   "goal": 20000
  },
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 54,
-   "value": 790100,
+   "rank": 52,
+   "value": 813600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Louisville Collegiate School",
-    "value": 4738400
+    "value": 4783400
    },
-   "gap": 1900,
-   "chasing": "ACLU of Kentucky Foundation",
+   "gap": 600,
+   "chasing": "The Monarch Music & Arts Community",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 173,
+   "value": 176,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 331
+    "value": 333
    },
-   "gap": 4,
+   "gap": 3,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -64,7 +64,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 190,
+   "value": 193,
    "field": "donations",
    "total": 665,
    "leader": {
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 190,
+   "value": 193,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 197
+    "value": 200
    },
    "gap": 7,
    "chasing": "Bloom Elementary PTA",
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 26,
-   "value": 627100,
+   "value": 650600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "OneWest",
     "value": 4025000
    },
-   "gap": 44700,
+   "gap": 21200,
    "chasing": "Louisville Habitat",
    "scored": true
   },
@@ -130,12 +130,12 @@
    "end": "2026-09-10T09:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 144,
+   "value": 147,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 157
+    "value": 160
    },
    "gap": 13,
    "chasing": "Bloom Elementary PTA",
