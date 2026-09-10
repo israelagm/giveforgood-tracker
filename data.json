@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T19:07:57.610Z",
+ "ts": "2026-09-10T19:08:48.629Z",
  "tier": "Tier 1",
  "org": {
   "raised": 18615,
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 543
    },
-   "gap": 12,
+   "gap": 13,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
