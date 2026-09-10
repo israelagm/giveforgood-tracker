@@ -18,6 +18,13 @@
       "amount": 1000,
       "note": "Drawn on Tereza Harris's donation",
       "sponsor": "Derby City Gaming & Hotel"
+    },
+    {
+      "prize": "Afternoon Drive",
+      "window": "1pm – 3pm",
+      "amount": 1000,
+      "note": "Tier 1 — most online donors",
+      "sponsor": "Brown-Forman"
     }
   ]
 }

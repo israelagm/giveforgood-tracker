@@ -11,6 +11,10 @@
     --ink:#16203a; --muted:#5f6d8c; --faint:#8b97b0; --line:#e4e9f2;
     --bg:#fff; --panel:#f7f9fc; --accent:#8431a6; --accent-soft:#f4eafa;
     --live:#0f9d58; --live-soft:#e8f6ee; --gold:#b8860b; --gold-soft:#fdf6e3;
+    /* Two different things, two different colors: gold marks a leaderboard
+       podium finish (rank, not money); blue marks a prize actually banked
+       (Golden Tickets, hourly drawings) — real dollars, confirmed. */
+    --win:#1868b7; --win-soft:#eaf5ff; --win-text:#0f4c81;
   }
   *{box-sizing:border-box}
   body{margin:0;padding:20px;background:var(--bg);color:var(--ink);
@@ -73,16 +77,16 @@
   .stalebar a{color:#7a5c00}
   .meta.pending{color:#9a7400;font-style:italic}
   .closed-head{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}
-  .wins{margin-top:22px;border:1.5px solid var(--gold);background:var(--gold-soft);
+  .wins{margin-top:22px;border:1.5px solid var(--win);background:var(--win-soft);
     border-radius:12px;padding:14px 16px}
-  .wins-top{font-size:16px;font-weight:750;color:#7a5c00}
+  .wins-top{font-size:16px;font-weight:750;color:var(--win-text)}
   .wins-top b{font-size:19px}
   .win{margin-top:9px;font-size:14px;color:var(--ink)}
-  .win-amt{display:inline-block;min-width:58px;font-weight:800;color:var(--gold)}
+  .win-amt{display:inline-block;min-width:58px;font-weight:800;color:var(--win)}
   .win-when{color:var(--muted);font-size:13px}
   .win-note{margin-left:58px;font-size:12.5px;color:var(--muted)}
   .win-foot{margin-top:11px;font-size:12.5px}
-  .win-foot a{color:#7a5c00}
+  .win-foot a{color:var(--win-text)}
   @media (max-width:520px){ .amount{font-size:34px} body{padding:14px} }
 </style>
 </head>
