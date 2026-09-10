@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T20:53:40.124Z",
+ "ts": "2026-09-10T20:54:31.782Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 19781,
+  "raised": 19791,
   "donors": 411,
-  "donations": 599,
-  "avgGift": 33.02337228714524,
+  "donations": 601,
+  "avgGift": 32.930116472545755,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 56,
-   "value": 1978100,
+   "value": 1979100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13968500
    },
-   "gap": 4800,
+   "gap": 3800,
    "chasing": "The Arrow Fund",
    "scored": true
   },
@@ -47,10 +47,10 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 605
+    "value": 607
    },
-   "gap": 24,
-   "chasing": "ART FM",
+   "gap": 25,
+   "chasing": "Bloom Elementary PTA",
    "scored": true
   },
   {
@@ -64,12 +64,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 599,
+   "value": 601,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 763
+    "value": 764
    },
    "gap": 25,
    "chasing": "The Louisville Orchestra",
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 599,
+   "value": 601,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 599
+    "value": 601
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 49,
-   "value": 1815100,
+   "value": 1816100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13957500
    },
-   "gap": 44100,
+   "gap": 43100,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
@@ -196,12 +196,12 @@
    "end": "2026-09-10T17:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 36,
+   "value": 38,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 36
+    "value": 38
    },
    "gap": null,
    "chasing": null,
