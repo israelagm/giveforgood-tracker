@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T17:27:01.353Z",
+ "ts": "2026-09-10T17:27:53.099Z",
  "tier": "Tier 1",
  "org": {
   "raised": 15628,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13098500
+    "value": 13101000
    },
    "gap": 2700,
    "chasing": "Friends of the Belle",
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 488
+    "value": 489
    },
    "gap": 3,
    "chasing": "ART FM",
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 582
    },
-   "gap": 76,
+   "gap": 77,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13087500
+    "value": 13090000
    },
    "gap": 26700,
    "chasing": "Kentucky Performing Arts",
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23423104
+ "lastDonationId": 23423226
 }
