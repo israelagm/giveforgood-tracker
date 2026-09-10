@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T22:28:57.196Z",
+ "ts": "2026-09-10T22:29:48.789Z",
  "tier": "Tier 1",
  "org": {
   "raised": 21151,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14167000
+    "value": 14169500
    },
    "gap": 62000,
    "chasing": "Gilda's Club Kentuckiana",
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14156000
+    "value": 14158500
    },
    "gap": 32200,
    "chasing": "Paws with Purpose",
