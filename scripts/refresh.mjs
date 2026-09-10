@@ -18,6 +18,15 @@ const PAGE = process.env.LEADERBOARD_PAGE || '/p/leaderboards';
 const PER_PAGE = 200;
 const MAX_PAGES = 4;
 
+// Alerts. CHAT_WEBHOOK comes from a repo secret; with it unset the script
+// still refreshes data.json and simply posts nothing.
+const CHAT_WEBHOOK = process.env.CHAT_WEBHOOK || '';
+const ALERT_TOP_N = Number(process.env.ALERT_TOP_N || 10);
+const DOLLAR_MILESTONE = Number(process.env.DOLLAR_MILESTONE || 1000);
+const DONOR_MILESTONE = Number(process.env.DONOR_MILESTONE || 25);
+const BIG_GIFT = Number(process.env.BIG_GIFT_DOLLARS || 250);
+const ANNOUNCE_EVERY_DONATION = process.env.ANNOUNCE_EVERY_DONATION === 'true';
+
 const FIELD = {
   dollars: 'dollars_in_cents',
   donors: 'donors',
@@ -138,6 +147,134 @@ function labelOf(b) {
   return b.tier ? (b.prize || b.name) : (b.view || b.prize || b.name);
 }
 
+const fmt = (n) => Math.round(Number(n) || 0).toLocaleString('en-US');
+
+function valueLabel(p, v) {
+  if (v == null) return '—';
+  return p.field === 'dollars_in_cents'
+    ? '$' + fmt(v / 100)
+    : fmt(v) + ' ' + (p.rankBy === 'donors' ? 'donors' : 'gifts');
+}
+
+function rankByLabel(rankBy) {
+  return rankBy === 'donors' ? 'donor count'
+    : rankBy === 'donations' ? 'number of gifts' : 'dollars raised';
+}
+
+const timeET = (iso) =>
+  new Date(iso).toLocaleTimeString('en-US',
+    { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
+
+/** Recent gifts, for big-gift alerts. Returns [alerts, newestId]. */
+async function donationAlerts(lastSeen) {
+  let list = [];
+  try {
+    const body = await getJSON(
+      `${BASE}/api/v4/story/${URN}/recent_donations.json?page=1&per_page=25`);
+    list = body.donation || [];
+  } catch { return [[], lastSeen]; }
+  if (!list.length) return [[], lastSeen];
+
+  const newest = list[0].id;
+  if (!lastSeen) return [[], newest];   // first run: baseline only
+
+  const out = [];
+  // Newest first from the API; reverse so messages read in arrival order.
+  for (const d of list.filter((x) => x.id > lastSeen).reverse()) {
+    const amount = (d.amount_in_cents || 0) / 100;
+    const who = d.show_as_anonymous ? 'An anonymous donor' : (d.full_name || 'Someone');
+    if (amount >= BIG_GIFT) {
+      out.push(`⭐ Big gift: ${who} gave $${fmt(amount)}!` +
+        (d.comment ? ` “${d.comment}”` : ''));
+    } else if (ANNOUNCE_EVERY_DONATION) {
+      out.push(`💛 ${who} gave $${fmt(amount)}.`);
+    }
+  }
+  return [out, newest];
+}
+
+/** Everything worth saying out loud between two readings. */
+function buildAlerts(prev, next) {
+  const alerts = [];
+  if (!prev || !prev.org) return alerts;   // first run: baseline only
+
+  const before = Object.fromEntries((prev.prizes || []).map((p) => [p.id, p]));
+
+  for (const now of next.prizes) {
+    const was = before[now.id];
+    if (!was) continue;
+
+    if (was.status === 'upcoming' && now.status === 'live') {
+      alerts.push(`🟢 ${now.prize} is OPEN until ${timeET(now.end)} — ranked by ` +
+        `${rankByLabel(now.rankBy)}. Every gift counts now.`);
+    }
+
+    if (was.status === 'live' && now.status === 'final') {
+      alerts.push(now.rank
+        ? `🏁 ${now.prize} is over — we finished #${now.rank} of ${now.total} ` +
+          `with ${valueLabel(now, now.value)}.`
+        : `🏁 ${now.prize} is over.`);
+    }
+
+    if (now.status === 'live' && was.rank && now.rank && was.rank !== now.rank) {
+      const tail = now.gap != null && now.chasing
+        ? ` — ${valueLabel(now, now.gap)} behind ${now.chasing}.` : '.';
+      if (now.rank < was.rank && now.rank <= ALERT_TOP_N) {
+        alerts.push(`⬆️ ${now.prize}: up to #${now.rank} (was #${was.rank})${tail}`);
+      } else if (now.rank > was.rank && was.rank <= ALERT_TOP_N) {
+        alerts.push(`⬇️ ${now.prize}: slipped to #${now.rank} (was #${was.rank})${tail}`);
+      }
+    }
+  }
+
+  if (DOLLAR_MILESTONE > 0) {
+    const b = Math.floor(prev.org.raised / DOLLAR_MILESTONE);
+    const a = Math.floor(next.org.raised / DOLLAR_MILESTONE);
+    if (a > b) {
+      alerts.push(`💰 Just crossed $${fmt(a * DOLLAR_MILESTONE)} — now at ` +
+        `$${fmt(next.org.raised)}.`);
+    }
+  }
+
+  if (DONOR_MILESTONE > 0) {
+    const b = Math.floor(prev.org.donors / DONOR_MILESTONE);
+    const a = Math.floor(next.org.donors / DONOR_MILESTONE);
+    if (a > b) {
+      alerts.push(`🎉 Donor #${a * DONOR_MILESTONE} is in — ${next.org.donors} donors so far.`);
+    }
+  }
+
+  if (next.org.goal && prev.org.raised < next.org.goal && next.org.raised >= next.org.goal) {
+    alerts.push(`🏆 GOAL MET! $${fmt(next.org.raised)} of our $${fmt(next.org.goal)} goal.`);
+  }
+
+  return alerts;
+}
+
+async function postAlerts(alerts, state) {
+  if (!alerts.length) return;
+  if (!CHAT_WEBHOOK) {
+    console.log('(no CHAT_WEBHOOK set) would have posted:\n  ' + alerts.join('\n  '));
+    return;
+  }
+
+  const liveWindow = state.prizes.find((p) => p.status === 'live' && p.rank);
+  const header = `${LABEL} — $${fmt(state.org.raised)} · ${state.org.donors} donors` +
+    (liveWindow ? `\nLive now — ${liveWindow.prize}: #${liveWindow.rank} of ${liveWindow.total}` : '');
+  const text = `${header}\n\n${alerts.join('\n')}\n\n${state.config.url}`;
+
+  try {
+    const res = await fetch(CHAT_WEBHOOK, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=UTF-8' },
+      body: JSON.stringify({ text }),
+    });
+    console.log(`posted ${alerts.length} alert(s) → ${res.status}`);
+  } catch (e) {
+    console.warn('chat post failed: ' + e.message);
+  }
+}
+
 async function main() {
   const [records, views] = await Promise.all([fetchBoardRecords(), fetchDisplayMap()]);
   const byId = Object.fromEntries(records.map((r) => [r.id, r]));
@@ -229,6 +366,19 @@ async function main() {
   };
 
   const fs = await import('node:fs/promises');
+
+  // The committed data.json is our previous reading — exactly the state we
+  // need to diff against, with no extra storage.
+  let prev = null;
+  try { prev = JSON.parse(await fs.readFile('data.json', 'utf8')); } catch {}
+
+  const [giftAlerts, newestDonationId] =
+    await donationAlerts(prev && prev.lastDonationId);
+  state.lastDonationId = newestDonationId;
+
+  const alerts = [...buildAlerts(prev, state), ...giftAlerts];
+  await postAlerts(alerts, state);
+
   await fs.writeFile('data.json', JSON.stringify(state, null, 1));
 
   console.log(`tier=${tier} raised=$${state.org.raised} donors=${state.org.donors}`);

@@ -64,6 +64,10 @@
     margin-right:5px;vertical-align:1px}
   .dot.stale{background:#d0a215}
   .empty{color:var(--muted);text-align:center;padding:40px 0}
+  .stalebar{margin-top:14px;background:#fdf6e3;border:1px solid #e8d9a8;color:#7a5c00;
+    border-radius:8px;padding:9px 12px;font-size:13px}
+  .stalebar a{color:#7a5c00}
+  .meta.pending{color:#9a7400;font-style:italic}
   @media (max-width:520px){ .amount{font-size:34px} body{padding:14px} }
 </style>
 </head>
@@ -99,6 +103,22 @@ function dayOf(iso){
 /** A timed prize window (a couple of hours), as opposed to an all-day board. */
 function isWindow(p){
   return new Date(p.end).getTime() - new Date(p.start).getTime() <= 6*3600*1000;
+}
+/**
+ * Status is recomputed here rather than trusted from the file. The refresh job
+ * stamps a status when it runs, but the file can be several minutes old by the
+ * time you read it — a window that has since closed would otherwise still show
+ * LIVE with 0:00 on the clock.
+ */
+function statusOf(p){
+  var now = Date.now();
+  if (now < new Date(p.start).getTime()) return 'upcoming';
+  if (now > new Date(p.end).getTime()) return 'final';
+  return 'live';
+}
+/** True when a window has closed but our numbers predate the close. */
+function isPending(p, dataTs){
+  return statusOf(p) === 'final' && dataTs < new Date(p.end).getTime();
 }
 /** "8:00 AM - 9:59 AM ET", or "Sep 7 - Sep 10" for multi-day boards. */
 function spanOf(p){
@@ -166,7 +186,7 @@ function render(){
   h.push('<h2>All prizes' + (s.tier ? ' · ' + esc(s.tier) : '') + '</h2>');
   h.push('<div class="grid">');
   prizes.forEach(function(p){
-    var podium = p.status === 'final' && p.rank && p.rank <= 3;
+    var podium = p.status === 'final' && !p.pending && p.rank && p.rank <= 3;
     h.push('<div class="card ' + p.status + (podium ? ' podium' : '') + '">');
     h.push('<div class="top"><div class="pn">' + esc(p.prize) + '</div>' +
       '<span class="chip ' + p.status + '">' + p.status + '</span></div>');
@@ -175,11 +195,15 @@ function render(){
       h.push('<div class="rk"><small>Opens ' + clockTime(p.start) + '</small></div>');
       h.push('<div class="meta">Ranked by ' + rankByLabel(p.rankBy) + '</div>');
     } else if (p.rank) {
-      var medal = podium ? ['🥇','🥈','🥉'][p.rank-1] + ' ' : '';
+      var medal = (podium && !p.pending) ? ['🥇','🥈','🥉'][p.rank-1] + ' ' : '';
       h.push('<div class="rk">' + medal + '#' + p.rank +
         ' <small>of ' + num(p.total) + '</small></div>');
       h.push('<div class="meta">' + valueOf(p, p.value) + ' · by ' +
         rankByLabel(p.rankBy) + '</div>');
+      if (p.pending) {
+        h.push('<div class="meta pending">Provisional — taken at ' +
+          clockTime(s.ts) + ', before this window closed.</div>');
+      }
       if (p.status === 'live' && p.gap != null) {
         h.push('<div class="meta">' + valueOf(p, p.gap) + ' behind ' + esc(p.chasing) + '</div>');
       }
@@ -200,8 +224,8 @@ function render(){
 
   // The refresh job runs on a 5-minute schedule and GitHub can delay it, so
   // say how old the reading is rather than implying it's live to the second.
-  var age = Math.round((Date.now() - new Date(s.ts).getTime()) / 60000);
-  h.push('<div class="foot"><span class="dot' + (age > 12 ? ' stale' : '') + '"></span>' +
+  var age = Math.round(ageMin);
+  h.push('<div class="foot"><span class="dot' + (age > 4 ? ' stale' : '') + '"></span>' +
     'Updated ' + clockTime(s.ts) + ' ET' +
     (age >= 1 ? ' · ' + age + ' min ago' : ' · just now') + '</div>');
 

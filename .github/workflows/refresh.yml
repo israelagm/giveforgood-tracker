@@ -2,11 +2,11 @@ name: Refresh leaderboard data
 
 on:
   schedule:
-    # Every 5 minutes — GitHub's minimum for scheduled workflows. Runs can be
-    # delayed under load, so treat the timestamp on the page as the truth
-    # rather than assuming the data is 5 minutes old at most.
+    # Five minutes is GitHub's floor for cron, which is too coarse for a prize
+    # window decided by a handful of donors. So each run loops internally,
+    # refreshing about once a minute until the next run takes over.
     - cron: '*/5 * * * *'
-  workflow_dispatch:      # lets you force a refresh from the Actions tab
+  workflow_dispatch:
   push:
     branches: [main]
 
@@ -14,12 +14,17 @@ permissions:
   contents: write
 
 concurrency:
+  # A new scheduled run replaces the previous looping one, so only one process
+  # is ever committing. Without this the runs would overlap and race on push.
   group: refresh
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      CHAT_WEBHOOK: ${{ secrets.CHAT_WEBHOOK }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,19 +32,26 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Fetch standings
-        run: node scripts/refresh.mjs
-
-      - name: Commit if changed
+      - name: Refresh on a loop
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data.json; then
-            echo "No change."
-            exit 0
-          fi
-          git add data.json
-          git commit -m "Refresh standings: $(date -u '+%Y-%m-%d %H:%MZ')"
-          # Another scheduled run may have landed while this one was fetching.
-          git pull --rebase --autostash origin main
-          git push
+
+          for i in $(seq 1 5); do
+            echo "::group::pass $i"
+            node scripts/refresh.mjs || echo "fetch failed, will retry next pass"
+
+            if git diff --quiet -- data.json; then
+              echo "no change"
+            else
+              git add data.json
+              git commit -q -m "Standings $(TZ=America/New_York date '+%-I:%M %p ET')"
+              # A cancelled predecessor may have landed a commit first.
+              git pull --rebase --autostash -q origin main || true
+              git push -q || echo "push rejected, next pass will retry"
+            fi
+            echo "::endgroup::"
+
+            [ "$i" -lt 5 ] && sleep 55
+          done
+          exit 0
