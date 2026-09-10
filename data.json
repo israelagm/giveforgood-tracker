@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T14:58:17.360Z",
+ "ts": "2026-09-10T14:59:09.221Z",
  "tier": "Tier 1",
  "org": {
   "raised": 10561,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 12930500
+    "value": 12935500
    },
    "gap": 3900,
    "chasing": "Clark County Museum, Inc.",
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 12919500
+    "value": 12924500
    },
    "gap": 12900,
    "chasing": "Kentucky Performing Arts",
