@@ -57,11 +57,14 @@ function buildState_() {
   var tier = getTier_(boards);
   var mine = boards.filter(function (b) { return !b.tier || b.tier === tier; });
 
+  var prizes = fetchStandings_(mine);
+  var org = fetchOrg_(mine, tier);
+
   var state = {
     ts: new Date().toISOString(),
     tier: tier,
-    org: fetchOrg_(),
-    prizes: fetchStandings_(mine),
+    org: org,
+    prizes: prizes,
     config: { label: ORG_LABEL, url: BASE + '/organization/' + ORG_URN }
   };
 
@@ -75,13 +78,46 @@ function json_(url) {
   return JSON.parse(res.getContentText());
 }
 
-function fetchOrg_() {
+/**
+ * story.json's own donation count comes back null for this org, and the old
+ * fallback made "donations" silently equal "donors" (they are not the same —
+ * a donor who gives twice is one donor, two donations). Prefer the board
+ * whose window spans the whole event: a timed prize's entry is scoped to just
+ * that window, so its donors/donations would badly undercount here. Grand
+ * Prize and the untiered "All Orgs" board both run the full event and give
+ * dollars, donors and donations from one snapshot, so avgGift derived from it
+ * reconciles exactly with the displayed total.
+ */
+function fetchOrg_(boards, tier) {
   var d = json_(BASE + '/api/v4/story/' + ORG_URN + '.json');
+  var raised = (d.total_amount_raised_in_cents || 0) / 100;
+  var donors = d.total_donors || 0;
+  var donations = donors;   // last-resort only, if no board entry is found
+
+  var fullEventBoard = (boards || []).reduce(function (best, b) {
+    if (!best) return b;
+    var wider = new Date(b.start) <= new Date(best.start) &&
+                new Date(b.end) >= new Date(best.end);
+    return wider ? b : best;
+  }, null);
+
+  if (fullEventBoard) {
+    var entries = fetchEntries_(fullEventBoard.id, fullEventBoard.members);
+    for (var i = 0; i < entries.length; i++) {
+      if (entries[i].urn === ORG_URN) {
+        raised = entries[i].dollars_in_cents / 100;
+        donors = entries[i].donors;
+        donations = entries[i].donations;
+        break;
+      }
+    }
+  }
+
   return {
-    raised: (d.total_amount_raised_in_cents || 0) / 100,
-    donors: d.total_donors || 0,
-    donations: d.cached_number_donations || d.total_donors || 0,
-    avgGift: (d.average_donation_in_cents || 0) / 100,
+    raised: raised,
+    donors: donors,
+    donations: donations,
+    avgGift: donations > 0 ? raised / donations : 0,
     goal: (d.goal_amount_in_cents || 0) / 100
   };
 }

@@ -104,13 +104,13 @@ leaderboard data → Run workflow** to force a refresh without waiting for cron.
   unique online gift of **$5 or more**; that floor is applied at audit, not on
   the live leaderboard, so the audited count can come in slightly lower.
 - Before anyone scores in a window every org is tied at zero, so the page shows
-  "no gifts yet" rather than an arbitrary rank.
+  "no donations yet" rather than an arbitrary rank.
 
 ## Chat alerts
 
 Set a Google Chat webhook as a repo secret and the refresh job posts on window
 open and close (with final placement), rank changes inside the top 10, dollar
-and donor milestones, and single gifts of $250 or more:
+and donor milestones, and single donations of $250 or more:
 
 ```bash
 gh secret set CHAT_WEBHOOK --repo israelagm/giveforgood-tracker

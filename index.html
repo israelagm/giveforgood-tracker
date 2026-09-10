@@ -102,10 +102,10 @@ function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g,
 function valueOf(p, v){
   if (v == null) return '—';
   return p.field === 'dollars_in_cents' ? money(v/100)
-    : num(v) + ' ' + (p.rankBy === 'donors' ? 'donors' : 'gifts');
+    : num(v) + ' ' + (p.rankBy === 'donors' ? 'donors' : 'donations');
 }
 function rankByLabel(rb){
-  return rb === 'donors' ? 'donor count' : rb === 'donations' ? 'gifts' : 'dollars';
+  return rb === 'donors' ? 'donor count' : rb === 'donations' ? 'donations' : 'dollars';
 }
 function clockTime(iso){
   return new Date(iso).toLocaleTimeString('en-US',
@@ -170,8 +170,8 @@ function render(){
   if (o.goal) h.push('<div class="bar"><span style="width:' + pct.toFixed(1) + '%"></span></div>');
   h.push('<div class="stats">' +
     '<div><b>' + num(o.donors) + '</b>donors</div>' +
-    '<div><b>' + num(o.donations) + '</b>gifts</div>' +
-    '<div><b>' + money(o.avgGift) + '</b>avg gift</div></div>');
+    '<div><b>' + num(o.donations) + '</b>donations</div>' +
+    '<div><b>' + money(o.avgGift) + '</b>avg donation</div></div>');
 
   // Giving is the point of the page, so the button sits above the fold rather
   // than below a long prize grid. The official leaderboards sit beside it
@@ -321,7 +321,7 @@ function card(p, s){
     }
   } else {
     h.push('<div class="rk"><small>' +
-      (p.status === 'final' ? 'Did not place' : (p.scored ? 'Not ranked' : 'No gifts yet')) +
+      (p.status === 'final' ? 'Did not place' : (p.scored ? 'Not ranked' : 'No donations yet')) +
       '</small></div>');
     h.push('<div class="meta">Ranked by ' + rankByLabel(p.rankBy) + '</div>');
   }

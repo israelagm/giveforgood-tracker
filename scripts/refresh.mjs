@@ -153,12 +153,12 @@ function valueLabel(p, v) {
   if (v == null) return '—';
   return p.field === 'dollars_in_cents'
     ? '$' + fmt(v / 100)
-    : fmt(v) + ' ' + (p.rankBy === 'donors' ? 'donors' : 'gifts');
+    : fmt(v) + ' ' + (p.rankBy === 'donors' ? 'donors' : 'donations');
 }
 
 function rankByLabel(rankBy) {
   return rankBy === 'donors' ? 'donor count'
-    : rankBy === 'donations' ? 'number of gifts' : 'dollars raised';
+    : rankBy === 'donations' ? 'number of donations' : 'dollars raised';
 }
 
 const timeET = (iso) =>
@@ -184,7 +184,7 @@ async function donationAlerts(lastSeen) {
     const amount = (d.amount_in_cents || 0) / 100;
     const who = d.show_as_anonymous ? 'An anonymous donor' : (d.full_name || 'Someone');
     if (amount >= BIG_GIFT) {
-      out.push(`⭐ Big gift: ${who} gave $${fmt(amount)}!` +
+      out.push(`⭐ Big donation: ${who} gave $${fmt(amount)}!` +
         (d.comment ? ` “${d.comment}”` : ''));
     } else if (ANNOUNCE_EVERY_DONATION) {
       out.push(`💛 ${who} gave $${fmt(amount)}.`);
@@ -316,8 +316,23 @@ async function main() {
   }
 
   const now = Date.now();
+  const mine = boards.filter((b) => !b.tier || b.tier === tier);
+
+  // Which board's numbers represent the whole event, not one two-hour window?
+  // A timed prize's entry is scoped to that window alone — the Morning Rush
+  // entry only counts who gave 8–10am — so using one for our header stats
+  // would wildly undercount. The board spanning the widest start/end range
+  // (Grand Prize and the untiered "All Orgs" board both run Sep 7–10) is the
+  // one whose donors/donations reflect the full event.
+  const fullEventBoard = mine.reduce((best, b) => {
+    if (!best) return b;
+    const wider = new Date(b.start) <= new Date(best.start) &&
+                  new Date(b.end) >= new Date(best.end);
+    return wider ? b : best;
+  }, null);
+
   const prizes = [];
-  for (const b of boards.filter((b) => !b.tier || b.tier === tier)) {
+  for (const b of mine) {
     const field = FIELD[b.metric] || 'dollars_in_cents';
     const sorted = (await fetchEntries(b.id, b.members))
       .slice()
@@ -351,14 +366,38 @@ async function main() {
   }
 
   const o = await getJSON(`${BASE}/api/v4/story/${URN}.json`);
+
+  // Prefer the full-event board entry over story.json for our own totals.
+  // story.json's `cached_number_donations` comes back null for this org, and
+  // the old fallback (`|| total_donors`) silently made "donations" always
+  // equal "donors" on the page — donors and donations are not the same thing
+  // (a donor who gives twice is one donor, two donations), and today they
+  // read 385 donors vs 542 real donations. The board entry carries dollars,
+  // donors and donations from one snapshot, so avgGift computed from it
+  // reconciles exactly with the total shown, instead of pairing raised/donors
+  // from one live call against an averageDonation from a different one.
+  let raised = (o.total_amount_raised_in_cents || 0) / 100;
+  let donors = o.total_donors || 0;
+  let donations = donors;   // last-resort only, if no board entry is found
+
+  if (fullEventBoard) {
+    const entries = await fetchEntries(fullEventBoard.id, fullEventBoard.members);
+    const ours = entries.find((e) => e.urn === URN);
+    if (ours) {
+      raised = ours.dollars_in_cents / 100;
+      donors = ours.donors;
+      donations = ours.donations;
+    }
+  }
+
   const state = {
     ts: new Date().toISOString(),
     tier,
     org: {
-      raised: (o.total_amount_raised_in_cents || 0) / 100,
-      donors: o.total_donors || 0,
-      donations: o.cached_number_donations || o.total_donors || 0,
-      avgGift: (o.average_donation_in_cents || 0) / 100,
+      raised,
+      donors,
+      donations,
+      avgGift: donations > 0 ? raised / donations : 0,
       goal: (o.goal_amount_in_cents || 0) / 100,
     },
     prizes,
