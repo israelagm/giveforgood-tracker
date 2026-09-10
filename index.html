@@ -167,8 +167,8 @@ function render(){
   // permanently — this page always trails them by a minute or two, and during
   // the last minutes of a window that is the one to trust.
   h.push('<div class="actions">' +
-    '<a class="cta" href="' + esc(s.config.url) + '">Give now</a>' +
-    '<a class="secondary" href="' + esc(LEADERBOARDS) + '">' +
+    '<a class="cta" href="' + esc(s.config.url) + '"' + NEWTAB + '>Give now</a>' +
+    '<a class="secondary" href="' + esc(LEADERBOARDS) + '"' + NEWTAB + '>' +
     'Official leaderboards \u2197</a></div>');
 
   var dataTs = new Date(s.ts).getTime();
@@ -184,7 +184,8 @@ function render(){
 
   if (ageMin > 3) {
     h.push('<div class="stalebar">These numbers are ' + Math.round(ageMin) +
-      ' minutes old. <a href="' + LEADERBOARDS + '">Official leaderboards</a></div>');
+      ' minutes old. <a href="' + LEADERBOARDS + '"' + NEWTAB +
+      '>Official leaderboards</a></div>');
   }
 
   // The hero is for the timed window that's open right now. All-day boards
@@ -254,7 +255,8 @@ function render(){
   h.push('<div class="foot"><span class="dot' + (age > 4 ? ' stale' : '') + '"></span>' +
     'Updated ' + clockTime(s.ts) + ' ET' +
     (age >= 1 ? ' · ' + age + ' min ago' : ' · just now') +
-    ' · <a href="' + esc(LEADERBOARDS) + '">official leaderboards</a></div>');
+    ' · <a href="' + esc(LEADERBOARDS) + '"' + NEWTAB +
+    '>official leaderboards</a></div>');
 
   document.getElementById('root').innerHTML = h.join('');
 }
@@ -297,6 +299,12 @@ var LIVE_ENDPOINT = '';
 
 var LEADERBOARDS = 'https://www.giveforgoodlouisville.org/p/leaderboards';
 
+// Every link here leaves for giveforgoodlouisville.org. They all open in a new
+// tab so nobody loses the tracker — and, on a phone, so a half-finished
+// donation form isn't destroyed by tapping back. rel guards the new tab from
+// reaching back at this page via window.opener.
+var NEWTAB = ' target="_blank" rel="noopener noreferrer"';
+
 var RAW = 'https://raw.githubusercontent.com/israelagm/giveforgood-tracker/data/data.json';
 var API = 'https://api.github.com/repos/israelagm/giveforgood-tracker/contents/data.json?ref=data';
 
@@ -327,7 +335,7 @@ function showLoadError(){
   if (STATE) return;   // we have something to show; a failed poll is harmless
   document.getElementById('root').innerHTML =
     '<div class="empty">Couldn\'t load the latest numbers.<br>' +
-    '<a href="' + LEADERBOARDS + '">Official leaderboards</a></div>';
+    '<a href="' + LEADERBOARDS + '"' + NEWTAB + '>Official leaderboards</a></div>';
 }
 
 function pollRaw(){
