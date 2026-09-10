@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T20:03:45.722Z",
+ "ts": "2026-09-10T20:04:37.154Z",
  "tier": "Tier 1",
  "org": {
   "raised": 19000,
@@ -25,9 +25,9 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13925000
+    "value": 13935000
    },
-   "gap": 32500,
+   "gap": 34000,
    "chasing": "Awake Ministries",
    "scored": true
   },
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13914000
+    "value": 13924000
    },
    "gap": 75200,
    "chasing": "Simmons College of Kentucky",
@@ -201,7 +201,7 @@
    "total": 199,
    "leader": {
     "name": "Elmgrove Foundation, Inc.",
-    "value": 5
+    "value": 6
    },
    "gap": 1,
    "chasing": "Bloom Elementary PTA",
