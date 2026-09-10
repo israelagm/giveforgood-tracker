@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T21:01:23.622Z",
+ "ts": "2026-09-10T21:02:14.890Z",
  "tier": "Tier 1",
  "org": {
   "raised": 19841,
@@ -27,8 +27,8 @@
     "name": "Amped",
     "value": 13978500
    },
-   "gap": 1300,
-   "chasing": "The Arrow Fund",
+   "gap": 4600,
+   "chasing": "ACLU of Kentucky Foundation",
    "scored": true
   },
   {
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 611
    },
-   "gap": 26,
+   "gap": 27,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 770
+    "value": 771
    },
    "gap": 25,
    "chasing": "The Louisville Orchestra",
