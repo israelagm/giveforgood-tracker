@@ -73,6 +73,16 @@
   .stalebar a{color:#7a5c00}
   .meta.pending{color:#9a7400;font-style:italic}
   .closed-head{margin-top:28px;padding-top:18px;border-top:1px solid var(--line)}
+  .wins{margin-top:22px;border:1.5px solid var(--gold);background:var(--gold-soft);
+    border-radius:12px;padding:14px 16px}
+  .wins-top{font-size:16px;font-weight:750;color:#7a5c00}
+  .wins-top b{font-size:19px}
+  .win{margin-top:9px;font-size:14px;color:var(--ink)}
+  .win-amt{display:inline-block;min-width:58px;font-weight:800;color:var(--gold)}
+  .win-when{color:var(--muted);font-size:13px}
+  .win-note{margin-left:58px;font-size:12.5px;color:var(--muted)}
+  .win-foot{margin-top:11px;font-size:12.5px}
+  .win-foot a{color:#7a5c00}
   @media (max-width:520px){ .amount{font-size:34px} body{padding:14px} }
 </style>
 </head>
@@ -213,6 +223,26 @@ function render(){
     h.push('</div>');
   });
 
+  // Prizes actually banked. Sits above the standings because it's the part
+  // that is settled — nothing here can be lost.
+  if (WINS && WINS.length) {
+    var won = WINS.reduce(function(t, w){ return t + (Number(w.amount) || 0); }, 0);
+    h.push('<div class="wins">');
+    h.push('<div class="wins-top">🎟️ <b>' + money(won) + '</b> in prizes won' +
+      (WINS.length > 1 ? ' · ' + WINS.length + ' prizes' : '') + '</div>');
+    WINS.forEach(function(w){
+      h.push('<div class="win">' +
+        '<span class="win-amt">' + money(Number(w.amount) || 0) + '</span> ' +
+        '<b>' + esc(w.prize) + '</b>' +
+        (w.window ? ' <span class="win-when">' + esc(w.window) + '</span>' : '') +
+        (w.note ? '<div class="win-note">' + esc(w.note) + '</div>' : '') +
+        '</div>');
+    });
+    h.push('<div class="win-foot"><a href="' + PRIZES_PAGE + '"' + NEWTAB +
+      '>All prize winners \u2197</a></div>');
+    h.push('</div>');
+  }
+
   // Finished prizes move out of the way. What's still winnable stays at the
   // top where it can be acted on; results become a record you scroll to.
   var open = prizes.filter(function(p){ return p.status !== 'final'; });
@@ -337,6 +367,16 @@ function tickClocks(){
 var LIVE_ENDPOINT = '';
 
 var LEADERBOARDS = 'https://www.giveforgoodlouisville.org/p/leaderboards';
+var PRIZES_PAGE = 'https://www.giveforgoodlouisville.org/p/prizes';
+
+/**
+ * Prizes awarded outside the leaderboards — Golden Tickets, Greatest Two
+ * Minutes in Giving, and the rest. The event keeps those winner tables behind
+ * a login, and they can't be inferred from the donation feed either: a Golden
+ * Ticket adds $1,000, but a real $1,000 gift looks exactly the same. So they
+ * are recorded by hand in wins.json and read from this origin.
+ */
+var WINS = null;
 
 // Every link here leaves for giveforgoodlouisville.org. They all open in a new
 // tab so nobody loses the tracker — and, on a phone, so a half-finished
@@ -375,6 +415,17 @@ function showLoadError(){
   document.getElementById('root').innerHTML =
     '<div class="empty">Couldn\'t load the latest numbers.<br>' +
     '<a href="' + LEADERBOARDS + '"' + NEWTAB + '>Official leaderboards</a></div>';
+}
+
+function pollWins(){
+  fetch('wins.json?t=' + Date.now(), { cache: 'no-store' })
+    .then(function(r){ return r.ok ? r.json() : null; })
+    .then(function(d){
+      if (!d || !d.wins) return;
+      WINS = d.wins;
+      if (STATE) render();
+    })
+    .catch(function(){ /* the page is complete without it */ });
 }
 
 function pollRaw(){
@@ -425,6 +476,8 @@ function pollLive(){
     })
     .catch(function(err){ showLoadError(); console.warn('live:', err); });
 }
+
+pollWins();   // rarely changes; one read per load is plenty
 
 // Paint the previous reading first so a refresh is never a blank screen.
 STATE = loadLast();

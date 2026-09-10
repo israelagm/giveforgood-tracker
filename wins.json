@@ -1,0 +1,23 @@
+{
+  "_readme": [
+    "Prizes we've actually been awarded that aren't leaderboard-based —",
+    "Golden Tickets, Greatest Two Minutes in Giving, Discover the Good, and so on.",
+    "",
+    "These live here rather than being fetched, because the event's winner tables",
+    "sit behind a login. Add an entry when a win is announced on",
+    "https://www.giveforgoodlouisville.org/p/prizes",
+    "",
+    "Edit straight from a phone: open the repo, tap wins.json, tap the pencil.",
+    "amount is in whole dollars. note is optional.",
+    "Delete nothing else; the page reads only the wins array."
+  ],
+  "wins": [
+    {
+      "prize": "Golden Ticket",
+      "window": "11am – 12pm",
+      "amount": 1000,
+      "note": "Drawn on Tereza Harris's donation",
+      "sponsor": "Derby City Gaming & Hotel"
+    }
+  ]
+}
