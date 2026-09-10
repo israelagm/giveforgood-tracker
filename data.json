@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T15:12:06.072Z",
+ "ts": "2026-09-10T15:12:57.772Z",
  "tier": "Tier 1",
  "org": {
   "raised": 11013,
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 443
    },
-   "gap": 3,
+   "gap": 4,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 302
+    "value": 303
    },
-   "gap": 3,
+   "gap": 4,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -115,7 +115,7 @@
     "name": "Amped",
     "value": 12929500
    },
-   "gap": 51700,
+   "gap": 61700,
    "chasing": "The Prisoner's Hope",
    "scored": true
   },
@@ -157,9 +157,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 93
+    "value": 94
    },
-   "gap": 15,
+   "gap": 16,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
