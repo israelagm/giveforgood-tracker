@@ -1,8 +1,8 @@
 {
- "ts": "2026-09-10T15:24:10.955Z",
+ "ts": "2026-09-10T15:25:02.686Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 11198,
+  "raised": 11203,
   "donors": 255,
   "donations": 255,
   "avgGift": 36,
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 70,
-   "value": 1119800,
+   "value": 1120300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12940500
    },
-   "gap": 14700,
+   "gap": 14200,
    "chasing": "Hope Southern Indiana",
    "scored": true
   },
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 395
+    "value": 397
    },
-   "gap": 2,
+   "gap": 3,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 312,
+   "value": 313,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 451
+    "value": 452
    },
-   "gap": 7,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 312,
+   "value": 313,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 319
+    "value": 321
    },
-   "gap": 7,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 57,
-   "value": 956800,
+   "value": 957300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12929500
    },
-   "gap": 57700,
+   "gap": 57200,
    "chasing": "Lighthouse Academy at Newburg/Lighthouse Promise, Inc.",
    "scored": true
   },
@@ -152,14 +152,14 @@
    "end": "2026-09-10T11:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 91,
+   "value": 92,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 109
+    "value": 111
    },
-   "gap": 18,
+   "gap": 19,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23416546
+ "lastDonationId": 23416634
 }
