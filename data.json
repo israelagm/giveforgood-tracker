@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T17:15:46.969Z",
+ "ts": "2026-09-10T17:16:38.827Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 15333,
-  "donors": 310,
-  "donations": 310,
+  "raised": 15338,
+  "donors": 311,
+  "donations": 311,
   "avgGift": 37,
   "goal": 20000
  },
@@ -19,15 +19,15 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 55,
-   "value": 1533300,
+   "rank": 56,
+   "value": 1533800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13063500
    },
-   "gap": 26700,
+   "gap": 26200,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 310,
+   "value": 311,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 484
    },
-   "gap": 3,
+   "gap": 2,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 414,
+   "value": 415,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 569
    },
-   "gap": 84,
+   "gap": 83,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 414,
+   "value": 415,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 414
+    "value": 415
    },
    "gap": null,
    "chasing": null,
@@ -108,15 +108,15 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1370300,
+   "value": 1370800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13052500
    },
-   "gap": 200,
-   "chasing": "Walden School",
+   "gap": 42100,
+   "chasing": "St. Vincent de Paul Louisville",
    "scored": true
   },
   {
@@ -174,14 +174,14 @@
    "end": "2026-09-10T14:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 25,
+   "value": 26,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 29
    },
-   "gap": 4,
+   "gap": 3,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
