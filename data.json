@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T19:02:32.045Z",
+ "ts": "2026-09-10T19:03:23.762Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 18450,
-  "donors": 390,
-  "donations": 390,
+  "raised": 18565,
+  "donors": 392,
+  "donations": 392,
   "avgGift": 34,
   "goal": 20000
  },
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 54,
-   "value": 1845000,
+   "rank": 53,
+   "value": 1856500,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13381000
    },
-   "gap": 3800,
-   "chasing": "Paws with Purpose",
+   "gap": 11000,
+   "chasing": "YMCA of Greater Louisville",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 390,
+   "value": 392,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 541
    },
-   "gap": 16,
+   "gap": 14,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 550,
+   "value": 552,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 679
+    "value": 680
    },
-   "gap": 7,
+   "gap": 5,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 550,
+   "value": 552,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 550
+    "value": 552
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1682000,
+   "value": 1693500,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13370000
    },
-   "gap": 25200,
+   "gap": 13700,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
