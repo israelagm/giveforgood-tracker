@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T14:45:00.334Z",
+ "ts": "2026-09-10T14:45:52.616Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 9811,
-  "donors": 215,
-  "donations": 215,
+  "raised": 9851,
+  "donors": 217,
+  "donations": 217,
   "avgGift": 39,
   "goal": 20000
  },
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 73,
-   "value": 980600,
+   "value": 981100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12810500
    },
-   "gap": 500,
+   "gap": 2500,
    "chasing": "United Crescent Hill Ministries",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 248,
+   "value": 249,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 416
+    "value": 418
    },
-   "gap": 11,
+   "gap": 12,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 248,
+   "value": 249,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 259
+    "value": 261
    },
-   "gap": 11,
+   "gap": 12,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -152,12 +152,12 @@
    "end": "2026-09-10T11:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 36,
+   "value": 39,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 52
+    "value": 55
    },
    "gap": 16,
    "chasing": "Bloom Elementary PTA",
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23413943
+ "lastDonationId": 23414008
 }
