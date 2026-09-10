@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T20:02:02.089Z",
+ "ts": "2026-09-10T20:02:53.864Z",
  "tier": "Tier 1",
  "org": {
   "raised": 18995,
@@ -195,7 +195,7 @@
    "start": "2026-09-10T16:00:00.000-04:00",
    "end": "2026-09-10T17:59:59.000-04:00",
    "status": "live",
-   "rank": 2,
+   "rank": 3,
    "value": 2,
    "field": "donors",
    "total": 199,
@@ -204,7 +204,7 @@
     "value": 2
    },
    "gap": 0,
-   "chasing": "Bloom Elementary PTA",
+   "chasing": "Elmgrove Foundation, Inc.",
    "scored": true
   },
   {
