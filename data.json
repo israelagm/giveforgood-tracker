@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T16:17:50.250Z",
+ "ts": "2026-09-10T16:18:42.319Z",
  "tier": "Tier 1",
  "org": {
   "raised": 13378,
@@ -19,13 +19,13 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 60,
+   "rank": 61,
    "value": 1337800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13021500
+    "value": 13031500
    },
    "gap": 5700,
    "chasing": "The Parklands of Floyds Fork",
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 433
+    "value": 435
    },
    "gap": 9,
    "chasing": "Louisville Public Media",
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 498
+    "value": 499
    },
-   "gap": 71,
+   "gap": 73,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13010500
+    "value": 13020500
    },
    "gap": 8200,
    "chasing": "Sweet Evening Breeze",
