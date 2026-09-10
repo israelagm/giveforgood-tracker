@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T23:18:04.069Z",
+ "ts": "2026-09-10T23:18:55.599Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 22235,
+  "raised": 22245,
   "donors": 468,
-  "donations": 753,
-  "avgGift": 29.52855245683931,
+  "donations": 755,
+  "avgGift": 29.4635761589404,
   "goal": 20000
  },
  "prizes": [
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 67,
-   "value": 2223500,
+   "rank": 69,
+   "value": 2224500,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14712000
+    "value": 14714000
    },
-   "gap": 29000,
-   "chasing": "National Stem Cell Foundation",
+   "gap": 1800,
+   "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
   {
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 710
+    "value": 711
    },
    "gap": 54,
    "chasing": "ART FM",
@@ -63,16 +63,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 2,
-   "value": 753,
+   "rank": 3,
+   "value": 755,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 902
    },
-   "gap": 149,
-   "chasing": "ART FM",
+   "gap": 1,
+   "chasing": "Bloom Elementary PTA",
    "scored": true
   },
   {
@@ -85,16 +85,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 1,
-   "value": 753,
+   "rank": 2,
+   "value": 755,
    "field": "donations",
    "total": 199,
    "leader": {
-    "name": "Hawthorne Elementary PTA",
-    "value": 753
+    "name": "Bloom Elementary PTA",
+    "value": 756
    },
-   "gap": null,
-   "chasing": null,
+   "gap": 1,
+   "chasing": "Bloom Elementary PTA",
    "scored": true
   },
   {
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 60,
-   "value": 2060500,
+   "value": 2061500,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14701000
+    "value": 14703000
    },
-   "gap": 30000,
+   "gap": 29000,
    "chasing": "USA Cares",
    "scored": true
   },
@@ -218,14 +218,14 @@
    "end": "2026-09-10T20:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 78,
+   "value": 80,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 93
+    "value": 101
    },
-   "gap": 15,
+   "gap": 21,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
