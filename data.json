@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T21:48:37.120Z",
+ "ts": "2026-09-10T21:49:28.535Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 20261,
-  "donors": 429,
-  "donations": 634,
-  "avgGift": 31.957413249211356,
+  "raised": 20266,
+  "donors": 430,
+  "donations": 635,
+  "avgGift": 31.91496062992126,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 67,
-   "value": 2026100,
+   "value": 2026600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14037000
    },
-   "gap": 15400,
+   "gap": 14900,
    "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 429,
+   "value": 430,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 651
+    "value": 652
    },
-   "gap": 39,
+   "gap": 38,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,7 +64,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 634,
+   "value": 635,
    "field": "donations",
    "total": 665,
    "leader": {
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 634,
+   "value": 635,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 634
+    "value": 635
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 59,
-   "value": 1863100,
+   "value": 1863600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14026000
    },
-   "gap": 9800,
+   "gap": 9300,
    "chasing": "Waterfront Botanical Gardens",
    "scored": true
   },
