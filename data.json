@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T18:52:08.789Z",
+ "ts": "2026-09-10T18:53:00.597Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 18191,
-  "donors": 378,
-  "donations": 378,
+  "raised": 18211,
+  "donors": 379,
+  "donations": 379,
   "avgGift": 34,
   "goal": 20000
  },
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 54,
-   "value": 1819100,
+   "value": 1820100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13371000
+    "value": 13381000
    },
-   "gap": 29700,
+   "gap": 28700,
    "chasing": "Paws with Purpose",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 529,
+   "value": 531,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 669
+    "value": 670
    },
-   "gap": 22,
+   "gap": 21,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 529,
+   "value": 531,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 529
+    "value": 531
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1656100,
+   "value": 1658100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13360000
+    "value": 13370000
    },
-   "gap": 39800,
+   "gap": 37800,
    "chasing": "The Louisville Free Public Library Foundation",
    "scored": true
   },
@@ -174,12 +174,12 @@
    "end": "2026-09-10T14:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 133,
+   "value": 136,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 133
+    "value": 136
    },
    "gap": null,
    "chasing": null,
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23427745
+ "lastDonationId": 23427812
 }
