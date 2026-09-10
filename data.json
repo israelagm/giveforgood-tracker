@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T14:48:28.075Z",
+ "ts": "2026-09-10T14:49:19.892Z",
  "tier": "Tier 1",
  "org": {
   "raised": 9901,
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 73,
+   "rank": 75,
    "value": 990100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 12810500
+    "value": 12870500
    },
-   "gap": 20600,
-   "chasing": "W.A.G.S. Pet Therapy of Kentucky, Inc",
+   "gap": 14200,
+   "chasing": "Louisville Urban League",
    "scored": true
   },
   {
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 367
    },
-   "gap": 5,
+   "gap": 6,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 419
+    "value": 420
    },
-   "gap": 6,
+   "gap": 7,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 264
+    "value": 265
    },
-   "gap": 6,
+   "gap": 7,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -107,13 +107,13 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 59,
+   "rank": 60,
    "value": 827100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 12799500
+    "value": 12859500
    },
    "gap": 5700,
    "chasing": "Highlands Community Ministries",
@@ -157,9 +157,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 57
+    "value": 58
    },
-   "gap": 15,
+   "gap": 16,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
