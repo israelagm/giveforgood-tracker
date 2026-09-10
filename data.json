@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T17:21:50.569Z",
+ "ts": "2026-09-10T17:22:42.103Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 15418,
-  "donors": 313,
-  "donations": 313,
+  "raised": 15443,
+  "donors": 314,
+  "donations": 314,
   "avgGift": 37,
   "goal": 20000
  },
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 56,
-   "value": 1541800,
+   "value": 1544300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13073500
    },
-   "gap": 23700,
+   "gap": 21200,
    "chasing": "Friends of the Belle",
    "scored": true
   },
@@ -42,12 +42,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 313,
+   "value": 314,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 486
+    "value": 487
    },
    "gap": 1,
    "chasing": "ART FM",
@@ -64,12 +64,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 419,
+   "value": 420,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 575
+    "value": 576
    },
    "gap": 81,
    "chasing": "The Louisville Orchestra",
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 419,
+   "value": 420,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 419
+    "value": 420
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1378800,
+   "value": 1381300,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13062500
    },
-   "gap": 41700,
+   "gap": 39200,
    "chasing": "Walden School",
    "scored": true
   },
@@ -174,12 +174,12 @@
    "end": "2026-09-10T14:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 30,
+   "value": 31,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 33
+    "value": 34
    },
    "gap": 3,
    "chasing": "Bloom Elementary PTA",
