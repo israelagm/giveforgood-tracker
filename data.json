@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T19:35:20.225Z",
+ "ts": "2026-09-10T19:36:11.648Z",
  "tier": "Tier 1",
  "org": {
   "raised": 18785,
@@ -115,7 +115,7 @@
     "name": "Amped",
     "value": 13407500
    },
-   "gap": 1700,
+   "gap": 6700,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
