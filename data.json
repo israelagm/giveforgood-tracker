@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T16:31:42.103Z",
+ "ts": "2026-09-10T16:32:34.069Z",
  "tier": "Tier 1",
  "org": {
   "raised": 13793,
@@ -19,7 +19,7 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 58,
+   "rank": 60,
    "value": 1379300,
    "field": "dollars_in_cents",
    "total": 665,
@@ -27,8 +27,8 @@
     "name": "Amped",
     "value": 13050000
    },
-   "gap": 500,
-   "chasing": "Louisville Habitat",
+   "gap": 200,
+   "chasing": "Hildegard House",
    "scored": true
   },
   {
