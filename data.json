@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T21:21:08.666Z",
+ "ts": "2026-09-10T21:21:59.971Z",
  "tier": "Tier 1",
  "org": {
   "raised": 20041,
@@ -27,7 +27,7 @@
     "name": "Amped",
     "value": 14008500
    },
-   "gap": 16900,
+   "gap": 19400,
    "chasing": "Louisville Story Program",
    "scored": true
   },
