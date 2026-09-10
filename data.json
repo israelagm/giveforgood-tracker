@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T16:45:34.026Z",
+ "ts": "2026-09-10T16:46:26.271Z",
  "tier": "Tier 1",
  "org": {
   "raised": 13863,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13057500
+    "value": 13058500
    },
    "gap": 4200,
    "chasing": "The Parklands of Floyds Fork",
@@ -47,10 +47,10 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 456
+    "value": 457
    },
-   "gap": 24,
-   "chasing": "Louisville Public Media",
+   "gap": 26,
+   "chasing": "Bloom Elementary PTA",
    "scored": true
   },
   {
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 513
    },
-   "gap": 89,
+   "gap": 90,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13046500
+    "value": 13047500
    },
    "gap": 45200,
    "chasing": "New Directions Housing Corporation",
