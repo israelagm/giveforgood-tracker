@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T15:13:49.701Z",
+ "ts": "2026-09-10T15:14:41.816Z",
  "tier": "Tier 1",
  "org": {
   "raised": 11048,
@@ -19,7 +19,7 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 68,
+   "rank": 69,
    "value": 1104800,
    "field": "dollars_in_cents",
    "total": 665,
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 387
+    "value": 389
    },
-   "gap": 2,
+   "gap": 4,
    "chasing": "Louisville Public Media",
    "scored": true
   },
