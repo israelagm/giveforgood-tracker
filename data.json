@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T19:59:26.645Z",
+ "ts": "2026-09-10T20:00:18.273Z",
  "tier": "Tier 1",
  "org": {
   "raised": 18985,
@@ -194,7 +194,7 @@
    "rankBy": "donors",
    "start": "2026-09-10T16:00:00.000-04:00",
    "end": "2026-09-10T17:59:59.000-04:00",
-   "status": "upcoming",
+   "status": "live",
    "rank": null,
    "value": 0,
    "field": "donors",
