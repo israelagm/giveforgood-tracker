@@ -1,8 +1,8 @@
 {
- "ts": "2026-09-10T16:53:21.019Z",
+ "ts": "2026-09-10T16:54:12.604Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 13943,
+  "raised": 13948,
   "donors": 297,
   "donations": 297,
   "avgGift": 36,
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 62,
-   "value": 1394300,
+   "value": 1394800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13058500
    },
-   "gap": 8500,
+   "gap": 8000,
    "chasing": "New Directions Housing Corporation",
    "scored": true
   },
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 465
+    "value": 467
    },
-   "gap": 1,
+   "gap": 3,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 383,
+   "value": 384,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 547
+    "value": 549
    },
-   "gap": 95,
+   "gap": 96,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 383,
+   "value": 384,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 383
+    "value": 384
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1231300,
+   "value": 1231800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13047500
    },
-   "gap": 37200,
+   "gap": 36700,
    "chasing": "New Directions Housing Corporation",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23421413
+ "lastDonationId": 23421458
 }
