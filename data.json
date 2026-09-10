@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T15:31:58.082Z",
+ "ts": "2026-09-10T15:32:50.084Z",
  "tier": "Tier 1",
  "org": {
   "raised": 11353,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 12940500
+    "value": 12945500
    },
    "gap": 13500,
    "chasing": "Evolve502",
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 405
+    "value": 406
    },
-   "gap": 5,
+   "gap": 6,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 456
+    "value": 458
    },
-   "gap": 7,
+   "gap": 9,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 328
+    "value": 330
    },
-   "gap": 7,
+   "gap": 9,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 12929500
+    "value": 12934500
    },
    "gap": 42200,
    "chasing": "Lighthouse Academy at Newburg/Lighthouse Promise, Inc.",
@@ -157,9 +157,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 120
+    "value": 121
    },
-   "gap": 20,
+   "gap": 21,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
