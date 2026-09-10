@@ -1,8 +1,8 @@
 {
- "ts": "2026-09-10T15:52:45.060Z",
+ "ts": "2026-09-10T15:53:36.814Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 12768,
+  "raised": 12778,
   "donors": 272,
   "donations": 272,
   "avgGift": 38,
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 62,
-   "value": 1276800,
+   "value": 1277800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12968000
    },
-   "gap": 9200,
+   "gap": 8200,
    "chasing": "Awake Ministries",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 337,
+   "value": 338,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 478
+    "value": 479
    },
-   "gap": 16,
+   "gap": 15,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 337,
+   "value": 338,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 353
    },
-   "gap": 16,
+   "gap": 15,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 49,
-   "value": 1113800,
+   "value": 1114800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12957000
    },
-   "gap": 4700,
+   "gap": 3700,
    "chasing": "Home of the Innocents",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23418142
+ "lastDonationId": 23418209
 }
