@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T23:42:08.763Z",
+ "ts": "2026-09-10T23:43:00.238Z",
  "tier": "Tier 1",
  "org": {
   "raised": 22571,
@@ -27,7 +27,7 @@
     "name": "Amped",
     "value": 14733000
    },
-   "gap": 28900,
+   "gap": 43900,
    "chasing": "The Waldorf School of Louisville",
    "scored": true
   },
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 729
+    "value": 730
    },
    "gap": 58,
    "chasing": "ART FM",
