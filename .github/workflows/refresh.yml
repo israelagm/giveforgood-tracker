@@ -1,30 +1,28 @@
 name: Refresh leaderboard data
 
+# Cron is not the engine here. GitHub queues scheduled runs best-effort on
+# free public repos and drops them under load — on this repo not one */5 run
+# ever fired. Instead a single job runs for hours, refreshing on its own loop,
+# and the schedule exists only to queue a successor when it finishes.
 on:
-  schedule:
-    # Five minutes is GitHub's floor for cron, which is too coarse for a prize
-    # window decided by a handful of donors. Each run loops internally,
-    # refreshing about once a minute until the next run takes over.
-    - cron: '*/5 * * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
+  schedule:
+    - cron: '*/10 * * * *'
 
 permissions:
   contents: write
 
 concurrency:
-  # A new scheduled run replaces the previous looping one, so only one process
-  # is ever pushing. Without this the runs overlap and race.
   group: refresh
-  cancel-in-progress: true
+  # NOT cancel-in-progress: a scheduled run must wait its turn rather than kill
+  # the long-running one. GitHub keeps one run pending per group, so whenever
+  # cron does fire it becomes the successor and starts the moment this ends.
+  cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
-    env:
-      CHAT_WEBHOOK: ${{ secrets.CHAT_WEBHOOK }}
+    timeout-minutes: 350        # just under the 6-hour ceiling for a job
     steps:
       - uses: actions/checkout@v4
 
@@ -32,43 +30,42 @@ jobs:
         with:
           node-version: '20'
 
-      # Readings land on their own branch, never on main. Pages rebuilds on
-      # every push to main, and a commit a minute kept cancelling those builds
-      # so index.html could never deploy. Keeping main quiet fixes that, and
-      # the page reads the data branch through raw.githubusercontent.com.
+      # Readings land on their own branch, never on main, so publishing data
+      # never triggers a Pages rebuild. Pages builds once, when code changes.
       - name: Prepare data branch
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
-            git fetch origin data
+            git fetch origin data:data
             git worktree add out data
           else
-            git worktree add --orphan -b data out || {
-              git worktree add -d out && cd out && git checkout --orphan data && cd ..
-            }
+            git worktree add --orphan -b data out
           fi
 
-      - name: Refresh on a loop
+      - name: Refresh until the event is over
         run: |
           cd out
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          for i in $(seq 1 5); do
-            echo "::group::pass $i"
-            node ../scripts/refresh.mjs || echo "fetch failed, will retry next pass"
+          # Late giving closes at noon ET on the 11th; stop shortly after.
+          STOP=$(date -u -d '2026-09-11T17:00:00Z' +%s)
+          DEADLINE=$(( $(date -u +%s) + 340*60 ))
+
+          while :; do
+            NOW=$(date -u +%s)
+            [ "$NOW" -ge "$STOP" ] && { echo "event over"; break; }
+            [ "$NOW" -ge "$DEADLINE" ] && { echo "handing off to the next run"; break; }
+
+            node ../scripts/refresh.mjs || echo "fetch failed; retrying next pass"
 
             if git status --porcelain data.json | grep -q .; then
               git add data.json
-              git commit -q -m "Standings $(TZ=America/New_York date '+%-I:%M %p ET')"
+              git commit -q -m "Standings $(TZ=America/New_York date '+%-I:%M:%S %p ET')"
               git pull --rebase --autostash -q origin data 2>/dev/null || true
-              git push -q origin data || echo "push rejected, next pass will retry"
-            else
-              echo "no change"
+              git push -q origin data || echo "push rejected; retrying next pass"
             fi
-            echo "::endgroup::"
 
-            [ "$i" -lt 5 ] && sleep 55
+            sleep 45
           done
-          exit 0
