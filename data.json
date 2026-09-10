@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T16:23:55.448Z",
+ "ts": "2026-09-10T16:24:47.081Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 13628,
-  "donors": 289,
-  "donations": 289,
-  "avgGift": 36,
+  "raised": 13778,
+  "donors": 291,
+  "donations": 291,
+  "avgGift": 37,
   "goal": 20000
  },
  "prizes": [
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 61,
-   "value": 1362800,
+   "rank": 57,
+   "value": 1377800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13032500
+    "value": 13037500
    },
-   "gap": 4200,
-   "chasing": "Hildegard House",
+   "gap": 2000,
+   "chasing": "Louisville Habitat",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 289,
+   "value": 291,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 438
    },
-   "gap": 10,
+   "gap": 8,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 374,
+   "value": 376,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 503
+    "value": 504
    },
-   "gap": 76,
+   "gap": 74,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 374,
+   "value": 376,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 374
+    "value": 376
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 46,
-   "value": 1199800,
+   "value": 1214800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13021500
+    "value": 13026500
    },
-   "gap": 36200,
+   "gap": 21200,
    "chasing": "New Directions Housing Corporation",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23419587
+ "lastDonationId": 23419754
 }
