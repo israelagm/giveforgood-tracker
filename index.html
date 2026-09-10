@@ -158,7 +158,23 @@ function render(){
     '<div><b>' + num(o.donations) + '</b>gifts</div>' +
     '<div><b>' + money(o.avgGift) + '</b>avg gift</div></div>');
 
-  var prizes = s.prizes || [];
+  var dataTs = new Date(s.ts).getTime();
+  var ageMin = (Date.now() - dataTs) / 60000;
+
+  // Status is recomputed here, not taken from the file — see statusOf().
+  var prizes = (s.prizes || []).map(function(p){
+    var c = {}; for (var k in p) c[k] = p[k];
+    c.status = statusOf(p);
+    c.pending = isPending(p, dataTs);
+    return c;
+  });
+
+  if (ageMin > 3) {
+    h.push('<div class="stalebar">These numbers are ' + Math.round(ageMin) +
+      ' minutes old. <a href="https://www.giveforgoodlouisville.org/p/leaderboards">' +
+      'Official leaderboards</a></div>');
+  }
+
   // The hero is for the timed window that's open right now. All-day boards
   // (Grand Prize, All Organizations) stay in the grid — they're always "live".
   var live = prizes.filter(function(p){ return p.status === 'live' && isWindow(p); });
@@ -266,8 +282,19 @@ function poll(){
       return fetch('data.json?t=' + Date.now(), { cache: 'no-store' })
         .then(function(r){ return r.json(); });
     })
-    .then(function(data){ STATE = data; render(); })
-    .catch(function(){ /* keep showing the last good reading */ });
+    .then(function(data){ STATE = data; })
+    .then(function(){ render(); })
+    .catch(function(err){
+      // A render bug must not look like a network failure — it silently left
+      // the page on "Loading…" once already.
+      if (!STATE) {
+        document.getElementById('root').innerHTML =
+          '<div class="empty">Couldn\'t load the latest numbers.<br>' +
+          '<a href="https://www.giveforgoodlouisville.org/p/leaderboards">' +
+          'Official leaderboards</a></div>';
+      }
+      console.error(err);
+    });
 }
 
 poll();
