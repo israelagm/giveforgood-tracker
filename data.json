@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T17:03:41.771Z",
+ "ts": "2026-09-10T17:04:33.651Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 14078,
-  "donors": 301,
-  "donations": 301,
+  "raised": 14093,
+  "donors": 302,
+  "donations": 302,
   "avgGift": 36,
   "goal": 20000
  },
@@ -27,7 +27,7 @@
     "name": "Amped",
     "value": 13063500
    },
-   "gap": 8300,
+   "gap": 10300,
    "chasing": "United Crescent Hill Ministries",
    "scored": true
   },
@@ -173,16 +173,16 @@
    "start": "2026-09-10T13:00:00.000-04:00",
    "end": "2026-09-10T14:59:59.000-04:00",
    "status": "live",
-   "rank": 4,
-   "value": 2,
+   "rank": 2,
+   "value": 5,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 8
+    "value": 14
    },
-   "gap": 0,
-   "chasing": "Louisville Tool Library Inc",
+   "gap": 9,
+   "chasing": "Bloom Elementary PTA",
    "scored": true
   },
   {
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23421839
+ "lastDonationId": 23421960
 }
