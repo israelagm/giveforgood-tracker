@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T21:55:28.908Z",
+ "ts": "2026-09-10T21:56:20.156Z",
  "tier": "Tier 1",
  "org": {
   "raised": 20851,
@@ -201,9 +201,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 84
+    "value": 87
    },
-   "gap": 2,
+   "gap": 5,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
