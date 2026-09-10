@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T14:53:39.348Z",
+ "ts": "2026-09-10T14:54:31.205Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 10001,
-  "donors": 225,
-  "donations": 225,
+  "raised": 10291,
+  "donors": 227,
+  "donations": 227,
   "avgGift": 38,
   "goal": 20000
  },
@@ -152,14 +152,14 @@
    "end": "2026-09-10T11:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 49,
+   "value": 51,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 59
    },
-   "gap": 10,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23414449
+ "lastDonationId": 23414606
 }
