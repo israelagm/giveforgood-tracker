@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T22:11:46.557Z",
+ "ts": "2026-09-10T22:12:37.799Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 20986,
-  "donors": 439,
-  "donations": 655,
-  "avgGift": 32.03969465648855,
+  "raised": 20996,
+  "donors": 440,
+  "donations": 656,
+  "avgGift": 32.00609756097561,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 66,
-   "value": 2098600,
+   "value": 2099600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14067000
    },
-   "gap": 73500,
+   "gap": 72500,
    "chasing": "Gilda's Club Kentuckiana",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 439,
+   "value": 440,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 667
    },
-   "gap": 37,
+   "gap": 36,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 655,
+   "value": 656,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 826
    },
-   "gap": 35,
+   "gap": 34,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 655,
+   "value": 656,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 655
+    "value": 656
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 58,
-   "value": 1935600,
+   "value": 1936600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14056000
    },
-   "gap": 38700,
+   "gap": 37700,
    "chasing": "Paws with Purpose",
    "scored": true
   },
