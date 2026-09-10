@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T23:24:03.469Z",
+ "ts": "2026-09-10T23:24:54.727Z",
  "tier": "Tier 1",
  "org": {
   "raised": 22261,
@@ -27,8 +27,8 @@
     "name": "Amped",
     "value": 14718500
    },
-   "gap": 200,
-   "chasing": "The Parklands of Floyds Fork",
+   "gap": 26400,
+   "chasing": "National Stem Cell Foundation",
    "scored": true
   },
   {
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 718
+    "value": 719
    },
    "gap": 57,
    "chasing": "ART FM",
@@ -218,14 +218,14 @@
    "end": "2026-09-10T20:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 81,
+   "value": 82,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 107
    },
-   "gap": 26,
+   "gap": 25,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23445336
+ "lastDonationId": 23445528
 }
