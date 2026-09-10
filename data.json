@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T23:11:11.713Z",
+ "ts": "2026-09-10T23:12:03.491Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 21331,
+  "raised": 21336,
   "donors": 447,
-  "donations": 666,
-  "avgGift": 32.028528528528525,
+  "donations": 667,
+  "avgGift": 31.988005997001498,
   "goal": 20000
  },
  "prizes": [
@@ -19,15 +19,15 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 68,
-   "value": 2133100,
+   "rank": 69,
+   "value": 2133600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14699500
    },
-   "gap": 4700,
+   "gap": 4200,
    "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 666,
+   "value": 667,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 864
    },
-   "gap": 57,
+   "gap": 56,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 666,
+   "value": 667,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 666
+    "value": 667
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 60,
-   "value": 1970100,
+   "value": 1970600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14688500
    },
-   "gap": 49700,
+   "gap": 49200,
    "chasing": "Paws with Purpose",
    "scored": true
   },
@@ -218,14 +218,14 @@
    "end": "2026-09-10T20:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 3,
+   "value": 4,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Cultivating The Youth Experience, Inc.",
     "value": 7
    },
-   "gap": 2,
+   "gap": 1,
    "chasing": "Sonrisas Y Luz",
    "scored": true
   },
