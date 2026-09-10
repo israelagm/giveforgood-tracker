@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T19:37:03.734Z",
+ "ts": "2026-09-10T19:37:55.556Z",
  "tier": "Tier 1",
  "org": {
   "raised": 18785,
@@ -19,7 +19,7 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 53,
+   "rank": 54,
    "value": 1878500,
    "field": "dollars_in_cents",
    "total": 665,
@@ -27,8 +27,8 @@
     "name": "Amped",
     "value": 13418500
    },
-   "gap": 53000,
-   "chasing": "Bloom Elementary PTA",
+   "gap": 8000,
+   "chasing": "Awake Ministries",
    "scored": true
   },
   {
