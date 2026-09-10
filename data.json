@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T21:36:35.668Z",
+ "ts": "2026-09-10T21:37:27.571Z",
  "tier": "Tier 1",
  "org": {
   "raised": 20161,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14026000
+    "value": 14027000
    },
    "gap": 7400,
    "chasing": "Louisville Story Program",
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 647
    },
-   "gap": 36,
+   "gap": 37,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 801
+    "value": 803
    },
    "gap": 43,
    "chasing": "The Louisville Orchestra",
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14015000
+    "value": 14016000
    },
    "gap": 26900,
    "chasing": "National Stem Cell Foundation",
