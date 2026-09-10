@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T20:17:33.313Z",
+ "ts": "2026-09-10T20:18:24.844Z",
  "tier": "Tier 1",
  "org": {
   "raised": 19320,
@@ -25,7 +25,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13961000
+    "value": 13963500
    },
    "gap": 12000,
    "chasing": "Awake Ministries",
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 13950000
+    "value": 13952500
    },
    "gap": 43500,
    "chasing": "National Stem Cell Foundation",
