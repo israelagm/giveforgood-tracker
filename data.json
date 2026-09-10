@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T17:00:15.285Z",
+ "ts": "2026-09-10T17:01:07.032Z",
  "tier": "Tier 1",
  "org": {
   "raised": 14068,
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 470
    },
-   "gap": 3,
+   "gap": 4,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 556
+    "value": 557
    },
    "gap": 95,
    "chasing": "The Louisville Orchestra",
@@ -178,12 +178,12 @@
    "field": "donors",
    "total": 199,
    "leader": {
-    "name": "502 Dragon Boat Community",
-    "value": 0
+    "name": "Joyous Singers Inc",
+    "value": 1
    },
    "gap": null,
    "chasing": null,
-   "scored": false
+   "scored": true
   },
   {
    "id": "131284:donors",
