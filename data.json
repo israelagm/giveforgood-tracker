@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T19:53:25.618Z",
+ "ts": "2026-09-10T19:54:17.465Z",
  "tier": "Tier 1",
  "org": {
   "raised": 18885,
@@ -27,7 +27,7 @@
     "name": "Amped",
     "value": 13923500
    },
-   "gap": 36500,
+   "gap": 41500,
    "chasing": "Awake Ministries",
    "scored": true
   },
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 570
+    "value": 572
    },
    "gap": 20,
    "chasing": "Bloom Elementary PTA",
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 706
+    "value": 709
    },
-   "gap": 25,
+   "gap": 27,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -115,7 +115,7 @@
     "name": "Amped",
     "value": 13912500
    },
-   "gap": 76700,
+   "gap": 81700,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
