@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T21:07:24.647Z",
+ "ts": "2026-09-10T21:08:16.108Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 19856,
-  "donors": 413,
-  "donations": 607,
-  "avgGift": 32.71169686985173,
+  "raised": 19876,
+  "donors": 416,
+  "donations": 611,
+  "avgGift": 32.53027823240589,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 57,
-   "value": 1985600,
+   "value": 1987600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13988500
    },
-   "gap": 3100,
+   "gap": 1100,
    "chasing": "ACLU of Kentucky Foundation",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 413,
+   "value": 416,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 613
    },
-   "gap": 30,
+   "gap": 28,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 607,
+   "value": 611,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 776
+    "value": 777
    },
-   "gap": 25,
+   "gap": 21,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 607,
+   "value": 611,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 607
+    "value": 611
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 49,
-   "value": 1822600,
+   "value": 1824600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13977500
    },
-   "gap": 42600,
+   "gap": 40600,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
