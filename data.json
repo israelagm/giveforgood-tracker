@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-10T20:12:22.607Z",
+ "ts": "2026-09-10T20:13:13.971Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 19225,
+  "raised": 19230,
   "donors": 403,
-  "donations": 570,
-  "avgGift": 33.728070175438596,
+  "donations": 571,
+  "avgGift": 33.67775831873905,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 55,
-   "value": 1922500,
+   "value": 1923000,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13936000
    },
-   "gap": 21500,
+   "gap": 21000,
    "chasing": "Awake Ministries",
    "scored": true
   },
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 581
+    "value": 582
    },
    "gap": 9,
    "chasing": "ART FM",
@@ -64,7 +64,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 570,
+   "value": 571,
    "field": "donations",
    "total": 665,
    "leader": {
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 570,
+   "value": 571,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 570
+    "value": 571
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 48,
-   "value": 1759500,
+   "value": 1760000,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13925000
    },
-   "gap": 52700,
+   "gap": 52200,
    "chasing": "Simmons College of Kentucky",
    "scored": true
   },
@@ -196,14 +196,14 @@
    "end": "2026-09-10T17:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 7,
+   "value": 8,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Elmgrove Foundation, Inc.",
     "value": 8
    },
-   "gap": 1,
+   "gap": 0,
    "chasing": "Elmgrove Foundation, Inc.",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23431403
+ "lastDonationId": 23431686
 }
