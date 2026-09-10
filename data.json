@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T16:32:34.069Z",
+ "ts": "2026-09-10T16:33:26.494Z",
  "tier": "Tier 1",
  "org": {
   "raised": 13793,
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 442
    },
-   "gap": 11,
+   "gap": 12,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -115,7 +115,7 @@
     "name": "Amped",
     "value": 13039000
    },
-   "gap": 19700,
+   "gap": 27200,
    "chasing": "New Directions Housing Corporation",
    "scored": true
   },
