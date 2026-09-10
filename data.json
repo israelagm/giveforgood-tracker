@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T14:50:11.769Z",
+ "ts": "2026-09-10T14:51:03.930Z",
  "tier": "Tier 1",
  "org": {
   "raised": 9916,
@@ -20,15 +20,15 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 75,
-   "value": 990100,
+   "value": 991600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12870500
    },
-   "gap": 14200,
-   "chasing": "Louisville Urban League",
+   "gap": 21600,
+   "chasing": "W.A.G.S. Pet Therapy of Kentucky, Inc",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 219,
+   "value": 220,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 367
    },
-   "gap": 6,
+   "gap": 5,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 258,
+   "value": 260,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 420
+    "value": 421
    },
-   "gap": 7,
+   "gap": 6,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 258,
+   "value": 260,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 265
+    "value": 266
    },
-   "gap": 7,
+   "gap": 6,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 60,
-   "value": 827100,
+   "value": 828600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 12859500
    },
-   "gap": 5700,
+   "gap": 4200,
    "chasing": "Highlands Community Ministries",
    "scored": true
   },
@@ -157,9 +157,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 58
+    "value": 59
    },
-   "gap": 14,
+   "gap": 15,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
