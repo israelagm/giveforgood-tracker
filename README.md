@@ -8,16 +8,26 @@ finished prizes keeping their final placement.
 ## How it works
 
 ```
-GitHub Actions (every 5 min)  →  data.json  →  index.html
-   fetches the event API         committed      reads same-origin
-   server-side                   to the repo
+GitHub Actions          →  data.json           →  index.html
+  fetches the event API     committed to main      reads it from
+  server-side, ~1/min                              raw.githubusercontent.com
 ```
 
 The event's standings endpoints send no `Access-Control-Allow-Origin` header,
 so a browser on `github.io` cannot call them — the request is blocked before it
 leaves the device. The scheduled Action runs server-side, where CORS doesn't
-apply, and commits the result into the repo. The page then reads `data.json`
-from its own origin, which is always allowed.
+apply, and commits the result into the repo.
+
+The page reads that file from `raw.githubusercontent.com`, not from its own
+origin. GitHub Pages rebuilds on every commit, and when data refreshes about
+once a minute those builds queue and cancel each other — the Pages copy of
+`data.json` can sit several minutes behind the repo. `raw` serves the newest
+commit immediately and sends `access-control-allow-origin: *`, so the
+cross-origin read is allowed. Pages only has to serve `index.html`, which
+rarely changes. The page falls back to the same-origin copy if `raw` fails.
+
+Cron's floor is five minutes, so each run loops internally and refreshes about
+once a minute until the next run takes over.
 
 ## Which metric each prize uses
 
@@ -80,9 +90,13 @@ leaderboard data → Run workflow** to force a refresh without waiting for cron.
 
 ## Limits worth knowing
 
-- **Scheduled workflows have a 5-minute minimum and GitHub delays them under
-  load** — sometimes well past the scheduled time. The page shows how old the
-  reading is; don't assume it's current to the minute during a tight race.
+- **GitHub delays scheduled workflows under load.** The internal loop keeps
+  refreshing between cron firings, but a delayed run still leaves a gap. The
+  page shows how old the reading is and warns past three minutes.
+- Status (upcoming / live / final) is recomputed in the browser, not trusted
+  from the file — otherwise a window that closed after the last refresh would
+  still show LIVE. A closed window whose numbers predate the close is marked
+  provisional until the next refresh confirms it.
 - Prize *rules* aren't in the API, only leaderboards. Golden Tickets,
   #WhyIGive, Ambassador grants and randomized drawings aren't leaderboard-driven
   and won't appear here.
@@ -91,3 +105,19 @@ leaderboard data → Run workflow** to force a refresh without waiting for cron.
   the live leaderboard, so the audited count can come in slightly lower.
 - Before anyone scores in a window every org is tied at zero, so the page shows
   "no gifts yet" rather than an arbitrary rank.
+
+## Chat alerts
+
+Set a Google Chat webhook as a repo secret and the refresh job posts on window
+open and close (with final placement), rank changes inside the top 10, dollar
+and donor milestones, and single gifts of $250 or more:
+
+```bash
+gh secret set CHAT_WEBHOOK --repo israelagm/giveforgood-tracker
+```
+
+Get the URL from your Chat space: **Apps & integrations → Webhooks → Add**.
+Without the secret the job still refreshes the page and just logs what it would
+have posted. Tuning knobs (`ALERT_TOP_N`, `DOLLAR_MILESTONE`, `DONOR_MILESTONE`,
+`BIG_GIFT_DOLLARS`, `ANNOUNCE_EVERY_DONATION`) are environment variables read by
+`scripts/refresh.mjs`.

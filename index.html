@@ -243,19 +243,34 @@ function tickClocks(){
 }
 
 /**
- * data.json sits on this same origin, written by the GitHub Action. The event
- * API can't be called from here directly — it sends no CORS headers — which is
- * why a scheduled job fetches it server-side instead.
+ * Where the numbers come from.
+ *
+ * The event API can't be called from this page at all — it sends no CORS
+ * headers — so a GitHub Action fetches it server-side and commits data.json.
+ *
+ * We read that file from raw.githubusercontent.com rather than from our own
+ * origin, because GitHub Pages rebuilds on every commit and those builds queue
+ * up and cancel each other when the data refreshes once a minute — the Pages
+ * copy of data.json can sit minutes behind the repo. raw serves the newest
+ * commit immediately and sends `access-control-allow-origin: *`, so reading it
+ * cross-origin is allowed. Falls back to the same-origin copy if raw is
+ * unreachable.
  */
+var RAW = 'https://raw.githubusercontent.com/israelagm/giveforgood-tracker/main/data.json';
+
 function poll(){
-  fetch('data.json?t=' + Date.now(), { cache: 'no-store' })
-    .then(function(r){ return r.json(); })
+  fetch(RAW + '?t=' + Date.now(), { cache: 'no-store' })
+    .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+    .catch(function(){
+      return fetch('data.json?t=' + Date.now(), { cache: 'no-store' })
+        .then(function(r){ return r.json(); });
+    })
     .then(function(data){ STATE = data; render(); })
     .catch(function(){ /* keep showing the last good reading */ });
 }
 
 poll();
-setInterval(poll, 15000);
+setInterval(poll, 20000);
 setInterval(tickClocks, 1000);
 </script>
 </body>
