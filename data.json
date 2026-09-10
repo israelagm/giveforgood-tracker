@@ -1,10 +1,10 @@
 {
- "ts": "2026-09-10T16:08:18.093Z",
+ "ts": "2026-09-10T16:09:09.905Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 13243,
-  "donors": 284,
-  "donations": 284,
+  "raised": 13308,
+  "donors": 286,
+  "donations": 286,
   "avgGift": 36,
   "goal": 20000
  },
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 59,
-   "value": 1324300,
+   "value": 1330800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13021500
    },
-   "gap": 41700,
+   "gap": 35200,
    "chasing": "Hildegard House",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 4,
-   "value": 284,
+   "value": 286,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 431
    },
-   "gap": 8,
+   "gap": 6,
    "chasing": "Louisville Public Media",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 368,
+   "value": 370,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 489
+    "value": 490
    },
-   "gap": 74,
+   "gap": 72,
    "chasing": "The Louisville Orchestra",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 368,
+   "value": 370,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 368
+    "value": 370
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 47,
-   "value": 1161300,
+   "value": 1167800,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 13010500
    },
-   "gap": 21700,
+   "gap": 15200,
    "chasing": "Sweet Evening Breeze",
    "scored": true
   },
