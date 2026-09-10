@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-10T23:47:17.146Z",
+ "ts": "2026-09-10T23:48:08.698Z",
  "tier": "Tier 1",
  "org": {
   "raised": 22626,
@@ -19,13 +19,13 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 69,
+   "rank": 71,
    "value": 2262600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14733000
+    "value": 14753000
    },
    "gap": 58600,
    "chasing": "Louisville Classical Academy",
@@ -107,13 +107,13 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 60,
+   "rank": 62,
    "value": 2099600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14722000
+    "value": 14742000
    },
    "gap": 21400,
    "chasing": "Kentucky Performing Arts",
@@ -223,9 +223,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 109
+    "value": 110
    },
-   "gap": 6,
+   "gap": 7,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
