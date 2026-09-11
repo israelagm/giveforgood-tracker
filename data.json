@@ -1,8 +1,8 @@
 {
- "ts": "2026-09-11T00:53:32.492Z",
+ "ts": "2026-09-11T00:54:23.972Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 23616,
+  "raised": 23621,
   "donors": 501,
   "donations": 501,
   "avgGift": 29,
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 74,
-   "value": 2361600,
+   "value": 2362100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 15165300
    },
-   "gap": 14500,
+   "gap": 14000,
    "chasing": "The Waldorf School of Louisville",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 822,
+   "value": 823,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 967
+    "value": 968
    },
-   "gap": 21,
+   "gap": 24,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 822,
+   "value": 823,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 843
+    "value": 847
    },
-   "gap": 21,
+   "gap": 24,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 63,
-   "value": 2198600,
+   "value": 2199100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14754500
    },
-   "gap": 53500,
+   "gap": 53000,
    "chasing": "The Waldorf School of Louisville",
    "scored": true
   },
@@ -218,14 +218,14 @@
    "end": "2026-09-10T20:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 141,
+   "value": 142,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 148
+    "value": 150
    },
-   "gap": 7,
+   "gap": 8,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
