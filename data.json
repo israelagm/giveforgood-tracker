@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T01:15:32.064Z",
+ "ts": "2026-09-11T01:16:23.641Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 24296,
+  "raised": 24301,
   "donors": 513,
-  "donations": 849,
-  "avgGift": 28.617196702002357,
+  "donations": 850,
+  "avgGift": 28.589411764705883,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 73,
-   "value": 2429600,
+   "value": 2430100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 15165300
    },
-   "gap": 1900,
+   "gap": 1400,
    "chasing": "Kentucky Performing Arts",
    "scored": true
   },
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 792
+    "value": 793
    },
-   "gap": 56,
+   "gap": 57,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 849,
+   "value": 850,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 984
+    "value": 985
    },
-   "gap": 16,
+   "gap": 15,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 849,
+   "value": 850,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 865
    },
-   "gap": 16,
+   "gap": 15,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 65,
-   "value": 2266600,
+   "value": 2267100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14757000
    },
-   "gap": 17100,
+   "gap": 16600,
    "chasing": "Catholic Charities of Louisville",
    "scored": true
   },
