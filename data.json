@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T00:47:30.645Z",
+ "ts": "2026-09-11T00:48:22.296Z",
  "tier": "Tier 1",
  "org": {
   "raised": 23491,
@@ -27,7 +27,7 @@
     "name": "Metro United Way",
     "value": 15165300
    },
-   "gap": 26000,
+   "gap": 27000,
    "chasing": "The Waldorf School of Louisville",
    "scored": true
   },
@@ -41,7 +41,7 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 5,
+   "rank": 6,
    "value": 496,
    "field": "donors",
    "total": 665,
@@ -49,8 +49,8 @@
     "name": "The Louisville Orchestra",
     "value": 772
    },
-   "gap": 59,
-   "chasing": "Bloom Elementary PTA",
+   "gap": 1,
+   "chasing": "Kentucky Humane Society",
    "scored": true
   },
   {
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 961
    },
-   "gap": 1,
+   "gap": 7,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 811
+    "value": 817
    },
-   "gap": 1,
+   "gap": 7,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -115,7 +115,7 @@
     "name": "Amped",
     "value": 14754500
    },
-   "gap": 65000,
+   "gap": 66000,
    "chasing": "The Waldorf School of Louisville",
    "scored": true
   },
@@ -217,16 +217,16 @@
    "start": "2026-09-10T19:00:00.000-04:00",
    "end": "2026-09-10T20:59:59.000-04:00",
    "status": "live",
-   "rank": 1,
+   "rank": 2,
    "value": 129,
    "field": "donors",
    "total": 199,
    "leader": {
-    "name": "Hawthorne Elementary PTA",
-    "value": 129
+    "name": "Bloom Elementary PTA",
+    "value": 132
    },
-   "gap": null,
-   "chasing": null,
+   "gap": 3,
+   "chasing": "Bloom Elementary PTA",
    "scored": true
   },
   {
