@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T03:45:57.983Z",
+ "ts": "2026-09-11T03:46:49.157Z",
  "tier": "Tier 1",
  "org": {
   "raised": 25604,
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1120
+    "value": 1121
    },
-   "gap": 164,
+   "gap": 165,
    "chasing": "ART FM",
    "scored": true
   },
