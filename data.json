@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T00:27:36.448Z",
+ "ts": "2026-09-11T00:28:27.773Z",
  "tier": "Tier 1",
  "org": {
   "raised": 22841,
@@ -19,7 +19,7 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 74,
+   "rank": 75,
    "value": 2284100,
    "field": "dollars_in_cents",
    "total": 665,
@@ -27,8 +27,8 @@
     "name": "Metro United Way",
     "value": 14965300
    },
-   "gap": 47000,
-   "chasing": "Evolve502",
+   "gap": 7733,
+   "chasing": "Blessings in a Backpack Louisville Chapter",
    "scored": true
   },
   {
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 757
+    "value": 760
    },
-   "gap": 51,
+   "gap": 52,
    "chasing": "ART FM",
    "scored": true
   },
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 936
+    "value": 937
    },
-   "gap": 138,
+   "gap": 139,
    "chasing": "ART FM",
    "scored": true
   },
