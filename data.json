@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T02:13:35.714Z",
+ "ts": "2026-09-11T02:14:27.051Z",
  "tier": "Tier 1",
  "org": {
   "raised": 24922,
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 832
    },
-   "gap": 24,
+   "gap": 25,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
