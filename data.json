@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T03:24:37.402Z",
+ "ts": "2026-09-11T03:25:28.822Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 25569,
+  "raised": 25574,
   "donors": 548,
-  "donations": 949,
-  "avgGift": 26.94309799789252,
+  "donations": 950,
+  "avgGift": 26.92,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 76,
-   "value": 2556900,
+   "value": 2557400,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 23519800
    },
-   "gap": 5800,
+   "gap": 5300,
    "chasing": "Feed Louisville",
    "scored": true
   },
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 861
+    "value": 862
    },
    "gap": 13,
    "chasing": "Kentucky Humane Society",
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 949,
+   "value": 950,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1101
+    "value": 1103
    },
-   "gap": 152,
+   "gap": 153,
    "chasing": "ART FM",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 949,
+   "value": 950,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 949
+    "value": 950
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 66,
-   "value": 2393900,
+   "value": 2394400,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 22254800
    },
-   "gap": 11300,
+   "gap": 10800,
    "chasing": "Catholic Charities of Louisville",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23457500
+ "lastDonationId": 23457601
 }
