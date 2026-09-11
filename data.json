@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T03:16:56.325Z",
+ "ts": "2026-09-11T03:17:47.741Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 25534,
-  "donors": 546,
-  "donations": 943,
-  "avgGift": 27.077412513255567,
+  "raised": 25549,
+  "donors": 547,
+  "donations": 945,
+  "avgGift": 27.035978835978835,
   "goal": 20000
  },
  "prizes": [
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 76,
-   "value": 2553400,
+   "rank": 75,
+   "value": 2554900,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 23519800
    },
-   "gap": 1433,
-   "chasing": "Blessings in a Backpack Louisville Chapter",
+   "gap": 16100,
+   "chasing": "Kentucky Performing Arts",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 6,
-   "value": 546,
+   "value": 547,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 856
    },
-   "gap": 15,
+   "gap": 14,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
@@ -64,12 +64,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 943,
+   "value": 945,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1094
+    "value": 1096
    },
    "gap": 151,
    "chasing": "ART FM",
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 943,
+   "value": 945,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 943
+    "value": 945
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 66,
-   "value": 2390400,
+   "value": 2391900,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 22254800
    },
-   "gap": 14800,
+   "gap": 13300,
    "chasing": "Catholic Charities of Louisville",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23457381
+ "lastDonationId": 23457397
 }
