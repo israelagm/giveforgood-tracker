@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T02:00:47.117Z",
+ "ts": "2026-09-11T02:01:38.294Z",
  "tier": "Tier 1",
  "org": {
   "raised": 24426,
@@ -25,10 +25,10 @@
    "total": 665,
    "leader": {
     "name": "Metro United Way",
-    "value": 15367800
+    "value": 15369800
    },
-   "gap": 12400,
-   "chasing": "Kentucky Performing Arts",
+   "gap": 14900,
+   "chasing": "Whitney/Strong",
    "scored": true
   },
   {
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 826
    },
-   "gap": 18,
+   "gap": 19,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
