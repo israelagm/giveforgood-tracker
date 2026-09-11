@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T03:16:05.211Z",
+ "ts": "2026-09-11T03:16:56.325Z",
  "tier": "Tier 1",
  "org": {
   "raised": 25534,
@@ -115,7 +115,7 @@
     "name": "Metro United Way",
     "value": 22254800
    },
-   "gap": 12300,
+   "gap": 14800,
    "chasing": "Catholic Charities of Louisville",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23457350
+ "lastDonationId": 23457381
 }
