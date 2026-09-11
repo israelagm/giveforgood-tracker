@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T02:29:52.833Z",
+ "ts": "2026-09-11T02:30:44.123Z",
  "tier": "Tier 1",
  "org": {
   "raised": 25072,
@@ -19,13 +19,13 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 74,
+   "rank": 76,
    "value": 2507200,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
-    "value": 15369800
+    "value": 23419800
    },
    "gap": 8200,
    "chasing": "Volunteers of America Mid-States (VOA)",
@@ -69,7 +69,7 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1050
+    "value": 1053
    },
    "gap": 7,
    "chasing": "Bloom Elementary PTA",
@@ -107,13 +107,13 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 64,
+   "rank": 67,
    "value": 2344200,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
-    "name": "Amped",
-    "value": 14891800
+    "name": "Metro United Way",
+    "value": 22154800
    },
    "gap": 1100,
    "chasing": "Paws with Purpose",
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23455237
+ "lastDonationId": 23455412
 }
