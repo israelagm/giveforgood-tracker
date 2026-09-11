@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T02:24:44.270Z",
+ "ts": "2026-09-11T02:25:35.512Z",
  "tier": "Tier 1",
  "org": {
   "raised": 25037,
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 834
+    "value": 835
    },
-   "gap": 25,
+   "gap": 26,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23455002
+ "lastDonationId": 23455067
 }
