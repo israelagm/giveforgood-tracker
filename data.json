@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T01:23:13.311Z",
+ "ts": "2026-09-11T01:24:04.594Z",
  "tier": "Tier 1",
  "org": {
   "raised": 24326,
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 993
    },
-   "gap": 18,
+   "gap": 19,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 869
+    "value": 870
    },
-   "gap": 18,
+   "gap": 19,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23451777
+ "lastDonationId": 23452191
 }
