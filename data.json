@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T13:51:27.205Z",
+ "ts": "2026-09-11T13:52:18.697Z",
  "tier": "Tier 1",
  "org": {
   "raised": 25704,
   "donors": 553,
-  "donations": 961,
-  "avgGift": 26.747138397502603,
+  "donations": 962,
+  "avgGift": 26.719334719334718,
   "goal": 20000
  },
  "prizes": [
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23459672
+ "lastDonationId": 23460186
 }
