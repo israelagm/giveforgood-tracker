@@ -17,12 +17,13 @@ permissions:
   contents: write
 
 concurrency:
-  # Renamed from "refresh" after a run got stuck in_progress for 25+ minutes
-  # even after being cancelled twice (API and UI) — GitHub occasionally leaves
-  # a runner in that state, and cancel-in-progress:false meant every newly
-  # dispatched run just queued silently behind the zombie instead of running.
-  # A fresh group name sidesteps that without waiting on GitHub to notice.
-  group: refresh-v2
+  # Bumped twice now (refresh -> refresh-v2 -> refresh-v3), both times after
+  # a run got stuck reporting in_progress well past being cancelled — GitHub
+  # occasionally leaves a runner in that state, and cancel-in-progress:false
+  # meant every newly dispatched run just queued silently behind the zombie
+  # instead of running. A fresh group name sidesteps that without waiting on
+  # GitHub to notice; bump it again (-v4, -v5, ...) if it recurs.
+  group: refresh-v3
   cancel-in-progress: false
 
 jobs:
