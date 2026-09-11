@@ -1,8 +1,8 @@
 {
- "ts": "2026-09-11T00:50:57.206Z",
+ "ts": "2026-09-11T00:51:48.969Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 23591,
+  "raised": 23596,
   "donors": 500,
   "donations": 500,
   "avgGift": 29,
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 74,
-   "value": 2359100,
+   "value": 2359600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 15165300
    },
-   "gap": 17000,
+   "gap": 16500,
    "chasing": "The Waldorf School of Louisville",
    "scored": true
   },
@@ -64,12 +64,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 818,
+   "value": 819,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 964
+    "value": 965
    },
    "gap": 21,
    "chasing": "Bloom Elementary PTA",
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 818,
+   "value": 819,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 839
+    "value": 840
    },
    "gap": 21,
    "chasing": "Bloom Elementary PTA",
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 63,
-   "value": 2196100,
+   "value": 2196600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14754500
    },
-   "gap": 56000,
+   "gap": 55500,
    "chasing": "The Waldorf School of Louisville",
    "scored": true
   },
@@ -218,12 +218,12 @@
    "end": "2026-09-10T20:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 137,
+   "value": 138,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 146
+    "value": 147
    },
    "gap": 9,
    "chasing": "Bloom Elementary PTA",
