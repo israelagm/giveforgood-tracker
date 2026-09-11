@@ -318,19 +318,6 @@ async function main() {
   const now = Date.now();
   const mine = boards.filter((b) => !b.tier || b.tier === tier);
 
-  // Which board's numbers represent the whole event, not one two-hour window?
-  // A timed prize's entry is scoped to that window alone — the Morning Rush
-  // entry only counts who gave 8–10am — so using one for our header stats
-  // would wildly undercount. The board spanning the widest start/end range
-  // (Grand Prize and the untiered "All Orgs" board both run Sep 7–10) is the
-  // one whose donors/donations reflect the full event.
-  const fullEventBoard = mine.reduce((best, b) => {
-    if (!best) return b;
-    const wider = new Date(b.start) <= new Date(best.start) &&
-                  new Date(b.end) >= new Date(best.end);
-    return wider ? b : best;
-  }, null);
-
   const prizes = [];
   for (const b of mine) {
     const field = FIELD[b.metric] || 'dollars_in_cents';
@@ -367,28 +354,30 @@ async function main() {
 
   const o = await getJSON(`${BASE}/api/v4/story/${URN}.json`);
 
-  // Prefer the full-event board entry over story.json for our own totals.
-  // story.json's `cached_number_donations` comes back null for this org, and
-  // the old fallback (`|| total_donors`) silently made "donations" always
-  // equal "donors" on the page — donors and donations are not the same thing
-  // (a donor who gives twice is one donor, two donations), and today they
-  // read 385 donors vs 542 real donations. The board entry carries dollars,
-  // donors and donations from one snapshot, so avgGift computed from it
-  // reconciles exactly with the total shown, instead of pairing raised/donors
-  // from one live call against an averageDonation from a different one.
-  let raised = (o.total_amount_raised_in_cents || 0) / 100;
-  let donors = o.total_donors || 0;
-  let donations = donors;   // last-resort only, if no board entry is found
-
-  if (fullEventBoard) {
-    const entries = await fetchEntries(fullEventBoard.id, fullEventBoard.members);
-    const ours = entries.find((e) => e.urn === URN);
-    if (ours) {
-      raised = ours.dollars_in_cents / 100;
-      donors = ours.donors;
-      donations = ours.donations;
-    }
-  }
+  // Our own totals come from story.json — the same live source the org's
+  // public profile page reads, so this always matches what a donor sees
+  // there. It keeps climbing through the Sep 11 late-giving window even
+  // after every prize leaderboard has closed and frozen, which a board
+  // entry (tried here previously) can't do.
+  //
+  // story.json's own donation count is unusable though: `cached_number_donations`
+  // comes back null for this org, and falling back to `total_donors` silently
+  // made "donations" always equal "donors" on the page (donors and donations
+  // are not the same thing — a donor who gives twice is one donor, two
+  // donations). recent_donations.json's `total_count` is a real, live tally
+  // of the donation ledger itself, so it stays accurate even as new gifts
+  // land, and a per_page=1 request is enough to read it. avgGift is derived
+  // from these two rather than trusted from a third field, so the header
+  // numbers are always internally consistent — avg × donations reconciles
+  // exactly with the total shown, no matter which moment they were read at.
+  const raised = (o.total_amount_raised_in_cents || 0) / 100;
+  const donors = o.total_donors || 0;
+  let donations = donors;   // last-resort only, if the ledger call fails
+  try {
+    const ledger = await getJSON(
+      `${BASE}/api/v4/story/${URN}/recent_donations.json?page=1&per_page=1`);
+    if (ledger.total_count) donations = ledger.total_count;
+  } catch { /* keep the fallback */ }
 
   const state = {
     ts: new Date().toISOString(),

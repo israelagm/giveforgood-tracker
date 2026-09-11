@@ -58,7 +58,7 @@ function buildState_() {
   var mine = boards.filter(function (b) { return !b.tier || b.tier === tier; });
 
   var prizes = fetchStandings_(mine);
-  var org = fetchOrg_(mine, tier);
+  var org = fetchOrg_();
 
   var state = {
     ts: new Date().toISOString(),
@@ -79,39 +79,33 @@ function json_(url) {
 }
 
 /**
- * story.json's own donation count comes back null for this org, and the old
- * fallback made "donations" silently equal "donors" (they are not the same —
- * a donor who gives twice is one donor, two donations). Prefer the board
- * whose window spans the whole event: a timed prize's entry is scoped to just
- * that window, so its donors/donations would badly undercount here. Grand
- * Prize and the untiered "All Orgs" board both run the full event and give
- * dollars, donors and donations from one snapshot, so avgGift derived from it
- * reconciles exactly with the displayed total.
+ * Our own totals come from story.json — the same live source the org's
+ * public profile page reads, so this always matches what a donor sees there.
+ * It keeps climbing through the Sep 11 late-giving window even after every
+ * prize leaderboard has closed and frozen; a leaderboard entry (tried here
+ * previously) can't do that, since every 2026 board's window ends Sep 10
+ * 23:59:59.
+ *
+ * story.json's own donation count is unusable though: `cached_number_donations`
+ * comes back null for this org, and falling back to `total_donors` silently
+ * made "donations" always equal "donors" on the page (a donor who gives
+ * twice is one donor, two donations). recent_donations.json's `total_count`
+ * is a real, live tally of the donation ledger, so it stays accurate as new
+ * gifts land; a per_page=1 call is enough to read it. avgGift is derived from
+ * these two rather than trusted from a third field, so the numbers shown are
+ * always internally consistent.
  */
-function fetchOrg_(boards, tier) {
+function fetchOrg_() {
   var d = json_(BASE + '/api/v4/story/' + ORG_URN + '.json');
   var raised = (d.total_amount_raised_in_cents || 0) / 100;
   var donors = d.total_donors || 0;
-  var donations = donors;   // last-resort only, if no board entry is found
+  var donations = donors;   // last-resort only, if the ledger call fails
 
-  var fullEventBoard = (boards || []).reduce(function (best, b) {
-    if (!best) return b;
-    var wider = new Date(b.start) <= new Date(best.start) &&
-                new Date(b.end) >= new Date(best.end);
-    return wider ? b : best;
-  }, null);
-
-  if (fullEventBoard) {
-    var entries = fetchEntries_(fullEventBoard.id, fullEventBoard.members);
-    for (var i = 0; i < entries.length; i++) {
-      if (entries[i].urn === ORG_URN) {
-        raised = entries[i].dollars_in_cents / 100;
-        donors = entries[i].donors;
-        donations = entries[i].donations;
-        break;
-      }
-    }
-  }
+  try {
+    var ledger = json_(BASE + '/api/v4/story/' + ORG_URN +
+      '/recent_donations.json?page=1&per_page=1');
+    if (ledger.total_count) donations = ledger.total_count;
+  } catch (e) { /* keep the fallback */ }
 
   return {
     raised: raised,
