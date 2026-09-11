@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T03:20:20.753Z",
+ "ts": "2026-09-11T03:21:11.951Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 25549,
-  "donors": 547,
-  "donations": 945,
-  "avgGift": 27.035978835978835,
+  "raised": 25559,
+  "donors": 548,
+  "donations": 947,
+  "avgGift": 26.989440337909187,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 75,
-   "value": 2554900,
+   "value": 2555900,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 23519800
    },
-   "gap": 16100,
+   "gap": 15100,
    "chasing": "Kentucky Performing Arts",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 6,
-   "value": 547,
+   "value": 548,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 857
    },
-   "gap": 14,
+   "gap": 13,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 945,
+   "value": 947,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1096
+    "value": 1097
    },
-   "gap": 151,
+   "gap": 150,
    "chasing": "ART FM",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 945,
+   "value": 947,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 945
+    "value": 947
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 66,
-   "value": 2391900,
+   "value": 2392900,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 22254800
    },
-   "gap": 13300,
+   "gap": 12300,
    "chasing": "Catholic Charities of Louisville",
    "scored": true
   },
