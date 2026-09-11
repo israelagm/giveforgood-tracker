@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T02:44:24.810Z",
+ "ts": "2026-09-11T02:45:15.869Z",
  "tier": "Tier 1",
  "org": {
   "raised": 25217,
@@ -27,7 +27,7 @@
     "name": "Metro United Way",
     "value": 23419800
    },
-   "gap": 9300,
+   "gap": 14300,
    "chasing": "Whitney/Strong",
    "scored": true
   },
@@ -115,7 +115,7 @@
     "name": "Metro United Way",
     "value": 22154800
    },
-   "gap": 7300,
+   "gap": 12300,
    "chasing": "Whitney/Strong",
    "scored": true
   },
