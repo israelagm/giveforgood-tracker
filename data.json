@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T02:02:29.603Z",
+ "ts": "2026-09-11T02:03:21.046Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 24431,
-  "donors": 517,
-  "donations": 857,
-  "avgGift": 28.507584597432906,
+  "raised": 24726,
+  "donors": 518,
+  "donations": 861,
+  "avgGift": 28.717770034843205,
   "goal": 20000
  },
  "prizes": [
@@ -19,16 +19,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 75,
-   "value": 2443100,
+   "rank": 74,
+   "value": 2472600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 15369800
    },
-   "gap": 17900,
-   "chasing": "Kentucky Performing Arts",
+   "gap": 4200,
+   "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
   {
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 6,
-   "value": 517,
+   "value": 518,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 827
+    "value": 828
    },
-   "gap": 19,
+   "gap": 18,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
@@ -63,16 +63,16 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 4,
-   "value": 857,
+   "rank": 3,
+   "value": 861,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1016
+    "value": 1020
    },
-   "gap": 0,
-   "chasing": "The Louisville Orchestra",
+   "gap": 22,
+   "chasing": "Bloom Elementary PTA",
    "scored": true
   },
   {
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 857,
+   "value": 861,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 883
    },
-   "gap": 26,
+   "gap": 22,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -107,16 +107,16 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 68,
-   "value": 2280100,
+   "rank": 65,
+   "value": 2309600,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14780000
    },
-   "gap": 4400,
-   "chasing": "Louisville Story Program",
+   "gap": 100,
+   "chasing": "Catholic Charities of Louisville",
    "scored": true
   },
   {
@@ -240,12 +240,12 @@
    "end": "2026-09-10T22:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 4,
+   "value": 5,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 4
+    "value": 5
    },
    "gap": null,
    "chasing": null,
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23453959
+ "lastDonationId": 23454000
 }
