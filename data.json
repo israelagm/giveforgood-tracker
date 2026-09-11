@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T00:21:34.862Z",
+ "ts": "2026-09-11T00:22:27.099Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 22786,
-  "donors": 488,
-  "donations": 794,
-  "avgGift": 28.697732997481108,
+  "raised": 22791,
+  "donors": 489,
+  "donations": 795,
+  "avgGift": 28.667924528301885,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 74,
-   "value": 2278600,
+   "value": 2279100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 14965300
    },
-   "gap": 52500,
+   "gap": 52000,
    "chasing": "Evolve502",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 5,
-   "value": 488,
+   "value": 489,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
     "value": 754
    },
-   "gap": 54,
+   "gap": 53,
    "chasing": "ART FM",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 794,
+   "value": 795,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 934
    },
-   "gap": 140,
+   "gap": 139,
    "chasing": "ART FM",
    "scored": true
   },
@@ -86,12 +86,12 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 794,
+   "value": 795,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 794
+    "value": 795
    },
    "gap": null,
    "chasing": null,
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 67,
-   "value": 2115600,
+   "value": 2116100,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14742000
    },
-   "gap": 10500,
+   "gap": 10000,
    "chasing": "Gilda's Club Kentuckiana",
    "scored": true
   },
