@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T03:02:23.201Z",
+ "ts": "2026-09-11T03:03:14.408Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 25394,
-  "donors": 539,
-  "donations": 919,
-  "avgGift": 27.632208922742112,
+  "raised": 25399,
+  "donors": 540,
+  "donations": 920,
+  "avgGift": 27.607608695652175,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 76,
-   "value": 2539400,
+   "value": 2539900,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 23419800
    },
-   "gap": 7933,
+   "gap": 7433,
    "chasing": "Blessings in a Backpack Louisville Chapter",
    "scored": true
   },
@@ -42,7 +42,7 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 6,
-   "value": 539,
+   "value": 540,
    "field": "donors",
    "total": 665,
    "leader": {
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 919,
+   "value": 920,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1086
+    "value": 1087
    },
-   "gap": 3,
+   "gap": 2,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 919,
+   "value": 920,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 922
    },
-   "gap": 3,
+   "gap": 2,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -108,14 +108,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 66,
-   "value": 2376400,
+   "value": 2376900,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 22154800
    },
-   "gap": 26300,
+   "gap": 25800,
    "chasing": "Catholic Charities of Louisville",
    "scored": true
   },
