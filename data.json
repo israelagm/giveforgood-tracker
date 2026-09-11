@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T02:10:10.798Z",
+ "ts": "2026-09-11T02:11:01.894Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 24796,
+  "raised": 24812,
   "donors": 520,
-  "donations": 870,
-  "avgGift": 28.501149425287355,
+  "donations": 872,
+  "avgGift": 28.454128440366972,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 75,
-   "value": 2479600,
+   "value": 2481200,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 15369800
    },
-   "gap": 2200,
+   "gap": 600,
    "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 830
+    "value": 831
    },
    "gap": 22,
    "chasing": "Kentucky Humane Society",
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 870,
+   "value": 872,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1026
+    "value": 1028
    },
-   "gap": 15,
+   "gap": 13,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 870,
+   "value": 872,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 885
    },
-   "gap": 15,
+   "gap": 13,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -107,16 +107,16 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 66,
-   "value": 2316600,
+   "rank": 65,
+   "value": 2318200,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Amped",
     "value": 14780000
    },
-   "gap": 200,
-   "chasing": "Mattingly Edge",
+   "gap": 7200,
+   "chasing": "Volunteers of America Mid-States (VOA)",
    "scored": true
   },
   {
@@ -240,12 +240,12 @@
    "end": "2026-09-10T22:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 14,
+   "value": 16,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 14
+    "value": 16
    },
    "gap": null,
    "chasing": null,
