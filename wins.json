@@ -7,9 +7,19 @@
     "sit behind a login. Add an entry when a win is announced on",
     "https://www.giveforgoodlouisville.org/p/prizes",
     "",
+    "Two arrays:",
+    "  wins    — confirmed, a fixed dollar amount actually paid out. Shown at the",
+    "            top of the panel, largest first, summed into the headline total.",
+    "  pending — real but not yet confirmed: no winner table, no fixed amount, just",
+    "            a rule (e.g. \"up to 10% of what we raised\"). Shown separately below",
+    "            a divider and never counted into the confirmed total. Give it either",
+    "            estimatePct (computed live as that % of the current raised total,",
+    "            shown as \"Up to $X\") or amount if a fixed figure gets confirmed —",
+    "            at that point move it into wins instead.",
+    "",
     "Edit straight from a phone: open the repo, tap wins.json, tap the pencil.",
-    "amount is in whole dollars. note is optional.",
-    "Delete nothing else; the page reads only the wins array."
+    "amount is in whole dollars. note and sponsor are optional.",
+    "Delete nothing else; the page reads only the wins and pending arrays."
   ],
   "wins": [
     {
@@ -45,6 +55,14 @@
       "amount": 150,
       "note": "Every participating organization receives this",
       "sponsor": "Sam Swope family"
+    }
+  ],
+  "pending": [
+    {
+      "prize": "Building Nonprofit Capacity Match Pool",
+      "estimatePct": 10,
+      "note": "A $55,250 pool split proportionately among eligible Tier 1 organizations (annual revenue under $50,000), capped at 10% of what each org raised. 10% of our total is the most we could personally receive — the actual amount is set by the sponsors, not shown on any leaderboard, and depends on how many other orgs qualify.",
+      "sponsor": "Sam Swope family, Jewish Heritage Fund, LG&E and KU Foundation, Brown-Forman, Delta Dental of Kentucky"
     }
   ]
 }

@@ -87,6 +87,9 @@
   .win-note{margin-left:58px;font-size:12.5px;color:var(--muted)}
   .win-foot{margin-top:11px;font-size:12.5px}
   .win-foot a{color:var(--win-text)}
+  .pending-head{margin-top:16px;padding-top:12px;border-top:1px dashed color-mix(in srgb, var(--win) 35%, transparent);
+    font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+  .pending-row .win-amt{color:var(--muted);font-style:italic}
   @media (max-width:520px){ .amount{font-size:34px} body{padding:14px} }
 </style>
 </head>
@@ -229,19 +232,45 @@ function render(){
 
   // Prizes actually banked. Sits above the standings because it's the part
   // that is settled — nothing here can be lost.
-  if (WINS && WINS.length) {
-    var won = WINS.reduce(function(t, w){ return t + (Number(w.amount) || 0); }, 0);
-    h.push('<div class="wins">');
-    h.push('<div class="wins-top">🎟️ <b>' + money(won) + '</b> in prizes won' +
-      (WINS.length > 1 ? ' · ' + WINS.length + ' prizes' : '') + '</div>');
-    WINS.forEach(function(w){
-      h.push('<div class="win">' +
-        '<span class="win-amt">' + money(Number(w.amount) || 0) + '</span> ' +
-        '<b>' + esc(w.prize) + '</b>' +
-        (w.window ? ' <span class="win-when">' + esc(w.window) + '</span>' : '') +
-        (w.note ? '<div class="win-note">' + esc(w.note) + '</div>' : '') +
-        '</div>');
+  var wins = WINS || [], pending = PENDING || [];
+  if (wins.length || pending.length) {
+    var won = wins.reduce(function(t, w){ return t + (Number(w.amount) || 0); }, 0);
+    // Largest first — the headline prize belongs at the top of its own list.
+    var sortedWins = wins.slice().sort(function(a, b){
+      return (Number(b.amount) || 0) - (Number(a.amount) || 0);
     });
+
+    h.push('<div class="wins">');
+    if (wins.length) {
+      h.push('<div class="wins-top">🎟️ <b>' + money(won) + '</b> in prizes won' +
+        (wins.length > 1 ? ' · ' + wins.length + ' prizes' : '') + '</div>');
+      sortedWins.forEach(function(w){
+        h.push('<div class="win">' +
+          '<span class="win-amt">' + money(Number(w.amount) || 0) + '</span> ' +
+          '<b>' + esc(w.prize) + '</b>' +
+          (w.window ? ' <span class="win-when">' + esc(w.window) + '</span>' : '') +
+          (w.note ? '<div class="win-note">' + esc(w.note) + '</div>' : '') +
+          '</div>');
+      });
+    }
+
+    if (pending.length) {
+      h.push('<div class="pending-head">Potential — not yet confirmed</div>');
+      pending.forEach(function(w){
+        // A rule ("up to 10% of what we raised"), not a fixed number — so the
+        // figure is computed live and framed as a ceiling, not an amount owed.
+        var est = w.estimatePct != null ? o.raised * w.estimatePct / 100 : null;
+        h.push('<div class="win pending-row">' +
+          (est != null
+            ? '<span class="win-amt">Up to ' + money(est) + '</span> '
+            : '') +
+          '<b>' + esc(w.prize) + '</b>' +
+          (w.note ? '<div class="win-note">' + esc(w.note) + '</div>' : '') +
+          (w.sponsor ? '<div class="win-note">Sponsored by ' + esc(w.sponsor) + '</div>' : '') +
+          '</div>');
+      });
+    }
+
     h.push('<div class="win-foot"><a href="' + PRIZES_PAGE + '"' + NEWTAB +
       '>All prize winners \u2197</a></div>');
     h.push('</div>');
@@ -382,6 +411,14 @@ var PRIZES_PAGE = 'https://www.giveforgoodlouisville.org/p/prizes';
  */
 var WINS = null;
 
+/**
+ * Real prizes we may still receive, but that aren't confirmed the way WINS
+ * entries are -- no winner table, no fixed dollar figure, just a rule (see
+ * wins.json). Kept in a separate array so the confirmed-money total at the
+ * top of the panel can never accidentally include a guess.
+ */
+var PENDING = null;
+
 // Every link here leaves for giveforgoodlouisville.org. They all open in a new
 // tab so nobody loses the tracker — and, on a phone, so a half-finished
 // donation form isn't destroyed by tapping back. rel guards the new tab from
@@ -425,8 +462,9 @@ function pollWins(){
   fetch('wins.json?t=' + Date.now(), { cache: 'no-store' })
     .then(function(r){ return r.ok ? r.json() : null; })
     .then(function(d){
-      if (!d || !d.wins) return;
-      WINS = d.wins;
+      if (!d) return;
+      WINS = d.wins || [];
+      PENDING = d.pending || [];
       if (STATE) render();
     })
     .catch(function(){ /* the page is complete without it */ });
