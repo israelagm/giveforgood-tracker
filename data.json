@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T02:22:08.773Z",
+ "ts": "2026-09-11T02:23:00.610Z",
  "tier": "Tier 1",
  "org": {
   "raised": 24982,
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 1039
    },
-   "gap": 10,
+   "gap": 11,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 891
+    "value": 892
    },
-   "gap": 10,
+   "gap": 11,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
