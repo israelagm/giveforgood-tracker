@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T02:11:01.894Z",
+ "ts": "2026-09-11T02:11:53.427Z",
  "tier": "Tier 1",
  "org": {
   "raised": 24812,
@@ -49,7 +49,7 @@
     "name": "The Louisville Orchestra",
     "value": 831
    },
-   "gap": 22,
+   "gap": 24,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 1028
    },
-   "gap": 13,
+   "gap": 14,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 885
+    "value": 886
    },
-   "gap": 13,
+   "gap": 14,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
