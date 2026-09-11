@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T00:36:10.948Z",
+ "ts": "2026-09-11T00:37:02.546Z",
  "tier": "Tier 1",
  "org": {
   "raised": 22876,
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 764
+    "value": 765
    },
-   "gap": 0,
+   "gap": 2,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 946
+    "value": 948
    },
-   "gap": 146,
+   "gap": 148,
    "chasing": "ART FM",
    "scored": true
   },
@@ -113,7 +113,7 @@
    "total": 665,
    "leader": {
     "name": "Amped",
-    "value": 14742000
+    "value": 14744500
    },
    "gap": 2400,
    "chasing": "KMAC Contemporary Art Museum",
