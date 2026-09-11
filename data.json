@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T00:43:54.004Z",
+ "ts": "2026-09-11T00:44:45.383Z",
  "tier": "Tier 1",
  "org": {
   "raised": 22981,
@@ -27,7 +27,7 @@
     "name": "Metro United Way",
     "value": 15165300
    },
-   "gap": 5733,
+   "gap": 15733,
    "chasing": "Blessings in a Backpack Louisville Chapter",
    "scored": true
   },
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 769
+    "value": 771
    },
    "gap": 58,
    "chasing": "Bloom Elementary PTA",
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 958
+    "value": 959
    },
-   "gap": 151,
+   "gap": 152,
    "chasing": "ART FM",
    "scored": true
   },
