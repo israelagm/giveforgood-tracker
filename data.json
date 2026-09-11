@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T01:05:34.171Z",
+ "ts": "2026-09-11T01:06:08.441Z",
  "tier": "Tier 1",
  "org": {
   "raised": 23836,
   "donors": 512,
-  "donations": 512,
-  "avgGift": 28,
+  "donations": 845,
+  "avgGift": 28.20828402366864,
   "goal": 20000
  },
  "prizes": [
