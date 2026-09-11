@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T03:59:37.637Z",
+ "ts": "2026-09-11T04:00:28.809Z",
  "tier": "Tier 1",
  "org": {
   "raised": 25604,
@@ -18,7 +18,7 @@
    "rankBy": "dollars",
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
-   "status": "live",
+   "status": "final",
    "rank": 77,
    "value": 2560400,
    "field": "dollars_in_cents",
@@ -27,7 +27,7 @@
     "name": "Metro United Way",
     "value": 23534800
    },
-   "gap": 14800,
+   "gap": 17300,
    "chasing": "Feed Louisville",
    "scored": true
   },
@@ -40,14 +40,14 @@
    "rankBy": "donors",
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
-   "status": "live",
+   "status": "final",
    "rank": 6,
    "value": 548,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 867
+    "value": 868
    },
    "gap": 18,
    "chasing": "Kentucky Humane Society",
@@ -62,16 +62,16 @@
    "rankBy": "donations",
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
-   "status": "live",
+   "status": "final",
    "rank": 2,
    "value": 956,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1133
+    "value": 1134
    },
-   "gap": 177,
+   "gap": 178,
    "chasing": "ART FM",
    "scored": true
   },
@@ -84,7 +84,7 @@
    "rankBy": "donations",
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
-   "status": "live",
+   "status": "final",
    "rank": 1,
    "value": 956,
    "field": "donations",
@@ -106,7 +106,7 @@
    "rankBy": "dollars",
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
-   "status": "live",
+   "status": "final",
    "rank": 66,
    "value": 2397400,
    "field": "dollars_in_cents",
