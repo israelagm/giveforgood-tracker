@@ -90,6 +90,10 @@
   .pending-head{margin-top:16px;padding-top:12px;border-top:1px dashed color-mix(in srgb, var(--win) 35%, transparent);
     font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--muted)}
   .pending-row .win-amt{color:var(--muted);font-style:italic}
+  .potential-total{margin-top:14px;padding-top:12px;border-top:1px solid color-mix(in srgb, var(--win) 25%, transparent);
+    font-size:14px;color:var(--ink)}
+  .potential-total b{color:var(--win)}
+  .potential-note{margin-top:4px;font-size:12px;color:var(--muted);font-style:italic}
   @media (max-width:520px){ .amount{font-size:34px} body{padding:14px} }
 </style>
 </head>
@@ -254,12 +258,14 @@ function render(){
       });
     }
 
+    var pendingTotal = 0;
     if (pending.length) {
       h.push('<div class="pending-head">Potential — not yet confirmed</div>');
       pending.forEach(function(w){
         // A rule ("up to 10% of what we raised"), not a fixed number — so the
         // figure is computed live and framed as a ceiling, not an amount owed.
         var est = w.estimatePct != null ? o.raised * w.estimatePct / 100 : null;
+        if (est != null) pendingTotal += est;
         h.push('<div class="win pending-row">' +
           (est != null
             ? '<span class="win-amt">Up to ' + money(est) + '</span> '
@@ -269,6 +275,18 @@ function render(){
           (w.sponsor ? '<div class="win-note">Sponsored by ' + esc(w.sponsor) + '</div>' : '') +
           '</div>');
       });
+
+      // Raised + confirmed prizes + the pending ceiling, all added together.
+      // A real number (raised, wins) plus an upper bound (pending) isn't a
+      // forecast — it's the most optimistic case, labelled as such, and it
+      // still leaves out anything we have no way to see from here (employer
+      // matching gifts are typically submitted separately after the event and
+      // never show up in the org's own totals).
+      h.push('<div class="potential-total">Could reach up to <b>' +
+        money(o.raised + won + pendingTotal) + '</b> total, raised + prizes' +
+        '<div class="potential-note">Doesn\'t include employer matching gifts ' +
+        '(e.g. from Humana) \u2014 those are submitted separately after the event ' +
+        'and won\'t show up here.</div></div>');
     }
 
     h.push('<div class="win-foot"><a href="' + PRIZES_PAGE + '"' + NEWTAB +
