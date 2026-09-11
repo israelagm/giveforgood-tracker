@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T01:51:24.054Z",
+ "ts": "2026-09-11T01:52:15.199Z",
  "tier": "Tier 1",
  "org": {
   "raised": 24426,
@@ -27,7 +27,7 @@
     "name": "Metro United Way",
     "value": 15367800
    },
-   "gap": 8700,
+   "gap": 9200,
    "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
@@ -47,9 +47,9 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 819
+    "value": 820
    },
-   "gap": 14,
+   "gap": 15,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 1012
    },
-   "gap": 21,
+   "gap": 22,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 877
+    "value": 878
    },
-   "gap": 21,
+   "gap": 22,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
