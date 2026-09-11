@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T01:27:29.281Z",
+ "ts": "2026-09-11T01:28:20.649Z",
  "tier": "Tier 1",
  "org": {
   "raised": 24416,
@@ -19,7 +19,7 @@
    "start": "2026-09-07T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 72,
+   "rank": 73,
    "value": 2441600,
    "field": "dollars_in_cents",
    "total": 665,
@@ -27,8 +27,8 @@
     "name": "Metro United Way",
     "value": 15367800
    },
-   "gap": 50400,
-   "chasing": "Planned Parenthood",
+   "gap": 1400,
+   "chasing": "Kentucky Performing Arts",
    "scored": true
   },
   {
