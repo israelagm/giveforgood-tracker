@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T00:24:10.427Z",
+ "ts": "2026-09-11T00:25:01.948Z",
  "tier": "Tier 1",
  "org": {
   "raised": 22811,
@@ -47,7 +47,7 @@
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 755
+    "value": 756
    },
    "gap": 52,
    "chasing": "ART FM",
@@ -115,8 +115,8 @@
     "name": "Amped",
     "value": 14742000
    },
-   "gap": 8000,
-   "chasing": "Gilda's Club Kentuckiana",
+   "gap": 8900,
+   "chasing": "KMAC Contemporary Art Museum",
    "scored": true
   },
   {
@@ -256,5 +256,5 @@
   "label": "Hawthorne Elementary PTA",
   "url": "https://www.giveforgoodlouisville.org/organization/Hawthorne-Elementary-Pta"
  },
- "lastDonationId": 23448757
+ "lastDonationId": 23448925
 }
