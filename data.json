@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T01:43:42.646Z",
+ "ts": "2026-09-11T01:44:34.208Z",
  "tier": "Tier 1",
  "org": {
   "raised": 24426,
@@ -27,7 +27,7 @@
     "name": "Metro United Way",
     "value": 15367800
    },
-   "gap": 5700,
+   "gap": 6200,
    "chasing": "The Parklands of Floyds Fork",
    "scored": true
   },
@@ -69,9 +69,9 @@
    "total": 665,
    "leader": {
     "name": "ART FM",
-    "value": 1011
+    "value": 1012
    },
-   "gap": 18,
+   "gap": 19,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 874
+    "value": 875
    },
-   "gap": 18,
+   "gap": 19,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
