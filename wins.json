@@ -25,6 +25,26 @@
       "amount": 1000,
       "note": "Tier 1 — most online donors",
       "sponsor": "Brown-Forman"
+    },
+    {
+      "prize": "Grand Prizes — 1st place",
+      "window": "Sep 7 – Sep 10",
+      "amount": 3500,
+      "note": "Tier 1, most donations: 956 vs 937 for 2nd place",
+      "sponsor": "Sam Swope family"
+    },
+    {
+      "prize": "Late Night Push",
+      "window": "10pm – 11pm",
+      "amount": 1000,
+      "note": "Tier 1 — most online donors",
+      "sponsor": "LG&E and KU Foundation"
+    },
+    {
+      "prize": "Swope Legacy Prize",
+      "amount": 150,
+      "note": "Every participating organization receives this",
+      "sponsor": "Sam Swope family"
     }
   ]
 }
