@@ -1,5 +1,5 @@
 {
- "ts": "2026-09-11T01:45:25.507Z",
+ "ts": "2026-09-11T01:46:16.649Z",
  "tier": "Tier 1",
  "org": {
   "raised": 24426,
@@ -71,7 +71,7 @@
     "name": "ART FM",
     "value": 1012
    },
-   "gap": 19,
+   "gap": 20,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -91,9 +91,9 @@
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
-    "value": 875
+    "value": 876
    },
-   "gap": 19,
+   "gap": 20,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -107,7 +107,7 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 65,
+   "rank": 66,
    "value": 2279600,
    "field": "dollars_in_cents",
    "total": 665,
@@ -115,8 +115,8 @@
     "name": "Amped",
     "value": 14780000
    },
-   "gap": 14600,
-   "chasing": "Catholic Charities of Louisville",
+   "gap": 3300,
+   "chasing": "Mattingly Edge",
    "scored": true
   },
   {
