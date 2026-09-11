@@ -1,11 +1,11 @@
 {
- "ts": "2026-09-11T02:30:44.123Z",
+ "ts": "2026-09-11T02:31:35.287Z",
  "tier": "Tier 1",
  "org": {
-  "raised": 25072,
-  "donors": 525,
-  "donations": 888,
-  "avgGift": 28.234234234234233,
+  "raised": 25102,
+  "donors": 526,
+  "donations": 890,
+  "avgGift": 28.20449438202247,
   "goal": 20000
  },
  "prizes": [
@@ -20,14 +20,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 76,
-   "value": 2507200,
+   "value": 2510200,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 23419800
    },
-   "gap": 8200,
+   "gap": 5200,
    "chasing": "Volunteers of America Mid-States (VOA)",
    "scored": true
   },
@@ -42,14 +42,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 6,
-   "value": 525,
+   "value": 526,
    "field": "donors",
    "total": 665,
    "leader": {
     "name": "The Louisville Orchestra",
-    "value": 839
+    "value": 840
    },
-   "gap": 25,
+   "gap": 24,
    "chasing": "Kentucky Humane Society",
    "scored": true
   },
@@ -64,14 +64,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 3,
-   "value": 888,
+   "value": 890,
    "field": "donations",
    "total": 665,
    "leader": {
     "name": "ART FM",
     "value": 1053
    },
-   "gap": 7,
+   "gap": 5,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -86,14 +86,14 @@
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
    "rank": 2,
-   "value": 888,
+   "value": 890,
    "field": "donations",
    "total": 199,
    "leader": {
     "name": "Bloom Elementary PTA",
     "value": 895
    },
-   "gap": 7,
+   "gap": 5,
    "chasing": "Bloom Elementary PTA",
    "scored": true
   },
@@ -107,16 +107,16 @@
    "start": "2026-09-10T00:00:00.000-04:00",
    "end": "2026-09-10T23:59:59.000-04:00",
    "status": "live",
-   "rank": 67,
-   "value": 2344200,
+   "rank": 66,
+   "value": 2347200,
    "field": "dollars_in_cents",
    "total": 665,
    "leader": {
     "name": "Metro United Way",
     "value": 22154800
    },
-   "gap": 1100,
-   "chasing": "Paws with Purpose",
+   "gap": 8300,
+   "chasing": "Louisville Story Program",
    "scored": true
   },
   {
@@ -240,12 +240,12 @@
    "end": "2026-09-10T22:59:59.000-04:00",
    "status": "live",
    "rank": 1,
-   "value": 31,
+   "value": 32,
    "field": "donors",
    "total": 199,
    "leader": {
     "name": "Hawthorne Elementary PTA",
-    "value": 31
+    "value": 32
    },
    "gap": null,
    "chasing": null,
